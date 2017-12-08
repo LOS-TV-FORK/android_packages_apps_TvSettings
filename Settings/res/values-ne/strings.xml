@@ -367,6 +367,7 @@
     <string name="about_legal_license" msgid="4056934178111674054">"तेस्रो पक्षीय स्रोत"</string>
     <string name="about_terms_of_service" msgid="8514826341101557623">"Google सम्बन्धी कानुनी जानकारी"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"लाइसेन्स डेटा उपलब्ध छैन"</string>
+    <string name="about_manufacturer" msgid="3516742885166545865">"निर्माता"</string>
     <string name="about_model" msgid="9164284529291439296">"मोडेल"</string>
     <string name="device_mode" msgid="7258350575590118152">"डिभाइस मोड"</string>
     <string name="store_demo_mode" msgid="4382231515659362796">"स्टोरको डेमो"</string>

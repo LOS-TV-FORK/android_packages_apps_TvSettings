@@ -367,6 +367,7 @@
     <string name="about_legal_license" msgid="4056934178111674054">"ແຫຼ່ງຂໍ້ມູນພາກສ່ວນທີສາມ"</string>
     <string name="about_terms_of_service" msgid="8514826341101557623">"Google ຕາມ​ກົດ​ໝາຍ"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"ບໍ່​ມີ​ຂໍ້​ມູນ​ລິ​ຂະ​ສິດ"</string>
+    <string name="about_manufacturer" msgid="3516742885166545865">"ຜູ້ຜະລິດ"</string>
     <string name="about_model" msgid="9164284529291439296">"ໂມເດວ"</string>
     <string name="device_mode" msgid="7258350575590118152">"ໂໝດອຸປະກອນ"</string>
     <string name="store_demo_mode" msgid="4382231515659362796">"ເດໂມຢູ່ຮ້ານຄ້າ"</string>

@@ -367,6 +367,7 @@
     <string name="about_legal_license" msgid="4056934178111674054">"Kodi burimor nga një palë e tretë"</string>
     <string name="about_terms_of_service" msgid="8514826341101557623">"Informacioni ligjor i Google"</string>
     <string name="about_license_activity_unavailable" msgid="4559187037375581674">"Të dhënat e licencës nuk ofrohen"</string>
+    <string name="about_manufacturer" msgid="3516742885166545865">"Prodhuesi"</string>
     <string name="about_model" msgid="9164284529291439296">"Modeli"</string>
     <string name="device_mode" msgid="7258350575590118152">"Modaliteti i pajisjes"</string>
     <string name="store_demo_mode" msgid="4382231515659362796">"Demonstrimi i dyqanit"</string>
