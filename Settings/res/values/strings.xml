@@ -1067,6 +1067,8 @@
     <string name="baseband_version">Baseband version</string>
     <!-- About screen,  setting option name  [CHAR LIMIT=40] -->
     <string name="kernel_version">Kernel version</string>
+    <!-- About screen,  setting option name  [CHAR LIMIT=40] -->
+    <string name="opengl_version">OpenGL ES driver version</string>
 
     <!-- Status screen -->
     <!-- About phone, status item value if the actual value is not available. -->

@@ -403,6 +403,7 @@
     <string name="fcc_equipment_id" msgid="6731077083927000108">"ID trang bị"</string>
     <string name="baseband_version" msgid="5618116741093274294">"Phiên bản dải tần cơ sở"</string>
     <string name="kernel_version" msgid="7265509054070001542">"Phiên bản Kernel"</string>
+    <string name="opengl_version">"Phiên bản driver OpenGL ES"</string>
     <string name="status_unavailable" msgid="2033933928980193334">"Không có sẵn"</string>
     <string name="device_status_title" msgid="9051569510258883673">"Trạng thái"</string>
     <string name="battery_status_title" msgid="8850166742025222210">"Tình trạng pin"</string>

@@ -403,6 +403,7 @@
     <string name="fcc_equipment_id" msgid="6731077083927000108">"设备 ID"</string>
     <string name="baseband_version" msgid="5618116741093274294">"基带版本"</string>
     <string name="kernel_version" msgid="7265509054070001542">"内核版本"</string>
+    <string name="opengl_version">"Open GL ES 驅動版本"</string>
     <string name="status_unavailable" msgid="2033933928980193334">"不可用"</string>
     <string name="device_status_title" msgid="9051569510258883673">"状态"</string>
     <string name="battery_status_title" msgid="8850166742025222210">"电池状态"</string>
