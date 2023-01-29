@@ -57,7 +57,7 @@ public class StatusFragment extends PreferenceControllerFragment {
         controllers.add(new NopePreferenceController(context, KEY_BATTERY_LEVEL));
         controllers.add(new BatteryStatusPreferenceController(context, lifecycle));
 
-        controllers.add(new SerialNumberPreferenceController(context));
+        controllers.add(new CustomSerialNumberPreferenceController(context));
         controllers.add(new UptimePreferenceController(context, lifecycle));
         controllers.add(new BluetoothAddressPreferenceController(context, lifecycle));
         controllers.add(new IpAddressPreferenceController(context, lifecycle));
