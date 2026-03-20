@@ -63,6 +63,7 @@ import com.android.tv.settings.customization.CustomizationConstants;
 import com.android.tv.settings.customization.Partner;
 import com.android.tv.settings.customization.PartnerPreferencesMerger;
 import com.android.tv.settings.library.about.OpenGLVersionUtils;
+import com.android.tv.settings.library.about.VulkanUtils;
 import com.android.tv.settings.name.DeviceManager;
 import com.android.tv.settings.overlay.FlavorUtils;
 import com.android.tv.twopanelsettings.slices.CustomContentDescriptionPreference;
@@ -84,8 +85,9 @@ public class AboutFragment extends SettingsPreferenceFragment {
     private static final String KEY_SYSTEM_UPDATE_SETTINGS = "system_update_settings";
     private static final String PROPERTY_URL_SAFETYLEGAL = "ro.url.safetylegal";
     private static final String PROPERTY_SELINUX_STATUS = "ro.build.selinux";
-    private static final String KEY_OPENGL_VERSION = "opengl_version";
     private static final String KEY_KERNEL_VERSION = "kernel_version";
+    private static final String KEY_OPENGL_VERSION = "opengl_version";
+    private static final String KEY_VULKAN_VERSION = "vulkan_version";
     private static final String KEY_BUILD_NUMBER = "build_number";
     private static final String KEY_DEVICE_MANUFACTURER = "device_manufacturer";
     private static final String KEY_DEVICE_MODEL = "device_model";
@@ -197,10 +199,22 @@ public class AboutFragment extends SettingsPreferenceFragment {
         final Preference buildNumberPref = findPreference(KEY_BUILD_NUMBER);
         buildNumberPref.setSummary(Build.DISPLAY);
         buildNumberPref.setEnabled(true);
-        findPreference(KEY_OPENGL_VERSION)
-                .setSummary(OpenGLVersionUtils.getOpenGLVersion());
         findPreference(KEY_KERNEL_VERSION)
                 .setSummary(DeviceInfoUtils.getFormattedKernelVersion(getContext()));
+        findPreference(KEY_OPENGL_VERSION)
+                .setSummary(OpenGLVersionUtils.getOpenGLVersion());
+        final Preference vulkanPref = findPreference(KEY_VULKAN_VERSION);
+        try {
+            VulkanUtils.VkPhysicalDevices devices = VulkanUtils.getVkInfo();
+            if (devices != null && !devices.isEmpty()) {
+                // Get the first device (usually the primary GPU)
+                vulkanPref.setSummary(devices.get(0).getFormattedSummary());
+            } else {
+                vulkanPref.setSummary("Vulkan not supported");
+            }
+        } catch (Exception | UnsatisfiedLinkError e) {
+            vulkanPref.setSummary("Vulkan info unavailable");
+        }
 
         final Preference selinuxPref = findPreference(KEY_SELINUX_STATUS);
         if (!SELinux.isSELinuxEnabled()) {

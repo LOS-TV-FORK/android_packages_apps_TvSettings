@@ -126,6 +126,11 @@
         android:title="@string/opengl_version"
         android:summary="@string/device_info_default"/>
 
+    <!-- Device Vulkan driver -->
+    <Preference android:key="vulkan_version"
+        android:title="@string/vulkan_version"
+        android:summary="@string/device_info_default"/>
+
     <!-- Device Build date -->
     <Preference android:key="build_date"
         android:title="@*lineageos.platform:string/build_date"

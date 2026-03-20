@@ -50,6 +50,14 @@
     @androidx.annotation.Keep *;
 }
 
+-keep class com.android.tv.settings.library.about.VulkanUtils {
+    native <methods>;
+}
+
+-keep class com.android.tv.settings.library.about.VulkanUtils$VkPhysicalDevices {
+    boolean addDevice(long, long, long, long, long, java.lang.String);
+}
+
 -dontwarn org.bouncycastle.x509.util.LDAPStoreHelper
 -dontwarn org.bouncycastle.jce.provider.X509LDAPCertStoreSpi
 -dontwarn org.bouncycastle.util.io.pem.AllTests
