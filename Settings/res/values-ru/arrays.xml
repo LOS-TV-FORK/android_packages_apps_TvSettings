@@ -89,4 +89,17 @@
     <item msgid="3665868694672130423">"MSCHAPV2"</item>
     <item msgid="1778635393795831325">"GTC"</item>
   </string-array>
+  <string-array name="codec2_impl_entries">
+    <item>"Авто"</item>
+    <item>"FFmpeg"</item>
+    <item>"Intel MediaSDK"</item>
+  </string-array>
+  <string-array name="gralloc_impl_entries">
+    <item>"Авто"</item>
+    <item>"GBM"</item>
+    <item>"Minigbm"</item>
+    <item>"Minigbm (ARCVM)"</item>
+    <item>"Minigbm (GBM MESA)"</item>
+    <item>"Minigbm (Nouveau)"</item>
+  </string-array>
 </resources>

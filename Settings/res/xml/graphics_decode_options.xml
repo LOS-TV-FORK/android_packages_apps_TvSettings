@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2026 The LOS21ATV Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:custom="http://schemas.android.com/apk/res-auto"
+                  android:title="@string/graphics_decode_title">
+
+    <PreferenceCategory
+        android:key="graphics_decode_category"
+        android:title="@string/graphics_decode_category_title">
+
+        <Preference
+            android:key="current_codec2_impl"
+            android:title="@string/current_codec2_impl_title"
+            android:summary="@string/current_codec2_impl_summary"
+            android:selectable="false" />
+
+        <ListPreference
+            android:key="codec2_impl"
+            android:title="@string/codec2_impl_title"
+            android:summary="@string/codec2_impl_summary"
+            android:entries="@array/codec2_impl_entries"
+            android:entryValues="@array/codec2_impl_values"
+            android:defaultValue="auto" />
+
+        <Preference
+            android:key="current_gralloc_impl"
+            android:title="@string/current_gralloc_impl_title"
+            android:summary="@string/current_gralloc_impl_summary"
+            android:selectable="false" />
+
+        <ListPreference
+            android:key="gralloc_impl"
+            android:title="@string/gralloc_impl_title"
+            android:summary="@string/gralloc_impl_summary"
+            android:entries="@array/gralloc_impl_entries"
+            android:entryValues="@array/gralloc_impl_values"
+            android:defaultValue="auto" />
+
+        <SwitchPreference
+            android:key="hwaccel"
+            android:title="@string/hwaccel_title"
+            android:summary="@string/hwaccel_summary"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="hwaccel_drm_prime"
+            android:title="@string/hwaccel_drm_prime_title"
+            android:summary="@string/hwaccel_drm_prime_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="hwaccel_force"
+            android:title="@string/hwaccel_force_title"
+            android:summary="@string/hwaccel_force_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

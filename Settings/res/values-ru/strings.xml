@@ -1143,4 +1143,20 @@
     <string name="find_my_remote_slice_description" msgid="313598681990933215">"На вашем устройстве Google TV есть кнопка, которую можно нажать, чтобы в течение 30 секунд на пульте воспроизводился звук. Функция работает только на поддерживаемых пультах для устройств Google TV.\n\nЧтобы прекратить воспроизведение сигнала, нажмите любую кнопку на пульте."</string>
     <string name="find_my_remote_integration_hint" msgid="7560895390042161430">"Когда функция \"Поиск пульта\" включена, вы можете находить потерянный пульт Google TV по звуковому сигналу."</string>
     <string name="find_my_remote_play_sound" msgid="3364983972397728084">"Воспроизвести звуковой сигнал"</string>
+    <string name="graphics_decode_title">"Графика и декодирование"</string>
+    <string name="graphics_decode_category_title">"Медиа- и графические движки"</string>
+    <string name="current_codec2_impl_title">"Движок декодирования медиа"</string>
+    <string name="current_codec2_impl_summary">"Активный движок codec2"</string>
+    <string name="codec2_impl_title">"Движок декодирования медиа"</string>
+    <string name="codec2_impl_summary">"Выберите движок codec2. Нужен соответствующий компонент в образе системы."</string>
+    <string name="current_gralloc_impl_title">"Графический backend буферов"</string>
+    <string name="current_gralloc_impl_summary">"Активная реализация gralloc"</string>
+    <string name="gralloc_impl_title">"Графический backend буферов"</string>
+    <string name="gralloc_impl_summary">"Выберите backend выделения буферов gralloc для графики."</string>
+    <string name="hwaccel_title">"Аппаратное декодирование"</string>
+    <string name="hwaccel_summary">"Включить аппаратное ускорение декодирования медиа."</string>
+    <string name="hwaccel_drm_prime_title">"Использовать DRM-PRIME для декодирования"</string>
+    <string name="hwaccel_drm_prime_summary">"Принудительный импорт буферов DRM-PRIME аппаратным декодером."</string>
+    <string name="hwaccel_force_title">"Принудительное аппаратное декодирование"</string>
+    <string name="hwaccel_force_summary">"Принудительно использовать аппаратное декодирование, даже если предпочтителен программный путь."</string>
 </resources>

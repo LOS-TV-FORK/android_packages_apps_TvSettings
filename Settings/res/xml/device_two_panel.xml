@@ -71,6 +71,11 @@
         android:key="energysaver"
         android:title="@string/device_energy_saver"/>
     <Preference
+        android:key="graphics_decode"
+        android:icon="@drawable/ic_display_sound"
+        android:fragment="com.android.tv.settings.device.GraphicsDecodeOptionsFragment"
+        android:title="@string/graphics_decode_title"/>
+    <Preference
         android:fragment="com.android.tv.settings.system.development.DevelopmentFragment"
         android:icon="@drawable/ic_developer_mode"
         android:key="developer"

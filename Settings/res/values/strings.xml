@@ -2884,4 +2884,22 @@
     <string name="find_my_remote_integration_title" translatable="false">@string/settings_find_my_remote_title</string>
     <string name="find_my_remote_integration_hint">When Find my remote is enabled, you can play a sound to locate your Google TV remote if it\'s misplaced.</string>
     <string name="find_my_remote_play_sound">Play sound</string>
+
+    <!-- Graphics / decoding option switches -->
+    <string name="graphics_decode_title">Graphics &amp; decoding</string>
+    <string name="graphics_decode_category_title">Media and graphics backends</string>
+    <string name="current_codec2_impl_title">Media decoder engine</string>
+    <string name="current_codec2_impl_summary">Currently active codec2 backend</string>
+    <string name="codec2_impl_title">Media decoder engine</string>
+    <string name="codec2_impl_summary">Select which codec2 backend to use. Requires the matching component to be present in the system image.</string>
+    <string name="current_gralloc_impl_title">Graphics buffer backend</string>
+    <string name="current_gralloc_impl_summary">Currently active gralloc implementation</string>
+    <string name="gralloc_impl_title">Graphics buffer backend</string>
+    <string name="gralloc_impl_summary">Select gralloc / buffer allocation backend for graphics.</string>
+    <string name="hwaccel_title">Hardware decoding</string>
+    <string name="hwaccel_summary">Enable hardware accelerated media decoding.</string>
+    <string name="hwaccel_drm_prime_title">Use DRM-PRIME for decoding</string>
+    <string name="hwaccel_drm_prime_summary">Force DRM-PRIME buffer import for the hardware decoder.</string>
+    <string name="hwaccel_force_title">Force hardware decoding</string>
+    <string name="hwaccel_force_summary">Force hardware decoding even when the software path is preferred.</string>
 </resources>

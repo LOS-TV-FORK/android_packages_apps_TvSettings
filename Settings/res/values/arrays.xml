@@ -385,5 +385,36 @@
         <item>10</item>
     </string-array>
 
+    <!-- Codec2 backends -->
+    <string-array name="codec2_impl_entries">
+        <item>Auto</item>
+        <item>FFmpeg</item>
+        <item>Intel MediaSDK</item>
+    </string-array>
+    <string-array name="codec2_impl_values">
+        <item>auto</item>
+        <item>ffmpeg</item>
+        <item>intel</item>
+    </string-array>
+
+    <!-- Graphics buffer backends. Values must match the gralloc.* modules shipped in the
+         image (see device/generic/x86_64_tv/gpu/gpu_mesa.mk) and the handling in the boot
+         init script (device/generic/x86_64_tv/init.sh). -->
+    <string-array name="gralloc_impl_entries">
+        <item>Auto</item>
+        <item>GBM</item>
+        <item>Minigbm</item>
+        <item>Minigbm (ARCVM)</item>
+        <item>Minigbm (GBM MESA)</item>
+        <item>Minigbm (Nouveau)</item>
+    </string-array>
+    <string-array name="gralloc_impl_values">
+        <item>auto</item>
+        <item>gbm</item>
+        <item>minigbm</item>
+        <item>minigbm_arcvm</item>
+        <item>minigbm_gbm_mesa</item>
+        <item>minigbm_nouveau</item>
+    </string-array>
 
 </resources>
