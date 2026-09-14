@@ -1,0 +1,283 @@
+/**
+ * Copyright (C) 2023 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.android.tv.settings.device.eco;
+
+import static com.android.tv.settings.device.eco.EnergyModesHelper.MODE_HIGH_ENERGY;
+
+import android.app.Activity;
+import android.app.tvsettings.TvSettingsEnums;
+import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.Icon;
+import android.graphics.drawable.LayerDrawable;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.Keep;
+import androidx.annotation.Nullable;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+
+import com.android.tv.settings.FullScreenConfirmationActivity;
+import com.android.tv.settings.R;
+import com.android.tv.settings.RadioPreference;
+import com.android.tv.settings.SettingsPreferenceFragment;
+import com.android.tv.settings.connectivity.util.ThreadNetworkHelper;
+import com.android.tv.settings.device.eco.EnergyModesHelper.EnergyMode;
+import com.android.tv.settings.overlay.FlavorUtils;
+import com.android.tv.settings.util.SliceUtils;
+import com.android.tv.twopanelsettings.FullScreenDialogFragment;
+import com.android.tv.twopanelsettings.slices.InfoFragment;
+import com.android.tv.twopanelsettings.slices.SliceShard;
+import com.android.tv.twopanelsettings.slices.compat.Slice;
+
+import java.util.Optional;
+/**
+ * The Energy Modes screen in TV settings.
+ */
+@Keep
+public class EnergyModesFragment extends SettingsPreferenceFragment
+        implements SliceShard.Callbacks {
+    private static final String TAG = "EnergyModesFragment";
+
+    private static final String EXTRA_ENERGY_MODE_IDENTIFIER = "EXTRA_ENERGY_MODE_IDENTIFIER";
+    private static final String RADIO_GROUP_ENERGY_MODES = "energy_modes";
+    private static final String ENERGY_MODE_LIST_KEY = "energy_mode_list";
+
+    private EnergyModesHelper mEnergyModesHelper;
+    private Optional<ThreadNetworkHelper> mThreadNetworkHelperOptional;
+    private boolean isThreadEnabled;
+    private EnergyMode newEnergyMode;
+    private SliceShard mSliceShard;
+
+    @Override
+    public void onCreatePreferences(Bundle bundle, String s) {
+        mThreadNetworkHelperOptional = Optional.ofNullable(
+                ThreadNetworkHelper.getInstance(getContext()));
+
+        var sliceUri = SliceShard.Companion.getSliceUri(getResources(),
+                R.string.energy_modes_fragment_slice_uri, R.string.main_fragment_slice_uri,
+                    "energy_modes");
+        if (!SliceUtils.isSliceProviderValid(requireContext(), sliceUri)) {
+            setPreferencesFromResource(R.xml.energy_modes, null);
+            configurePreferences();
+            return;
+        }
+
+        setPreferencesFromResource(R.xml.settings_loading, null);
+        mSliceShard = new SliceShard(this, sliceUri, this,
+                getString(R.string.energy_modes),
+                SliceShard.Companion.getPrefContext(requireContext()), true);
+    }
+
+    private void configurePreferences() {
+        mEnergyModesHelper = new EnergyModesHelper(getContext());
+        EnergyMode selectedMode = mEnergyModesHelper.updateEnergyMode();
+
+        PreferenceCategory modeList = findPreference(ENERGY_MODE_LIST_KEY);
+
+        for (EnergyMode energyMode : mEnergyModesHelper.getEnergyModes()) {
+            RadioPreference radioPreference = createEnergyModeRadioPreference(energyMode);
+            if (energyMode.equals(selectedMode)) {
+                radioPreference.setChecked(true);
+            }
+            modeList.addPreference(radioPreference);
+        }
+
+    }
+
+    @Override
+    public void onSlice(@Nullable Slice slice) {
+        mSliceShard = null;
+        if (slice == null) {
+            setPreferencesFromResource(R.xml.energy_modes, null);
+        }
+        configurePreferences();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        mEnergyModesHelper = new EnergyModesHelper(getContext());
+        EnergyMode selectedMode = mEnergyModesHelper.updateEnergyMode();
+        for (EnergyMode mode : mEnergyModesHelper.getEnergyModes()) {
+            final String key = getContext().getString(mode.identifierRes);
+            final RadioPreference radioPreference = findPreference(key);
+            if (radioPreference != null) {
+                radioPreference.setChecked(mode.equals(selectedMode));
+            }
+        }
+
+        mThreadNetworkHelperOptional.ifPresent(threadNetworkHelper -> {
+            threadNetworkHelper.setOnStateChangeListener(mOnThreadNetworkStateChange);
+            threadNetworkHelper.registerStateCallback();
+        });
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+        mThreadNetworkHelperOptional.ifPresent(ThreadNetworkHelper::unregisterStateCallback);
+    }
+
+    private RadioPreference createEnergyModeRadioPreference(EnergyMode mode) {
+        final RadioPreference radioPreference = new RadioPreference(getContext());
+        radioPreference.setPersistent(false);
+
+        radioPreference.setKey(getContext().getString(mode.identifierRes));
+        radioPreference.setTitle(mode.titleRes);
+        radioPreference.setSummary(mode.subtitleRes);
+        radioPreference.setRadioGroup(RADIO_GROUP_ENERGY_MODES);
+
+        if (mode.iconRes != 0) {
+            final LayerDrawable compoundIcon =
+                    ((LayerDrawable) getContext().getDrawable(R.drawable.compound_icon));
+
+            final Drawable icon = getContext().getDrawable(mode.iconRes);
+            final ColorStateList colorStateList = getContext().getResources()
+                    .getColorStateList(R.color.preference_icon_color, getContext().getTheme());
+            icon.setTintList(colorStateList);
+
+            compoundIcon.setDrawableByLayerId(R.id.foreground, icon);
+            radioPreference.setIcon(compoundIcon);
+        }
+
+        radioPreference.setFragment(EnergyModeInfoFragment.class.getName());
+        Bundle bundle = radioPreference.getExtras();
+        bundle.putInt(EXTRA_ENERGY_MODE_IDENTIFIER, mode.identifierRes);
+
+        return radioPreference;
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference instanceof RadioPreference) {
+            RadioPreference modePref = (RadioPreference) preference;
+
+            modePref.setChecked(true);
+            PreferenceCategory modeList = findPreference(ENERGY_MODE_LIST_KEY);
+            modePref.clearOtherRadioPreferences(modeList);
+
+            int energyModeId = preference.getExtras().getInt(EXTRA_ENERGY_MODE_IDENTIFIER);
+            EnergyMode currentEnergyMode = mEnergyModesHelper.updateEnergyMode();
+            newEnergyMode = mEnergyModesHelper.getEnergyMode(energyModeId);
+            if (energyModeId != currentEnergyMode.identifierRes) {
+                if (!FlavorUtils.isTwoPanel(getContext())
+                        || mEnergyModesHelper.requiresConfirmation(
+                                currentEnergyMode, newEnergyMode)) {
+                    Intent intent = new Intent(getContext(), EnergyModeConfirmationActivity.class);
+                    intent.putExtra(EnergyModeConfirmationActivity.EXTRA_ENERGY_MODE_ID,
+                            getContext().getString(energyModeId));
+                    getContext().startActivity(intent);
+                } else {
+                    if (isThreadEnabled && newEnergyMode != MODE_HIGH_ENERGY) {
+                        disableThreadNetworkIntentLauncher
+                                .launch(getDisableThreadNetworkConfirmationIntent());
+                    } else {
+                        mEnergyModesHelper.setEnergyMode(newEnergyMode);
+                    }
+                }
+            }
+
+            return true;
+        }
+        return super.onPreferenceTreeClick(preference);
+    }
+
+    private final ActivityResultLauncher<Intent> disableThreadNetworkIntentLauncher =
+            registerForActivityResult(
+                    new ActivityResultContracts.StartActivityForResult(),
+                    new ActivityResultCallback<ActivityResult>() {
+                        @Override
+                        public void onActivityResult(ActivityResult result) {
+                            if (result.getResultCode() == Activity.RESULT_OK) {
+                                mEnergyModesHelper.setEnergyMode(newEnergyMode);
+                            }
+                        }
+                    });
+
+    private final ThreadNetworkHelper.OnStateChangeListener mOnThreadNetworkStateChange =
+            new ThreadNetworkHelper.OnStateChangeListener() {
+                @Override
+                public void isEnabled(boolean enabled) {
+                    isThreadEnabled = enabled;
+                }
+            };
+
+    @Override
+    protected int getPageId() {
+        return TvSettingsEnums.SYSTEM_POWER_AND_ENERGY_ENERGY_MODES;
+    }
+
+    /** Info panel giving more information about an Energy Mode */
+    public static class EnergyModeInfoFragment extends InfoFragment {
+        @Override
+        public View onCreateView(
+                LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+            int identifier = getArguments().getInt(EXTRA_ENERGY_MODE_IDENTIFIER);
+            EnergyModesHelper energyModesHelper = new EnergyModesHelper(getContext());
+            EnergyMode mode = energyModesHelper.getEnergyMode(identifier);
+            if (mode == null) {
+                return null;
+            }
+
+            View view = inflater.inflate(R.layout.energy_mode_info_fragment, container, false);
+
+            ImageView titleIcon = view.findViewById(R.id.info_title_icon);
+
+            TextView infoTitle = view.findViewById(R.id.info_title);
+            TextView infoSummary = view.findViewById(R.id.info_summary);
+            ImageView ecoHintIcon = view.findViewById(R.id.eco_hint_icon);
+            TextView ecoHint = view.findViewById(R.id.eco_hint);
+
+            infoTitle.setText(mode.titleRes);
+            infoSummary.setText(energyModesHelper.getSummary(mode));
+            //TODO(b/321811441): Hide hints until final copy is ready, if not we can remove views.
+            ecoHint.setVisibility(View.GONE);
+            ecoHintIcon.setVisibility(View.GONE);
+            titleIcon.setImageResource(mode.iconRes);
+
+            return view;
+        }
+    }
+
+    private Intent getDisableThreadNetworkConfirmationIntent() {
+        Bundle args = new FullScreenDialogFragment.DialogBuilder()
+                .setIcon(Icon.createWithResource(getContext(), R.drawable.ic_info_outline))
+                .setTitle(getContext()
+                        .getString(R.string.wifi_settings_thread_network_confirmation_title))
+                .setMessage(getContext()
+                        .getString(R.string.wifi_settings_thread_network_confirmation_message))
+                .setPositiveButton(getContext()
+                        .getString(
+                                R.string.wifi_settings_thread_network_confirmation_button_confirm))
+                .setNegativeButton(getContext().getString(R.string.settings_cancel))
+                .build();
+        return FullScreenConfirmationActivity.getIntent(getContext(), args);
+    }
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2025 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+  -->
+
+<EnergyModesExtensions
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Configures Energy mode selection during TV Setup (OOBE) -->
+    <TvSetupModeSelection>
+        <!-- Conditions under which OOBE mode selection is always shown rather than
+             using default policy. -->
+        <ForceShowConditions>
+            <!-- Add countries for which mode selection is always shown. -->
+            <!-- <country android:name="US"/> -->
+            <!-- <country android:name="CA"/> -->
+        </ForceShowConditions>
+
+        <!-- Conditions under which OOBE mode selection is always skipped rather than
+             using default policy. Can optionally override default mode selected. -->
+        <ForceHideConditions>
+            <!-- <country android:name="FR"
+                      app:defaultEnergyMode="@string/energy_mode_high_identifier" /> -->
+        </ForceHideConditions>
+
+        <!-- If present, increased energy used modes will be annotated with a warning -->
+        <!-- <ShowIncreasedEnergyUseDisclosure /> -->
+    </TvSetupModeSelection>
+</EnergyModesExtensions>

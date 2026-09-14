@@ -1,0 +1,12 @@
+STYLE_GUIDE.md # Allow per-developer styles
+# Eclipse project
+**/.classpath
+**/.project
+
+# IntelliJ project
+**/.idea
+**/*.iml
+**/*.ipr
+
+# Misc files
+**/.gitignore

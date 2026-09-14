@@ -1,0 +1,175 @@
+/*
+ * Copyright (C) 2023 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.android.tv.settings.device.displaysound;
+
+import static android.view.Display.HdrCapabilities.HDR_TYPE_DOLBY_VISION;
+import static android.view.Display.HdrCapabilities.HDR_TYPE_INVALID;
+
+import android.annotation.Nullable;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
+import android.hardware.display.DisplayManager;
+import android.hardware.display.HdrConversionMode;
+import android.os.UserHandle;
+import android.view.Display;
+
+import com.android.tv.settings.R;
+
+import java.util.Arrays;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+/**
+ * Helper methods for display and sound settings.
+ *
+ * @hide
+ */
+public class DisplaySoundUtils {
+    private static final String ACTION_HDR_SETTINGS_CHANGED =
+            "com.android.tv.settings.display.HDR_SETTINGS_CHANGED";
+
+    public static void sendHdrSettingsChangedBroadcast(Context context) {
+        final String target_package =
+                context.getResources().getString(R.string.hdr_settings_changed_broadcast_package);
+        if (target_package.isEmpty()) {
+            return;
+        }
+        context.sendBroadcastAsUser(
+                new Intent(ACTION_HDR_SETTINGS_CHANGED)
+                        .setPackage(target_package)
+                        .setFlags(
+                                Intent.FLAG_INCLUDE_STOPPED_PACKAGES
+                                        | Intent.FLAG_RECEIVER_FOREGROUND
+                                        | Intent.FLAG_RECEIVER_INCLUDE_BACKGROUND),
+                UserHandle.SYSTEM);
+    }
+
+    /** Gets the match-content dynamic range status */
+    public static boolean getMatchContentDynamicRangeStatus(DisplayManager displayManager) {
+        return displayManager.getHdrConversionModeSetting().getConversionMode()
+                == HdrConversionMode.HDR_CONVERSION_PASSTHROUGH;
+    }
+
+    /** Sets the match-content dynamic range status */
+    public static void setMatchContentDynamicRangeStatus(Context context,
+            DisplayManager displayManager,
+            boolean status) {
+        if (status) {
+            // When enabling Match Content Dymanic Range, check if the current Preferred Dynamic
+            // Range is set to Force SDR. Since Force SDR means that all HDR types have been
+            // disabled, when enabling Match Content Dynamic Range, Format Selection must be reset
+            // to Auto to allow for all supported HDR formats
+            if (displayManager.getHdrConversionModeSetting().equals(new HdrConversionMode(
+                    HdrConversionMode.HDR_CONVERSION_FORCE, HDR_TYPE_INVALID))) {
+                displayManager.setAreUserDisabledHdrTypesAllowed(true);
+            }
+            displayManager.setHdrConversionMode(
+                    new HdrConversionMode(HdrConversionMode.HDR_CONVERSION_PASSTHROUGH));
+        } else {
+            displayManager.setHdrConversionMode(
+                    new HdrConversionMode(HdrConversionMode.HDR_CONVERSION_SYSTEM));
+        }
+        sendHdrSettingsChangedBroadcast(context);
+    }
+
+    /** Returns if Dolby vision is supported by the device */
+    public static boolean isDolbyVisionSupported(Display.Mode[] modes) {
+        for (int i = 0; i < modes.length; i++) {
+            if (isHdrFormatSupported(modes[i], HDR_TYPE_DOLBY_VISION)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /** Returns if the passed HDR format is supported by the device in case of a specific mode */
+    public static boolean isHdrFormatSupported(Display.Mode mode, int hdrFormat) {
+        return Arrays.stream(mode.getSupportedHdrTypes()).anyMatch(
+                hdr -> hdr == hdrFormat);
+    }
+
+    /**
+     * Returns true if the current mode is above 4k30Hz and this is a device that does not support
+     * Dolby Vision at resolutions above 4k30Hz
+     */
+    public static boolean doesCurrentModeNotSupportDvBecauseLimitedTo4k30(Display display) {
+        Display.Mode[] supportedModes = display.getSupportedModes();
+        Display.Mode currentMode = display.getMode();
+        boolean is4k60HzMode = (currentMode.getPhysicalHeight() >= 2160
+                || currentMode.getPhysicalWidth() >= 2160)
+                && currentMode.getRefreshRate() >= 59.9;
+
+        return is4k60HzMode && isDolbyVisionSupported(supportedModes)
+                && !isHdrFormatSupported(currentMode, HDR_TYPE_DOLBY_VISION);
+    }
+
+    /**
+     * Returns a 1080p 60Hz mode if one is supported by the display, null otherwise
+     */
+    @Nullable
+    public static Display.Mode findMode1080p60(Display display) {
+        for (Display.Mode mode : display.getSupportedModes()) {
+            if (mode.getPhysicalWidth() == 1920 && mode.getPhysicalHeight() == 1080
+                    && mode.getRefreshRate() >= 59.9) {
+                return mode;
+            }
+        }
+        return null;
+    }
+
+    static AlertDialog createAlertDialog(Context context, String title, String description,
+            OnClickListener onOkClicked, OnClickListener onCancelClicked) {
+        return new AlertDialog.Builder(context)
+                .setTitle(title)
+                .setMessage(description)
+                .setPositiveButton(R.string.resolution_selection_dialog_ok, onOkClicked)
+                .setNegativeButton(R.string.resolution_selection_dialog_cancel, onCancelClicked)
+                .create();
+    }
+
+    static void enableHdrType(DisplayManager displayManager,
+            @Display.HdrCapabilities.HdrType int hdrType) {
+        Set<Integer> disabledHdrTypes = toSet(displayManager.getUserDisabledHdrTypes());
+        disabledHdrTypes.remove(hdrType);
+        displayManager.setUserDisabledHdrTypes(toArray(disabledHdrTypes));
+    }
+
+    static void disableHdrType(DisplayManager displayManager,
+            @Display.HdrCapabilities.HdrType int hdrType) {
+        Set<Integer> disabledHdrTypes = toSet(displayManager.getUserDisabledHdrTypes());
+        disabledHdrTypes.add(hdrType);
+        displayManager.setUserDisabledHdrTypes(toArray(disabledHdrTypes));
+    }
+
+    /** Returns true when Preferred Dynamic Range is set to Force SDR */
+    static boolean isForceSdr(DisplayManager displayManager) {
+        return displayManager.getHdrConversionModeSetting().equals(new HdrConversionMode(
+                HdrConversionMode.HDR_CONVERSION_FORCE, HDR_TYPE_INVALID));
+    }
+
+    /** Converts set to int array */
+    public static int[] toArray(Set<Integer> set) {
+        return set.stream().mapToInt(Integer::intValue).toArray();
+    }
+
+    /** Converts int array to set */
+    public static Set<Integer> toSet(int[] array) {
+        return Arrays.stream(array).boxed().collect(Collectors.toSet());
+    }
+}

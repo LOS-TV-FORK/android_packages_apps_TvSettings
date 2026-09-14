@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2018 The Android Open Source Project
+
+    Licensed under the Apache License, Version 2.0 (the "License")
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<resources>
+    <style name="TwoPanelPreferenceTheme" parent="PreferenceThemeOverlayLeanback">
+        <item name="android:windowBackground">@color/tp_preference_window_background</item>
+        <item name="android:colorPrimary">@color/tp_preference_brand_color</item>
+        <item name="android:textAppearanceListItemSmall">@style/TextAppearance.TwoPanelPreference.Category</item>
+        <item name="android:titleTextAppearance">@style/TextAppearance.TwoPanelPreference.Title</item>
+        <item name="android:selectableItemBackground">@drawable/preference_item_background</item>
+        <item name="android:textAppearanceListItem">@style/TextAppearance.TwoPanelPreference.ListItem</item>
+        <item name="android:textAppearanceListItemSecondary">@style/TextAppearance.TwoPanelPreference.ListItem.Secondary</item>
+        <item name="android:imageButtonStyle">@style/TwoPanelPreferenceIconStyle</item>
+        <item name="android:colorControlNormal">#FF808080</item>
+        <item name="android:listPreferredItemPaddingStart">12dp</item>
+        <item name="android:listPreferredItemPaddingEnd">16dp</item>
+        <item name="preferenceStyle">@style/TwoPanelPreferenceStyle</item>
+        <item name="android:preferenceStyle">@style/TwoPanelPreferenceStyle</item>
+        <item name="android:listPreferredItemHeight">48dp</item>
+        <item name="switchPreferenceStyle">@style/TwoPanelSwitchPreferenceStyle</item>
+        <item name="switchPreferenceCompatStyle">@style/TwoPanelSwitchPreferenceCompatStyle</item>
+        <item name="checkboxStyle">@style/TwoPanelCheckboxStyle</item>
+        <item name="android:checkboxStyle">@style/TwoPanelCheckboxStyle</item>
+        <item name="radioButtonStyle">@style/TwoPanelRadioButtonStyle</item>
+        <item name="android:radioButtonStyle">@style/TwoPanelRadioButtonStyle</item>
+        <item name="android:preferenceCategoryStyle">@style/TwoPanelCategoryStyle</item>
+        <item name="preferenceCategoryStyle">@style/TwoPanelCategoryStyle</item>
+        <item name="preferenceFragmentListStyle">@style/TwoPanelPreferenceFragmentListStyle</item>
+        <item name="dialogPreferenceStyle">@style/TwoPanelPreferenceStyle</item>
+        <item name="android:dialogPreferenceStyle">@style/TwoPanelPreferenceStyle</item>
+        <item name="preferenceScreenStyle">@style/TwoPanelPreferenceStyle</item>
+        <item name="android:preferenceScreenStyle">@style/TwoPanelPreferenceStyle</item>
+        <item name="checkBoxPreferenceStyle">@style/TwoPanelPreferenceStyle</item>
+        <item name="android:checkBoxPreferenceStyle">@style/TwoPanelPreferenceStyle</item>
+    </style>
+</resources>

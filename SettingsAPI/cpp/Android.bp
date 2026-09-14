@@ -1,0 +1,23 @@
+cc_library_shared {
+    name: "libtvsettings_vulkan",
+    system_ext_specific: true,
+    srcs: [
+        "VkUtils.cpp",
+        "vulkan/VkSession.cpp",
+        "jni_utils.cpp",
+        "vulkan_wrapper/vulkan_wrapper.cpp",
+    ],
+    shared_libs: [
+        "liblog",
+        "libdl",
+    ],
+    header_libs: [
+        "vulkan_headers",
+        "jni_headers",
+    ],
+    cppflags: [
+        "-fexceptions",
+        "-Wno-unused-parameter",
+    ],
+    stl: "c++_static",
+}
