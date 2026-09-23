@@ -149,6 +149,12 @@ public class ResolutionSelectionFragment extends PreferenceControllerFragment {
 
         Display display = mDisplayManager.getDisplay(Display.DEFAULT_DISPLAY);
         mAutoMode = display.getSystemPreferredDisplayMode();
+        if (mAutoMode == null) {
+            mAutoMode = display.getMode();
+        }
+        if (mAutoMode == null) {
+            mAutoMode = mModes[0];
+        }
         final String summary = getResources().getString(R.string.resolution_display_mode,
                 ResolutionSelectionUtils.getResolutionString(
                         mAutoMode.getPhysicalWidth(), mAutoMode.getPhysicalHeight()),
