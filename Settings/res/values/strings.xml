@@ -2971,4 +2971,12 @@
     <!--Dialog body text used to explain a reboot is required after changing ANGLE as system GLES driver setting-->
     <string name="reboot_dialog_enable_angle_as_system_driver">A reboot is required to change the system OpenGL ES driver</string>
 
+    <string name="audio_output_selection_title">Output device</string>
+    <string name="audio_input_selection_title">Microphone</string>
+    <string name="audio_device_auto_title">Auto</string>
+    <string name="audio_device_auto_output_summary">System choice</string>
+    <string name="audio_device_auto_input_summary">System choice</string>
+    <string name="audio_hdmi_enable_title">HDMI/DP audio output</string>
+    <string name="audio_hdmi_enable_summary">Report an HDMI/DP device so it appears above and can be selected</string>
+
 </resources>

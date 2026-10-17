@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.util.Log;
 
 import com.android.tv.settings.accessories.BluetoothDevicesService;
+import com.android.tv.settings.device.displaysound.AudioDeviceRouteHelper;
 import com.android.tv.settings.device.display.daydream.EnergySaverFragment;
 import com.android.tv.settings.device.eco.EnergyModesHelper;
 
@@ -44,5 +45,8 @@ public class BootReceiver extends BroadcastReceiver {
         energyModesHelper.updateEnergyMode();
 
         EnergySaverFragment.resetAttentiveTimeoutIfHidden(context);
+
+        // Preferred audio input/output do not survive reboot.
+        AudioDeviceRouteHelper.reapplySavedRoutes(context);
     }
 }

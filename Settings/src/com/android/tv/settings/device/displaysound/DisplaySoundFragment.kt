@@ -158,6 +158,10 @@ class DisplaySoundFragment : SettingsPreferenceFragment(), DisplayManager.Displa
         updateCecPreference()
         findPreference<SwitchPreference>(KEY_DYNAMIC_RANGE)?.isChecked =
             DisplaySoundUtils.getMatchContentDynamicRangeStatus(mDisplayManager)
+        findPreference<Preference>(KEY_AUDIO_OUTPUT)?.summary =
+            AudioDeviceRouteHelper.getOutputSummary(requireContext())
+        findPreference<Preference>(KEY_AUDIO_INPUT)?.summary =
+            AudioDeviceRouteHelper.getInputSummary(requireContext())
     }
 
     override fun onPreferenceTreeClick(preference: Preference): Boolean {
@@ -254,6 +258,8 @@ class DisplaySoundFragment : SettingsPreferenceFragment(), DisplayManager.Displa
 
     companion object {
         const val KEY_SOUND_EFFECTS = "sound_effects"
+        private const val KEY_AUDIO_OUTPUT = "audio_output_selection"
+        private const val KEY_AUDIO_INPUT = "audio_input_selection"
         private const val KEY_CEC = "cec"
         private const val KEY_DEFAULT_AUDIO_OUTPUT_SETTINGS_SLICE = "default_audio_output_settings"
         private const val KEY_RESOLUTION_TITLE = "resolution_selection"

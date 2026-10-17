@@ -1216,4 +1216,12 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Использовать ANGLE как системный драйвер OpenGL ES"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Экспериментальный параметр, понадобится перезагрузка"</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Чтобы изменить системный драйвер OpenGL ES, требуется перезагрузка."</string>
+
+    <string name="audio_output_selection_title">Устройство вывода</string>
+    <string name="audio_input_selection_title">Микрофон</string>
+    <string name="audio_device_auto_title">Авто</string>
+    <string name="audio_device_auto_output_summary">Системный выбор</string>
+    <string name="audio_device_auto_input_summary">Системный выбор</string>
+    <string name="audio_hdmi_enable_title">"Вывод звука по HDMI/DP"</string>
+    <string name="audio_hdmi_enable_summary">"Показать устройство HDMI/DP в списке выше для выбора"</string>
 </resources>

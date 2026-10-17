@@ -71,4 +71,12 @@
         android:key="advanced_sound_settings"
         android:title="@string/advanced_sound_settings_title"
         android:fragment="com.android.tv.settings.device.displaysound.AdvancedVolumeFragment" />
+    <Preference
+        android:key="audio_output_selection"
+        android:title="@string/audio_output_selection_title"
+        android:fragment="com.android.tv.settings.device.displaysound.AudioDeviceSelectionFragment$AudioOutputSelectionFragment" />
+    <Preference
+        android:key="audio_input_selection"
+        android:title="@string/audio_input_selection_title"
+        android:fragment="com.android.tv.settings.device.displaysound.AudioDeviceSelectionFragment$AudioInputSelectionFragment" />
 </PreferenceScreen>
