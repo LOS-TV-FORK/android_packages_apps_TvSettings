@@ -171,14 +171,15 @@ public abstract class PowerButtonActionFragment extends PreferenceControllerFrag
                 R.string.power_button_action_go_home,
                 R.string.device_daydream,
                 R.string.power_button_action_shutdown_confirm,
+                R.string.power_button_action_power_menu,
             };
         }
 
         @Override
         protected int[] getActionValues() {
             // PhoneWindowManager: SHORT_PRESS_POWER_NOTHING, _GO_TO_SLEEP, _REALLY_GO_TO_SLEEP,
-            // _GO_HOME, _DREAM_OR_SLEEP, _SHUT_OFF.
-            return new int[] {USE_DEFAULT, 0, 1, 2, 4, 7, 10};
+            // _GO_HOME, _DREAM_OR_SLEEP, _SHUT_OFF, _GLOBAL_ACTIONS.
+            return new int[] {USE_DEFAULT, 0, 1, 2, 4, 7, 10, 11};
         }
     }
 
