@@ -27,17 +27,21 @@ import static com.android.tv.settings.device.displaysound.PreferredDynamicRangeF
 import static com.android.tv.settings.device.displaysound.ResolutionSelectionInfo.HDR_TYPES_ARRAY;
 
 import android.app.AlertDialog;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.hardware.display.DisplayManager;
+import android.hardware.display.DisplayManagerGlobal;
 import android.hardware.display.HdrConversionMode;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.Display;
 import android.widget.Button;
 
 import androidx.annotation.Keep;
+import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -74,6 +78,7 @@ public class ResolutionSelectionFragment extends PreferenceControllerFragment {
     private int mUserPreferredModeIndex;
     private PreferenceCategory mResolutionPreferenceCategory;
     private Display.Mode mAutoMode;
+    private AlertDialog mConfirmDialog;
 
     static final Set<Integer> STANDARD_RESOLUTIONS_IN_ORDER = Set.of(2160, 1080, 720, 576, 480);
     static final int DIALOG_TIMEOUT_MILLIS = 12000;
@@ -228,14 +233,22 @@ public class ResolutionSelectionFragment extends PreferenceControllerFragment {
         if (preference instanceof RadioPreference) {
             selectRadioPreference(preference);
 
+            // A previous confirm dialog (with its own countdown) must not
+            // survive a new pick: dismiss it, its timer no-ops on dismiss.
+            if (mConfirmDialog != null && mConfirmDialog.isShowing()) {
+                mConfirmDialog.dismiss();
+            }
+            mConfirmDialog = null;
+
             Display.Mode newMode = null;
             Display.Mode previousMode = mDisplayManager.getGlobalUserPreferredDisplayMode();
-            if (key.equals(KEY_RESOLUTION_SELECTION_AUTO)) {
-                mDisplayManager.clearGlobalUserPreferredDisplayMode();
+            boolean isAutoPick = key.equals(KEY_RESOLUTION_SELECTION_AUTO);
+            if (isAutoPick) {
+                applyModeTemporarily(null);
             } else if (key.contains(KEY_RESOLUTION_PREFIX)) {
                 int modeIndex = Integer.parseInt(key.substring(KEY_RESOLUTION_PREFIX.length()));
                 newMode = mModes[modeIndex];
-                mDisplayManager.setGlobalUserPreferredDisplayMode(newMode);
+                applyModeTemporarily(newMode);
             }
             // if newMode is null, it means it is the automatic mode
             Display.Mode finalNewMode = Objects.requireNonNullElse(newMode, mAutoMode);
@@ -244,12 +257,49 @@ public class ResolutionSelectionFragment extends PreferenceControllerFragment {
             // is shown when the resolution change is under process, the dialog is lost.
             new Handler().postDelayed(new Runnable() {
                 public void run() {
-                    showWarningDialogOnResolutionChange(finalNewMode, finalPreviousMode);
+                    showWarningDialogOnResolutionChange(finalNewMode, finalPreviousMode,
+                            isAutoPick);
                 }
             }, DIALOG_START_MILLIS);
         }
 
         return super.onPreferenceTreeClick(preference);
+    }
+
+    /**
+     * Applies a mode without persisting it. Nothing survives a reboot until
+     * the user confirms with OK: persisting on bare selection bricked boxes
+     * when the new mode kills video (a reboot re-applies the stored killer
+     * vote and the system never comes back).
+     */
+    private void applyModeTemporarily(Display.Mode mode) {
+        applyRefreshRateVote(mode);
+        DisplayManagerGlobal.getInstance().setUserPreferredDisplayMode(
+                Display.INVALID_DISPLAY, mode, false);
+    }
+
+    /**
+     * SurfaceFlinger picks the refresh rate from the frame rate vote
+     * (Settings.System peak/min_refresh_rate), not from the mode that was asked for. Picking a
+     * different refresh rate at the same resolution therefore does nothing on its own: the
+     * mode request is accepted and the old rate is kept. Vote for the rate of the selected mode
+     * as well so the choice actually takes effect.
+     *
+     * The value has to be rounded to a whole number: display modes report their rate with more
+     * precision than the setting is compared with (e.g. 74.97 Hz for 75 Hz), and the exact
+     * float is then never matched against any mode.
+     */
+    private void applyRefreshRateVote(@Nullable Display.Mode mode) {
+        final ContentResolver resolver = getContext().getContentResolver();
+        if (mode == null || mode.getRefreshRate() <= 0) {
+            // Back to automatic: drop the vote so the display is free to pick its own rate.
+            Settings.System.putString(resolver, Settings.System.PEAK_REFRESH_RATE, null);
+            Settings.System.putString(resolver, Settings.System.MIN_REFRESH_RATE, null);
+            return;
+        }
+        final float rate = Math.round(mode.getRefreshRate());
+        Settings.System.putFloat(resolver, Settings.System.PEAK_REFRESH_RATE, rate);
+        Settings.System.putFloat(resolver, Settings.System.MIN_REFRESH_RATE, rate);
     }
 
     /** Returns the index of Display mode that matches UserPreferredMode */
@@ -267,18 +317,21 @@ public class ResolutionSelectionFragment extends PreferenceControllerFragment {
     }
 
     private void setUserPreferredMode(Display.Mode mode) {
+        // Revert path (Cancel/timeout): re-apply without persisting. The
+        // stored vote was never overwritten by the temporary pick, so this
+        // restores exactly the previously persisted choice.
         int modeIndex = lookupModeIndex(mode);
         if (modeIndex != -1) {
             selectRadioPreference(findPreference(KEY_RESOLUTION_PREFIX + modeIndex));
-            mDisplayManager.setGlobalUserPreferredDisplayMode(mode);
+            applyModeTemporarily(mModes[modeIndex]);
         } else {
             selectRadioPreference(findPreference(KEY_RESOLUTION_SELECTION_AUTO));
-            mDisplayManager.clearGlobalUserPreferredDisplayMode();
+            applyModeTemporarily(null);
         }
     }
 
     private void showWarningDialogOnResolutionChange(
-            Display.Mode currentMode, Display.Mode previousMode) {
+            Display.Mode currentMode, Display.Mode previousMode, boolean isAutoPick) {
         final CountDownTimer[] timerTask = {null};
         String resolutionString = ResolutionSelectionUtils.modeToString(currentMode, getContext());
         Display display = mDisplayManager.getDisplay(Display.DEFAULT_DISPLAY);
@@ -291,6 +344,14 @@ public class ResolutionSelectionFragment extends PreferenceControllerFragment {
                 doesCurrentModeNotSupportDvBecauseLimitedTo4k30);
 
         OnClickListener onOkClicked = (dialog, which) -> {
+            // Persist only on explicit confirm. Until now the pick was only
+            // applied temporarily, so an unconfirmed killer mode can never
+            // survive a reboot.
+            if (isAutoPick) {
+                mDisplayManager.clearGlobalUserPreferredDisplayMode();
+            } else {
+                mDisplayManager.setGlobalUserPreferredDisplayMode(currentMode);
+            }
             changeHdrConversionFormatToOneSupportedByMode(display.getMode());
             dialog.dismiss();
             timerTask[0].cancel();
@@ -303,6 +364,7 @@ public class ResolutionSelectionFragment extends PreferenceControllerFragment {
 
         AlertDialog dialog = createAlertDialog(getContext(), title, dialogDescription, onOkClicked,
                 onCancelClicked);
+        mConfirmDialog = dialog;
 
         dialog.setOnShowListener(dialog1 -> {
             final Button cancelButton =
