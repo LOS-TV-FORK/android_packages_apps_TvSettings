@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">ສະໜັງເມືອ້ງໂທລະສັບຢູ່ໜນ້າຫນຼຫຼາຂອງທີວີ</string>
     <string name="leanback_launcher_injection_summary">ສະບັບການເປີດຄຳແນະນຳເມືອ້ງທີວີໃນແຖວເມືອ້ງທີ່ບໍ່ມີລາຍການ ພ້ອມຄືແບນເນີທີ່ສ້າງຈາກໄອຄອນຂອງມັນ. ມີຜົນທັນທີ.</string>
     <string name="audio_device_input_level">ລະດັບອິນພຸດ: %1$s</string>
+    <string name="power_button_press_short_title">ກົດປຸ່ມໄຟໂຕ້ງສັໆນໆ</string>
+    <string name="power_button_press_short_summary">ຈະເກີດຫຍັງໃນເວລາທີ່ກົດໄຟໂຕ້ງສັໆນໆ</string>
+    <string name="power_button_press_long_title">ກົດປຸ່ມໄຟໂຕ້ງຄ້າງ</string>
+    <string name="power_button_press_long_summary">ຈະເກີດຫຍັງໃນເວລາທີ່ກົດຄ້າງໄຟໂຕ້ງ</string>
+    <string name="power_button_action_default">ຄ່າເດີມ</string>
+    <string name="power_button_action_sleep">ນອນສະຫງອນ</string>
+    <string name="power_button_action_sleep_no_doze">ນອນສະຫງອນ ປິດເຄື່ອງທັງໝົດ</string>
+    <string name="power_button_action_go_home">ໄປຫນ້າຈ໌ເຮມ</string>
+    <string name="power_button_action_power_menu">ເມນູໄຟໂຕ້ງ</string>
+    <string name="power_button_action_shutdown_confirm">ປິດເຄື່ອງ ພ້ອມການຢືນຢັນ</string>
+    <string name="power_button_action_shutdown_no_confirm">ປິດເຄື່ອງ ບໍ່ຕ້ອງຢືນຢັນ</string>
 </resources>

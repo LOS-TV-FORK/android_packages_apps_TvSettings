@@ -1221,4 +1221,15 @@
     <string name="leanback_launcher_injection_title">Hiển thị ứng dụng điện thoại trên màn hình chính của TV</string>
     <string name="leanback_launcher_injection_summary">Liệt kê các ứng dụng không có mục trình khởi chạy TV trong hàng ứng dụng, kèm biểu ngữ được vẽ từ biểu tượng của chúng. Có hiệu lực ngay lập tức.</string>
     <string name="audio_device_input_level">Mức đầu vào: %1$s</string>
+    <string name="power_button_press_short_title">Nhấn nhanh nút nguồn</string>
+    <string name="power_button_press_short_summary">Điều gì xảy ra khi nhấn nguồn trong thời gian ngắn</string>
+    <string name="power_button_press_long_title">Nhấn giữ nút nguồn</string>
+    <string name="power_button_press_long_summary">Điều gì xảy ra khi giữ nút nguồn</string>
+    <string name="power_button_action_default">Mặc định</string>
+    <string name="power_button_action_sleep">Ngủ</string>
+    <string name="power_button_action_sleep_no_doze">Ngủ, tắt hoàn toàn</string>
+    <string name="power_button_action_go_home">Về màn hình chính</string>
+    <string name="power_button_action_power_menu">Menu nguồn</string>
+    <string name="power_button_action_shutdown_confirm">Tắt nguồn, có xác nhận</string>
+    <string name="power_button_action_shutdown_no_confirm">Tắt nguồn, không xác nhận</string>
 </resources>

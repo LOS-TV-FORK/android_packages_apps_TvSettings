@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Rādīt tālruņa lietojumprogrammas TV sākuma ekrānā</string>
     <string name="leanback_launcher_injection_summary">Ierāda lietojumprogrammas, kurām nav TV palaidēja ieraksta lietojumprogrammu rindā, ar baneri, kas izveidots no to ikonas. Stājas spēkā nekavējoties.</string>
     <string name="audio_device_input_level">Ievades līmenis: %1$s</string>
+    <string name="power_button_press_short_title">Īss apgāžiens uz barošanas taustiņu</string>
+    <string name="power_button_press_short_summary">Kas notiek, īsi nospiežot barošanu</string>
+    <string name="power_button_press_long_title">Ilgs apgāžiens uz barošanas taustiņu</string>
+    <string name="power_button_press_long_summary">Kas notiek, turot barošanu nospiestu</string>
+    <string name="power_button_action_default">Pēc noklusējuma</string>
+    <string name="power_button_action_sleep">Miega režīms</string>
+    <string name="power_button_action_sleep_no_doze">Miega režīms, pilnībā izslēgts</string>
+    <string name="power_button_action_go_home">Pāriet uz sākuma ekrānu</string>
+    <string name="power_button_action_power_menu">Barošanas izvēlne</string>
+    <string name="power_button_action_shutdown_confirm">Izslēgt, ar apstiprinājumu</string>
+    <string name="power_button_action_shutdown_no_confirm">Izslēgt, bez apstiprinājuma</string>
 </resources>

@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">在電視主畫面上顯示手機應用程式</string>
     <string name="leanback_launcher_injection_summary">在應用程式列中列出沒有電視啟動器項目的應用程式，並附上由其圖示繪製的橫幅。立即生效。</string>
     <string name="audio_device_input_level">輸入位準：%1$s</string>
+    <string name="power_button_press_short_title">短按電源掣</string>
+    <string name="power_button_press_short_summary">短按電源掣時的操作</string>
+    <string name="power_button_press_long_title">長按電源掣</string>
+    <string name="power_button_press_long_summary">長按電源掣時的操作</string>
+    <string name="power_button_action_default">預設</string>
+    <string name="power_button_action_sleep">睡眠</string>
+    <string name="power_button_action_sleep_no_doze">睡眠（完全關機）</string>
+    <string name="power_button_action_go_home">返回主畫面</string>
+    <string name="power_button_action_power_menu">電源選單</string>
+    <string name="power_button_action_shutdown_confirm">關機，需要確認</string>
+    <string name="power_button_action_shutdown_no_confirm">關機，無需確認</string>
 </resources>

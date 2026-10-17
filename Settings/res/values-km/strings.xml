@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">បង្ហាញកម្មវិធីទូរស័ព្ទនៅលើអេក្រង់ដើមទំព័រទីវេរី</string>
     <string name="leanback_launcher_injection_summary">បង្ហាញកម្មវិធីដែលគ្មានធាតុក្នុងការដំណើតរបស់ទីវេរីនៅក្នុងជួរកម្មវិធី ដោយមានបានឺរដឺបើង់ដែលបានគូរពីរូបតំណាង់របស់វា។ មានឥទ្ធិភ្លាមៗ។</string>
     <string name="audio_device_input_level">កម្រិតបញ្ចូល: %1$s</string>
+    <string name="power_button_press_short_title">ចុចថ្លើងុនចោលក្នុងថ្លើង</string>
+    <string name="power_button_press_short_summary">អ្វីកើតបានពេលចុចថ្លើងុនចោល</string>
+    <string name="power_button_press_long_title">ចុចថ្លើងុនយូលក្នុងថ្លើង</string>
+    <string name="power_button_press_long_summary">អ្វីកើតបានពេលបង្កប់ថ្លើង</string>
+    <string name="power_button_action_default">លំនាំដោយលំនឹង</string>
+    <string name="power_button_action_sleep">ដងល់</string>
+    <string name="power_button_action_sleep_no_doze">ដងល់ បិទដោយពេញ</string>
+    <string name="power_button_action_go_home">ទៅទំព័រដើម</string>
+    <string name="power_button_action_power_menu">ម៉ឺនុយថ្លើង</string>
+    <string name="power_button_action_shutdown_confirm">បិទ ដោយបញ្ជាក់</string>
+    <string name="power_button_action_shutdown_no_confirm">បិទ ដោយគ្មានបញ្ជាក់</string>
 </resources>

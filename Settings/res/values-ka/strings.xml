@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">ტელეფონის აპების ჩვენება ტელევიზირის მთავარ ეკრანზე</string>
     <string name="leanback_launcher_injection_summary">აჩვენებს აპებს, რომლებსაც აპების სტრიქონში ტელევიზირის გამშვების ჩანაწერი არ აქვს, მათი ხატულიდან დადარგებული ბანერით. მოქმედება მუდმუდად იწყება.</string>
     <string name="audio_device_input_level">შესასვლელი დონე: %1$s</string>
+    <string name="power_button_press_short_title">მონართველის ღილაკის მოკლე შეხება</string>
+    <string name="power_button_press_short_summary">რა ხდება მონართველის მოკლედ შეხებისას</string>
+    <string name="power_button_press_long_title">მონართველის ღილაკის გრძელი შეხება</string>
+    <string name="power_button_press_long_summary">რა ხდება ღილაკის დაჭერით შენახვისას</string>
+    <string name="power_button_action_default">ნაგულისხმევი</string>
+    <string name="power_button_action_sleep">ძილი</string>
+    <string name="power_button_action_sleep_no_doze">ძილი, სრულად გამორთვა</string>
+    <string name="power_button_action_go_home">გადადი მთავარ ეკრანზე</string>
+    <string name="power_button_action_power_menu">ენერგიის მენიუ</string>
+    <string name="power_button_action_shutdown_confirm">გამორთვა, დადასტურებით</string>
+    <string name="power_button_action_shutdown_no_confirm">გამორთვა, დადასტურების გარეშე</string>
 </resources>

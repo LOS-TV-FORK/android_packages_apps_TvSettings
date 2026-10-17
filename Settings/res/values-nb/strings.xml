@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Vis telefonapper på TV-startskjermen</string>
     <string name="leanback_launcher_injection_summary">Lister opp apper som ikke har noen TV-startoppføring i apperaden, med et banner tegnet fra ikonet deres. Trer i kraft umiddelbart.</string>
     <string name="audio_device_input_level">Innspillsnivå: %1$s</string>
+    <string name="power_button_press_short_title">Kort trykk på av/på-knappen</string>
+    <string name="power_button_press_short_summary">Hva som skjer ved et kort trykk</string>
+    <string name="power_button_press_long_title">Langt trykk på av/på-knappen</string>
+    <string name="power_button_press_long_summary">Hva som skjer når knappen holdes nede</string>
+    <string name="power_button_action_default">Standard</string>
+    <string name="power_button_action_sleep">Hvilemodus</string>
+    <string name="power_button_action_sleep_no_doze">Hvilemodus, helt avslått</string>
+    <string name="power_button_action_go_home">Gå til startsiden</string>
+    <string name="power_button_action_power_menu">Strøm-meny</string>
+    <string name="power_button_action_shutdown_confirm">Slå av, med bekreftelse</string>
+    <string name="power_button_action_shutdown_no_confirm">Slå av, uten bekreftelse</string>
 </resources>

@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Телефон қолданбаларын теледизор басты экранында көрсету</string>
     <string name="leanback_launcher_injection_summary">Қолданбалар жолында теледизор іске қосу жазбасы жоқ қолданбаларды, олардың белгісінен жасалған баннермен тізімдейді. Бірден қолданылады.</string>
     <string name="audio_device_input_level">Енгізу деңгейі: %1$s</string>
+    <string name="power_button_press_short_title">Қуат түймесін қысқа басу</string>
+    <string name="power_button_press_short_summary">Қуат қысқа басылғанда не болады</string>
+    <string name="power_button_press_long_title">Қуат түймесін ұзақ басу</string>
+    <string name="power_button_press_long_summary">Қуат түймесі ұзақ ұсталғанда не болады</string>
+    <string name="power_button_action_default">Әдепкі</string>
+    <string name="power_button_action_sleep">Ұйықтау</string>
+    <string name="power_button_action_sleep_no_doze">Ұйықтау, толық өшіру</string>
+    <string name="power_button_action_go_home">Негізгі экранға өту</string>
+    <string name="power_button_action_power_menu">Қуат мәзірі</string>
+    <string name="power_button_action_shutdown_confirm">Өшіру, растаумен</string>
+    <string name="power_button_action_shutdown_no_confirm">Өшіру, растаусыз</string>
 </resources>

@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">TV ಮುಖಪುಟದಲ್ಲಿ ಫೋನ್ ಆ್ಯಪ್‌ಗಳನ್ನು ತೋರಿಸಿ</string>
     <string name="leanback_launcher_injection_summary">ಆ್ಯಪ್ ಸರತಿಯಲ್ಲಿ TV ಲಾಂಚರ್ ನಮೂದಿ ಇಲ್ಲದ ಆ್ಯಪ್‌ಗಳನ್ನು, ಅವುಗಳ ಐಕಾನ್‌ನಿಂದ ರಚಿಸಿದ ಬ್ಯಾನರ್‌ನೊಂದಿಗೆ ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ. ತಕ್ಷಣ ಅಮಲಗೊಳ್ಳುತ್ತದೆ.</string>
     <string name="audio_device_input_level">ಇನ್‌ಪುಟ್ ಮಟ್ಟ: %1$s</string>
+    <string name="power_button_press_short_title">ಪವರ್ ಬಟನ್ ಅಲ್ಪ ಒತ್ತು</string>
+    <string name="power_button_press_short_summary">ಪವರ್ ಅಲ್ಪದಿಂದ ಒತ್ತಿದಾಗ ಏನಾಗುತ್ತದೆ</string>
+    <string name="power_button_press_long_title">ಪವರ್ ಬಟನ್ ದೀರ್ಘ ಒತ್ತು</string>
+    <string name="power_button_press_long_summary">ಪವರ್ ಬಟನ್ ಹಿಡಿದಿಡಿ ಹಿಡಿದಿರಿದಾಗ ಏನಾಗುತ್ತದೆ</string>
+    <string name="power_button_action_default">ಪೂರ್ವನಿಯಮ</string>
+    <string name="power_button_action_sleep">ನಿದ್ದೆ</string>
+    <string name="power_button_action_sleep_no_doze">ನಿದ್ದೆ, ಸಂಪೂರ್ಣ ಆಫ್</string>
+    <string name="power_button_action_go_home">ಮುಖಪುಟಕ್ಕೆ ಹೋಗಿ</string>
+    <string name="power_button_action_power_menu">ಪವರ್ ಮೆನು</string>
+    <string name="power_button_action_shutdown_confirm">ಆಫ್ ಮಾಡಿ, ಖಚಿತೀಕರಿಸಿ</string>
+    <string name="power_button_action_shutdown_no_confirm">ಆಫ್ ಮಾಡಿ, ಖಚಿತೀಕರಣೆಯಿಲ್ಲದೆ</string>
 </resources>

@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Paparkan aplikasi telefon pada skrin utama TV</string>
     <string name="leanback_launcher_injection_summary">Menyenaraikan aplikasi yang tiada entri pelancar TV dalam baris aplikasi, dengan banner yang dilukis daripada ikonnya. Berkuat kuasa serta-merta.</string>
     <string name="audio_device_input_level">Tahap input: %1$s</string>
+    <string name="power_button_press_short_title">Tekan ringkas butang kuasa</string>
+    <string name="power_button_press_short_summary">Apa yang berlaku apabila kuasa ditekan sebentar</string>
+    <string name="power_button_press_long_title">Tekan lama butang kuasa</string>
+    <string name="power_button_press_long_summary">Apa yang berlaku apabila butang kuasa ditahan</string>
+    <string name="power_button_action_default">Lalai</string>
+    <string name="power_button_action_sleep">Tidur</string>
+    <string name="power_button_action_sleep_no_doze">Tidur, matikan sepenuhnya</string>
+    <string name="power_button_action_go_home">Pergi ke skrin utama</string>
+    <string name="power_button_action_power_menu">Menu kuasa</string>
+    <string name="power_button_action_shutdown_confirm">Matikan, dengan pengesahan</string>
+    <string name="power_button_action_shutdown_no_confirm">Matikan, tanpa pengesahan</string>
 </resources>

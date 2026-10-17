@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">දුරකථන යෙදුම් තව TV මුල් තහරයේ පෙන්වීම</string>
     <string name="leanback_launcher_injection_summary">යෙදුම් පේළියේ දුරකථන ක්‍රමයාරමතියුතු ඇතුළත් නොවන යෙදුම් ලැයිස්තුව කරමින්, ඒවාගේ අයිකනයෙන් අඳින ලද බැනරයක් එක් කරයි. වහාම බලපාරි වේ.</string>
     <string name="audio_device_input_level">ආගනතුන් මට්ටම: %1$s</string>
+    <string name="power_button_press_short_title">බල බඩුම කෙටි පිස්පු කිරීම</string>
+    <string name="power_button_press_short_summary">බල කෙටියෙන් පිස්පු කල විට මොකද සිදුවේ</string>
+    <string name="power_button_press_long_title">බල බඩුම දිගු පිස්පු කිරීම</string>
+    <string name="power_button_press_long_summary">බඩුම පිස්පුකර ඇතිවාම මොකද සිදුවේ</string>
+    <string name="power_button_action_default">පෙරනිමි</string>
+    <string name="power_button_action_sleep">නින්ද</string>
+    <string name="power_button_action_sleep_no_doze">නින්ද, සම්පූර්ණයෙන් කිරීම</string>
+    <string name="power_button_action_go_home">මුල් තහරයට යන්න</string>
+    <string name="power_button_action_power_menu">බල මෙනු</string>
+    <string name="power_button_action_shutdown_confirm">කිරීම, තහවුරු කිරීමෙන්</string>
+    <string name="power_button_action_shutdown_no_confirm">කිරීම, තහවුරු කිරීමකින් තොර</string>
 </resources>

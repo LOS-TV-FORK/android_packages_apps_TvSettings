@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Mostra les aplicacions del telèfon a la pantalla d\'inici de la TV</string>
     <string name="leanback_launcher_injection_summary">Mostra les aplicacions que no tenen cap entrada al llançador de la TV a la fila d\'aplicacions, amb un rètol extret de la seva icona. S\'aplica immediatament.</string>
     <string name="audio_device_input_level">Nivell d\'entrada: %1$s</string>
+    <string name="power_button_press_short_title">Pulsació curta del botó d\'alimentació</string>
+    <string name="power_button_press_short_summary">Què passa quan s\'aposta breument l\'alimentació</string>
+    <string name="power_button_press_long_title">Pulsació llarga del botó d\'alimentació</string>
+    <string name="power_button_press_long_summary">Què passa quan es mantén premut</string>
+    <string name="power_button_action_default">Per defecte</string>
+    <string name="power_button_action_sleep">Repòs</string>
+    <string name="power_button_action_sleep_no_doze">Repòs, aturat completament</string>
+    <string name="power_button_action_go_home">Vés a la pantalla d\'inici</string>
+    <string name="power_button_action_power_menu">Menú d\'energia</string>
+    <string name="power_button_action_shutdown_confirm">Atura, amb confirmació</string>
+    <string name="power_button_action_shutdown_no_confirm">Atura, sense confirmació</string>
 </resources>

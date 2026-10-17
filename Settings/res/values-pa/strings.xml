@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">ਟੀਵੀ ਹੋਮ ਸਕ੍ਰੀਨ ਤੇ ਫ਼ੋਨ ਐਪਾਂ ਵੇਖਾਓ</string>
     <string name="leanback_launcher_injection_summary">ਐਪ ਪੰਗਤੀ ਵਿੱਚ ਟੀਵੀ ਲਾਂਚਰ ਐਂਟਰੀ ਨਹੀਂ ਵਾਲੀਆਂ ਐਪਾਂ ਨੂੰ, ਉਹਨਾਂ ਦੇ ਆਈਕਾਨ ਤੋਂ ਬਣੀ ਬੈਨਰ ਨਾਲ ਸੂਚੀਬੱਧ ਕਰਦਾ ਹੈ। ਤੁਰੰਤ ਲਾਗੂ ਹੁੰਦਾ ਹੈ।</string>
     <string name="audio_device_input_level">ਇਨਪੁਟ ਪੱਧਰ: %1$s</string>
+    <string name="power_button_press_short_title">ਪਾਵਰ ਬਟਨ ਨੂੰ ਛੋਟੀ ਪ੍ਰੈੱਸ</string>
+    <string name="power_button_press_short_summary">ਪਾਵਰ ਨੂੰ ਥੋੜ੍ਹਾ ਦਬਾਉਣ \'ਤੇ ਕੀ ਹੁੰਦਾ ਹੈ</string>
+    <string name="power_button_press_long_title">ਪਾਵਰ ਬਟਨ ਨੂੰ ਲੰਬੀ ਪ੍ਰੈੱਸ</string>
+    <string name="power_button_press_long_summary">ਬਟਨ ਦਬਾ ਕੇ ਰੱਖਣ \'ਤੇ ਕੀ ਹੁੰਦਾ ਹੈ</string>
+    <string name="power_button_action_default">ਡਿਫਾਲਟ</string>
+    <string name="power_button_action_sleep">ਨਿਦਰਾ</string>
+    <string name="power_button_action_sleep_no_doze">ਨਿਦਰਾ, ਪੂਰੀ ਤਰ੍ਹਾਂ ਬੰਦ</string>
+    <string name="power_button_action_go_home">ਹੋਮ ਸਕ੍ਰੀਨ \'ਤੇ ਜਾਓ</string>
+    <string name="power_button_action_power_menu">ਪਾਵਰ ਮੀਨੂ</string>
+    <string name="power_button_action_shutdown_confirm">ਬੰਦ ਕਰੋ, ਪੁਸ਼ਟੀ ਨਾਲ</string>
+    <string name="power_button_action_shutdown_no_confirm">ਬੰਦ ਕਰੋ, ਬਿਨਾਂ ਪੁਸ਼ਟੀ</string>
 </resources>

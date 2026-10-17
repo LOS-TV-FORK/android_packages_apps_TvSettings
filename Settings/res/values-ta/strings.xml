@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">TV முகப்பு திரையில் தொலைபேசி பயன்பாடுகளைக் காட்டு</string>
     <string name="leanback_launcher_injection_summary">பயன்பாட்டு வரிசையில் TV தொடக்கப் பதிவு இல்லாத பயன்பாடுகளை, அவற்றின் சின்னத்திலிருந்து உருவாக்கப்பட்ட பேனருடன் பட்டியலிடுகிறது. உடனுக்குடன் பயன்படும்.</string>
     <string name="audio_device_input_level">உள்ளீட்டு நிலை: %1$s</string>
+    <string name="power_button_press_short_title">ஆற்றல் பொத்தானைக் குறுகிய அழுத்தம்</string>
+    <string name="power_button_press_short_summary">ஆற்றலை குறுகிய அழுத்தினால் என்ன நடக்கும்</string>
+    <string name="power_button_press_long_title">ஆற்றல் பொத்தானை நீண்ட அழுத்தம்</string>
+    <string name="power_button_press_long_summary">பொத்தானை அழுத்திப் பிடித்தால் என்ன நடக்கும்</string>
+    <string name="power_button_action_default">இயல்பு</string>
+    <string name="power_button_action_sleep">தூக்கம்</string>
+    <string name="power_button_action_sleep_no_doze">தூக்கம், முழுமையாக அணை</string>
+    <string name="power_button_action_go_home">முகப்பு திரைக்குச் செல்</string>
+    <string name="power_button_action_power_menu">ஆற்றல் பட்டி</string>
+    <string name="power_button_action_shutdown_confirm">நிறுத்து, உறுதிப்புடன்</string>
+    <string name="power_button_action_shutdown_no_confirm">நிறுத்து, உறுதியின்றி</string>
 </resources>

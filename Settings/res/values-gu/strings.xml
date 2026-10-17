@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">TV હોમ સ્ક્રીન પર ફોનની એપ્સ બતાવો</string>
     <string name="leanback_launcher_injection_summary">એપ પંક્તિમાં TV લાંચર એન્ટ્રી ન ધરાવતી એપ્સને, તેમના આઇકનથી બનાવેલા બેનર સાથે સૂચિ કરે છે. તરત જ અમલમાં આવે છે.</string>
     <string name="audio_device_input_level">ઇનપુટ સ્તર: %1$s</string>
+    <string name="power_button_press_short_title">પાવર બટનને ટૂંકું દબાવવું</string>
+    <string name="power_button_press_short_summary">પાવરને ટૂંકું દબાવતાં શું થાય છે</string>
+    <string name="power_button_press_long_title">પાવર બટનને લાંબું દબાવવું</string>
+    <string name="power_button_press_long_summary">બટનને દબાવીને રાખતાં શું થાય છે</string>
+    <string name="power_button_action_default">ડિફૉલ્ટ</string>
+    <string name="power_button_action_sleep">ઊંઘ</string>
+    <string name="power_button_action_sleep_no_doze">ઊંઘ, સંપૂર્ણ બંધ</string>
+    <string name="power_button_action_go_home">હોમ સ્ક્રીન પર જાઓ</string>
+    <string name="power_button_action_power_menu">પાવર મેનુ</string>
+    <string name="power_button_action_shutdown_confirm">બંધ કરો, પુષ્ટિ સાથે</string>
+    <string name="power_button_action_shutdown_no_confirm">બંધ કરો, પુષ્ટિ વગર</string>
 </resources>

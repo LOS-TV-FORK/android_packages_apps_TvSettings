@@ -1229,4 +1229,15 @@
     <string name="leanback_launcher_injection_title">Показывать приложения телефона на главном экране ТВ</string>
     <string name="leanback_launcher_injection_summary">Показывает приложения, у которых нет записи в ТВ-лаунчере в строке приложений, с баннером, созданным из их значка. Применяется сразу.</string>
     <string name="audio_device_input_level">Уровень входа: %1$s</string>
+    <string name="power_button_press_short_title">Короткое нажатие кнопки питания</string>
+    <string name="power_button_press_short_summary">Что происходит при коротком нажатии питания</string>
+    <string name="power_button_press_long_title">Долгое нажатие кнопки питания</string>
+    <string name="power_button_press_long_summary">Что происходит при удержании питания</string>
+    <string name="power_button_action_default">По умолчанию</string>
+    <string name="power_button_action_sleep">Сон</string>
+    <string name="power_button_action_sleep_no_doze">Сон с полным отключением</string>
+    <string name="power_button_action_go_home">Перейти на главный экран</string>
+    <string name="power_button_action_power_menu">Меню питания</string>
+    <string name="power_button_action_shutdown_confirm">Выключение с подтверждением</string>
+    <string name="power_button_action_shutdown_no_confirm">Выключение без подтверждения</string>
 </resources>

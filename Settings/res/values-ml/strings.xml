@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">ടിവി ഹോം സ്ക്രീനിൽ ഫോൺ ആപ്പുകൾ കാണിക്കുക</string>
     <string name="leanback_launcher_injection_summary">ആപ്പ് വരിവിൽ ടിവി ലോഞ്ചർ എൻട്രിയില്ലാത്ത ആപ്പുകൾ അവയുടെ ഐക്കൺ സ്വന്തം വരച്ചുപടിച്ച ബാനർ ഉപയോഗിച്ച് പട്ടികപ്പെടുത്തുന്നു. ഉടൻ പ്രാബ്യായമാകും.</string>
     <string name="audio_device_input_level">ഇൻപുട്ട് ലെവൽ: %1$s</string>
+    <string name="power_button_press_short_title">പവർ ബട്ടൺ ചുരുത്ത അമർത്തുക</string>
+    <string name="power_button_press_short_summary">പവർ ചുരുത്തിയായി അമർത്തുമ്പോൾ എന്താണ് സംഭവിക്കുക</string>
+    <string name="power_button_press_long_title">പവർ ബട്ടൻ ദീർഘമായി അമർത്തുക</string>
+    <string name="power_button_press_long_summary">ബട്ടൺ അമർത്തിപിടിക്കുമ്പോൾ എന്താണ് സംഭവിക്കുക</string>
+    <string name="power_button_action_default">ഡിഫാൾട്ട്</string>
+    <string name="power_button_action_sleep">ഉറക്ക്</string>
+    <string name="power_button_action_sleep_no_doze">ഉറക്ക്, പൂർത്തിയായി ഓഫ്</string>
+    <string name="power_button_action_go_home">ഹോം സ്ക്രീനിലേക്ക് പോകുക</string>
+    <string name="power_button_action_power_menu">പവർ മെനു</string>
+    <string name="power_button_action_shutdown_confirm">ഓഫ് ചെയ്യുക, സ്ഥിരീകരണത്തോടെ</string>
+    <string name="power_button_action_shutdown_no_confirm">ഓഫ് ചെയ്യുക, സ്ഥിരീകരണമില്ലാതെ</string>
 </resources>

@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Mostrar las apps del teléfono en la pantalla de inicio del televisor</string>
     <string name="leanback_launcher_injection_summary">Muestra las apps que no tienen entrada en el lanzador de TV en la fila de apps, con un banner generado a partir de su ícono. Se aplica al instante.</string>
     <string name="audio_device_input_level">Nivel de entrada: %1$s</string>
+    <string name="power_button_press_short_title">Toque corto del botón de encendido</string>
+    <string name="power_button_press_short_summary">Qué ocurre al pulsar brevemente el encendido</string>
+    <string name="power_button_press_long_title">Toque largo del botón de encendido</string>
+    <string name="power_button_press_long_summary">Qué ocurre al mantener pulsado el encendido</string>
+    <string name="power_button_action_default">Predeterminado</string>
+    <string name="power_button_action_sleep">Suspensión</string>
+    <string name="power_button_action_sleep_no_doze">Suspensión, apagado total</string>
+    <string name="power_button_action_go_home">Ir a la pantalla de inicio</string>
+    <string name="power_button_action_power_menu">Menú de energía</string>
+    <string name="power_button_action_shutdown_confirm">Apagar, con confirmación</string>
+    <string name="power_button_action_shutdown_no_confirm">Apagar, sin confirmación</string>
 </resources>

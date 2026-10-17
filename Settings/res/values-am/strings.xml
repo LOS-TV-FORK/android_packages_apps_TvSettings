@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">የስልክ አፑንን በቴቪ መነሻ ስክሪን አሳይ</string>
     <string name="leanback_launcher_injection_summary">በአፑች ላይ የTV አስኩሪክር ግብይት የለላቸው አፑን፣ ከአይኮኖቻቸው የተሠራ ማስታወቂያ ጋር። ወዲያውኑ ይተገበራል።</string>
     <string name="audio_device_input_level">የግብይት ደረጃ: %1$s</string>
+    <string name="power_button_press_short_title">የኃውሥት አዝራር አጭር ጫን</string>
+    <string name="power_button_press_short_summary">ኃውስት ሲጫን ምን ይከሰታል</string>
+    <string name="power_button_press_long_title">የኃውስት አዝራር የቀጥታ ጫን</string>
+    <string name="power_button_press_long_summary">ኃውስቱን ሲያነሱ ምን ይከሰታል</string>
+    <string name="power_button_action_default">መልክም</string>
+    <string name="power_button_action_sleep">እልቃ</string>
+    <string name="power_button_action_sleep_no_doze">እልቃ፣ ሙሉ ጠፋጥ</string>
+    <string name="power_button_action_go_home">ወደ መነሻ ገጽ ይሂዱ</string>
+    <string name="power_button_action_power_menu">የኃውስት ማኒዩ</string>
+    <string name="power_button_action_shutdown_confirm">አጫውት፣ ከረጋታ ጋር</string>
+    <string name="power_button_action_shutdown_no_confirm">አጫውት፣ ያለ ረጋታ</string>
 </resources>

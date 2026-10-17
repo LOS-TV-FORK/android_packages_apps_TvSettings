@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Прикажи ги апликациите од телефонот на почетниот екран на ТВ</string>
     <string name="leanback_launcher_injection_summary">Ги прикажува апликациите што немаат запис во ТВ-претварачот во редот со апликации, со банер направен од нивната икона. Се применува веднаш.</string>
     <string name="audio_device_input_level">Ниво на влез: %1$s</string>
+    <string name="power_button_press_short_title">Кратко притискање на копката за напојување</string>
+    <string name="power_button_press_short_summary">Што се случува при кратко притискање</string>
+    <string name="power_button_press_long_title">Долго притискање на копката за напојување</string>
+    <string name="power_button_press_long_summary">Што се случува додека се држи притиснато</string>
+    <string name="power_button_action_default">Стандардно</string>
+    <string name="power_button_action_sleep">Сон</string>
+    <string name="power_button_action_sleep_no_doze">Сон, целосно исклучено</string>
+    <string name="power_button_action_go_home">Оди на почетниот екран</string>
+    <string name="power_button_action_power_menu">Мени на напојување</string>
+    <string name="power_button_action_shutdown_confirm">Исклучи, со потврда</string>
+    <string name="power_button_action_shutdown_no_confirm">Исклучи, без потврда</string>
 </resources>

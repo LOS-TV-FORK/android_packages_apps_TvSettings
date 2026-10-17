@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Näita telefoni rakendusi TV-i avakuval</string>
     <string name="leanback_launcher_injection_summary">Loetleb rakendused, millel puudub TV-i käivitaja kirje rakenduste reas, ikoonist joonistatud banneriga. Rakendub kohe.</string>
     <string name="audio_device_input_level">Sisenditase: %1$s</string>
+    <string name="power_button_press_short_title">Toitenupule lühike vajutus</string>
+    <string name="power_button_press_short_summary">Mis juhtub toitenupu lühikese vajutuse korral</string>
+    <string name="power_button_press_long_title">Toitenupule pikk vajutus</string>
+    <string name="power_button_press_long_summary">Mis juhtub, kui toitenuput hoitakse all</string>
+    <string name="power_button_action_default">Vaikimisi</string>
+    <string name="power_button_action_sleep">Unerežiim</string>
+    <string name="power_button_action_sleep_no_doze">Unerežiim, täielikult välja</string>
+    <string name="power_button_action_go_home">Mine avakuvahele</string>
+    <string name="power_button_action_power_menu">Toitemenüü</string>
+    <string name="power_button_action_shutdown_confirm">Lülita välja, kinnitusega</string>
+    <string name="power_button_action_shutdown_no_confirm">Lülita välja, ilma kinnituseta</string>
 </resources>

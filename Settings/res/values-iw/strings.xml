@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">הצגת אפליקציות הטלפון במסך הבית של הטלוויזיה</string>
     <string name="leanback_launcher_injection_summary">מציג אפליקציות שאין להן רשומת מפעיל טלוויזיה בשורת האפליקציות, עם באנר שנוצר מהסמל שלהן. נכנס לתוקף מיד.</string>
     <string name="audio_device_input_level">רמת קלט: %1$s</string>
+    <string name="power_button_press_short_title">לחיצה קצרה על כפתור ההפעלה</string>
+    <string name="power_button_press_short_summary">מה קורה בלחיצה קצרה על ההפעלה</string>
+    <string name="power_button_press_long_title">לחיצה ארוכה על כפתור ההפעלה</string>
+    <string name="power_button_press_long_summary">מה קורה בהחזקת כפתור ההפעלה</string>
+    <string name="power_button_action_default">ברירת מחדל</string>
+    <string name="power_button_action_sleep">שינה</string>
+    <string name="power_button_action_sleep_no_doze">שינה, כיבוי מלא</string>
+    <string name="power_button_action_go_home">מעבר למסך הבית</string>
+    <string name="power_button_action_power_menu">תפריט ההפעלה</string>
+    <string name="power_button_action_shutdown_confirm">כיבוי, עם אישור</string>
+    <string name="power_button_action_shutdown_no_confirm">כיבוי, ללא אישור</string>
 </resources>

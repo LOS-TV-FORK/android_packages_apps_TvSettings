@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Telefon-Apps auf dem TV-Startbildschirm anzeigen</string>
     <string name="leanback_launcher_injection_summary">Listet Apps, die keinen TV-Startbildschirm-Eintrag in der App-Zeile haben, mit einem Banner aus ihrem Symbol. Wird sofort übernommen.</string>
     <string name="audio_device_input_level">Eingangspegel: %1$s</string>
+    <string name="power_button_press_short_title">Kurzer Druck der Ein-/Aus-Taste</string>
+    <string name="power_button_press_short_summary">Was bei kurzem Druck der Ein-/Aus-Taste geschieht</string>
+    <string name="power_button_press_long_title">Langer Druck der Ein-/Aus-Taste</string>
+    <string name="power_button_press_long_summary">Was beim gedrückt halten der Ein-/Aus-Taste geschieht</string>
+    <string name="power_button_action_default">Standard</string>
+    <string name="power_button_action_sleep">Ruhezustand</string>
+    <string name="power_button_action_sleep_no_doze">Ruhezustand, vollständig ausgeschaltet</string>
+    <string name="power_button_action_go_home">Zum Startbildschirm</string>
+    <string name="power_button_action_power_menu">Energiemenü</string>
+    <string name="power_button_action_shutdown_confirm">Ausschalten, mit Bestätigung</string>
+    <string name="power_button_action_shutdown_no_confirm">Ausschalten, ohne Bestätigung</string>
 </resources>

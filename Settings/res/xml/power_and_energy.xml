@@ -59,6 +59,19 @@
         custom:uri="@string/automatic_power_on_slice_uri"
         custom:isPreferenceVisible="false" />
 
+    <!-- Power button actions -->
+    <Preference
+        android:key="power_button_short_press"
+        android:fragment="com.android.tv.settings.device.eco.PowerButtonActionFragment$ShortPressActionFragment"
+        android:title="@string/power_button_press_short_title"
+        android:summary="@string/power_button_press_short_summary" />
+
+    <Preference
+        android:key="power_button_long_press"
+        android:fragment="com.android.tv.settings.device.eco.PowerButtonActionFragment$LongPressActionFragment"
+        android:title="@string/power_button_press_long_title"
+        android:summary="@string/power_button_press_long_summary" />
+
     <!-- Advanced Settings -->
     <com.android.tv.twopanelsettings.slices.EmbeddedSlicePreference
         android:key="power_and_energy_advanced_settings"

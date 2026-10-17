@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Показувати застосунки телефона на головному екрані ТБ</string>
     <string name="leanback_launcher_injection_summary">Показує застосунки, яких немає в запускачі ТБ у рядку застосунків, із банером, створеним із їхньої піктограми. Застосовується одразу.</string>
     <string name="audio_device_input_level">Рівень входу: %1$s</string>
+    <string name="power_button_press_short_title">Коротке натискання кнопки живлення</string>
+    <string name="power_button_press_short_summary">Що відбувається при короткому натисканні живлення</string>
+    <string name="power_button_press_long_title">Довге натискання кнопки живлення</string>
+    <string name="power_button_press_long_summary">Що відбувається при утриманні живлення</string>
+    <string name="power_button_action_default">За замовчуванням</string>
+    <string name="power_button_action_sleep">Сон</string>
+    <string name="power_button_action_sleep_no_doze">Сон із повним вимкненням</string>
+    <string name="power_button_action_go_home">Перейти на головний екран</string>
+    <string name="power_button_action_power_menu">Меню живлення</string>
+    <string name="power_button_action_shutdown_confirm">Вимкнення з підтвердженням</string>
+    <string name="power_button_action_shutdown_no_confirm">Вимкнення без підтвердження</string>
 </resources>

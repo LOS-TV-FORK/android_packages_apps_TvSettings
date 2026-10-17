@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">TV होम स्क्रीन पर फ़ोन ऐप दिखाएँ</string>
     <string name="leanback_launcher_injection_summary">ऐप पंक्ति में TV लॉन्चर प्रविष्टि नहीं वाले ऐप्स को, उनके आइकन से बने बैनर के साथ सूचीबद्ध करता है। तुरंत लागू होता है।</string>
     <string name="audio_device_input_level">इनपुट स्तर: %1$s</string>
+    <string name="power_button_press_short_title">पावर बटन का संक्षिप्त दबाव</string>
+    <string name="power_button_press_short_summary">पावर को थोड़ी देर दबाने पर क्या होता है</string>
+    <string name="power_button_press_long_title">पावर बटन का लंबा दबाव</string>
+    <string name="power_button_press_long_summary">पावर को देर तक दबाए रखने पर क्या होता है</string>
+    <string name="power_button_action_default">डिफ़ॉल्ट</string>
+    <string name="power_button_action_sleep">नींद</string>
+    <string name="power_button_action_sleep_no_doze">नींद, पूर्णतः बंद</string>
+    <string name="power_button_action_go_home">होम स्क्रीन पर जाएँ</string>
+    <string name="power_button_action_power_menu">पावर मेन्यू</string>
+    <string name="power_button_action_shutdown_confirm">बंद करें, पुष्टि के साथ</string>
+    <string name="power_button_action_shutdown_no_confirm">बंद करें, पुष्टि के बिना</string>
 </resources>

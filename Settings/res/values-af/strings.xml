@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Wys foon-apps op die TV-tuisskerm</string>
     <string name="leanback_launcher_injection_summary">Lys apps wat geen TV-opstarter-inskryding in die programareë het nie, met \'n banier wat uit hul ikoon geteken is. Tree onmiddellik in.</string>
     <string name="audio_device_input_level">Invoervlak: %1$s</string>
+    <string name="power_button_press_short_title">Kort druk op die aan/af-knop</string>
+    <string name="power_button_press_short_summary">Wat gebeur wanneer aan/af kort gedruk word</string>
+    <string name="power_button_press_long_title">Lang druk op die aan/af-knop</string>
+    <string name="power_button_press_long_summary">Wat gebeur wanneer die knop ingedruk gehou word</string>
+    <string name="power_button_action_default">Standaard</string>
+    <string name="power_button_action_sleep">Slaap</string>
+    <string name="power_button_action_sleep_no_doze">Slaap, heeltemaal afgeskakel</string>
+    <string name="power_button_action_go_home">Gaan na die tuisskerm</string>
+    <string name="power_button_action_power_menu">Kragkieslys</string>
+    <string name="power_button_action_shutdown_confirm">Skak af, met bevestiging</string>
+    <string name="power_button_action_shutdown_no_confirm">Skak af, sonder bevestiging</string>
 </resources>

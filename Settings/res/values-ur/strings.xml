@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">ٹی وی ہوم اسکرین پر فون ایپس دکھائیں</string>
     <string name="leanback_launcher_injection_summary">ایپس کی قطار میں ٹی وی لانچر اندراج نہ رکھنے والی ایپس کو ان کے آئیکن سے بنایا گیا بینر کے ساتھ درج کرتا ہے۔ فوراً لاگو ہوتا ہے۔</string>
     <string name="audio_device_input_level">ان پٹ لیول: %1$s</string>
+    <string name="power_button_press_short_title">پاور بٹن کی مختصر دباؤ</string>
+    <string name="power_button_press_short_summary">پاور کو مختصر دبائیں تو کیا ہوتا ہے</string>
+    <string name="power_button_press_long_title">پاور بٹن کا طویل دباؤ</string>
+    <string name="power_button_press_long_summary">پاور بٹن دبا کر رکھنے پر کیا ہوتا ہے</string>
+    <string name="power_button_action_default">طے شدہ</string>
+    <string name="power_button_action_sleep">نیند</string>
+    <string name="power_button_action_sleep_no_doze">نیند، مکمل بند</string>
+    <string name="power_button_action_go_home">ہوم اسکرین پر جائیں</string>
+    <string name="power_button_action_power_menu">پاور مینو</string>
+    <string name="power_button_action_shutdown_confirm">بند کریں، تصدیق کے ساتھ</string>
+    <string name="power_button_action_shutdown_no_confirm">بند کریں، بغیر تصدیق</string>
 </resources>

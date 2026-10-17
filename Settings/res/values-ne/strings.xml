@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">टीभी होम स्क्रिनमा फोनका एपहरू देखाउनेहोस्</string>
     <string name="leanback_launcher_injection_summary">एप पंक्तिमा टीभी लन्चर प्रविष्टि नभएका एपहरूलाई तिनको आइकनबाट बनाइएको ब्यानरसहित सूचीबद्ध गर्दछ। तुरुन्तै लागू हुन्छ।</string>
     <string name="audio_device_input_level">इनपुट स्तर: %1$s</string>
+    <string name="power_button_press_short_title">पावर बटन छोटो थिच्ने</string>
+    <string name="power_button_press_short_summary">पावर छोटो थिच्दा के हुन्छ</string>
+    <string name="power_button_press_long_title">पावर बटन लामो थिच्ने</string>
+    <string name="power_button_press_long_summary">पावर बटन थिचेर राख्दा के हुन्छ</string>
+    <string name="power_button_action_default">पहिले नै</string>
+    <string name="power_button_action_sleep">निद्रा</string>
+    <string name="power_button_action_sleep_no_doze">निद्रा, पूर्ण बन्द</string>
+    <string name="power_button_action_go_home">गृह स्क्रिनमा जाने</string>
+    <string name="power_button_action_power_menu">पावर मेनु</string>
+    <string name="power_button_action_shutdown_confirm">बन्द गर्नुहोस्, पुष्टि सहित</string>
+    <string name="power_button_action_shutdown_no_confirm">बन्द गर्नुहोस्, पुष्टि बिना</string>
 </resources>

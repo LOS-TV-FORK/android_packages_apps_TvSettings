@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Ipakita ang mga app ng telepono sa home screen ng TV</string>
     <string name="leanback_launcher_injection_summary">Iilista ang mga app na walang entry sa TV launcher sa hilera ng app, kasama ang banner na iginuhit mula sa kanilang icon. Nagsisimula agad.</string>
     <string name="audio_device_input_level">Antas ng input: %1$s</string>
+    <string name="power_button_press_short_title">Maikling pagpindot sa power button</string>
+    <string name="power_button_press_short_summary">Ano ang nangyayari kapag maikli pinindot ang power</string>
+    <string name="power_button_press_long_title">Mahabang pagpindot sa power button</string>
+    <string name="power_button_press_long_summary">Ano ang nangyayari habang pinipindot ang power</string>
+    <string name="power_button_action_default">Default</string>
+    <string name="power_button_action_sleep">Pang-idlip</string>
+    <string name="power_button_action_sleep_no_doze">Pang-idlip, ganap na shutdown</string>
+    <string name="power_button_action_go_home">Pumunta sa home screen</string>
+    <string name="power_button_action_power_menu">Power menu</string>
+    <string name="power_button_action_shutdown_confirm">I-shut down, may kumpirmasyon</string>
+    <string name="power_button_action_shutdown_no_confirm">I-shut down, walang kumpirmasyon</string>
 </resources>

@@ -1220,4 +1220,15 @@
     <string name="leanback_launcher_injection_title">Vis telefonapps på TV\'ens startskærm</string>
     <string name="leanback_launcher_injection_summary">Viser apps, der ikke har en TV-startpost på apprækken, med et banner, der er tegnet ud fra deres ikon. Træder i kraft med det samme.</string>
     <string name="audio_device_input_level">Indgangsniveau: %1$s</string>
+    <string name="power_button_press_short_title">Kort tryk på tænd/sluk-knappen</string>
+    <string name="power_button_press_short_summary">Hvad der sker ved et kort tryk</string>
+    <string name="power_button_press_long_title">Langt tryk på tænd/sluk-knappen</string>
+    <string name="power_button_press_long_summary">Hvad der sker, når knappen holdes nede</string>
+    <string name="power_button_action_default">Standard</string>
+    <string name="power_button_action_sleep">Slumber</string>
+    <string name="power_button_action_sleep_no_doze">Slumber, helt slukket</string>
+    <string name="power_button_action_go_home">Gå til startskærmen</string>
+    <string name="power_button_action_power_menu">Strømmenu</string>
+    <string name="power_button_action_shutdown_confirm">Luk, med bekræftelse</string>
+    <string name="power_button_action_shutdown_no_confirm">Luk, uden bekræftelse</string>
 </resources>

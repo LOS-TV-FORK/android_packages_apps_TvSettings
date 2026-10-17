@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Bonisa izinhlelo zefoni ekusethweni lasekhaya se-TV</string>
     <string name="leanback_launcher_injection_summary">Uluhlu izinhlelo ezinganayo kufakela esiqondiseni se-TV emigadeni yezinhlelo, ngokubannersi odwetshe ku-icon yazo. Iqala ngokushesha.</string>
     <string name="audio_device_input_level">Izinga lokufaka: %1$s</string>
+    <string name="power_button_press_short_title">Cindisha okweni kwamakashiwe okufushane</string>
+    <string name="power_button_press_short_summary">Kwenzekani uma ucindisha ukushane</string>
+    <string name="power_button_press_long_title">Cindisha okweni kwamakashiwe okude</string>
+    <string name="power_button_press_long_summary">Kwenzekani uma ubambe isikhathi eside</string>
+    <string name="power_button_action_default">Okujwayelekile</string>
+    <string name="power_button_action_sleep">Ukulala</string>
+    <string name="power_button_action_sleep_no_doze">Ukulala, kucishwe ngokuphelele</string>
+    <string name="power_button_action_go_home">Iya ekuscreeni kakhulu</string>
+    <string name="power_button_action_power_menu">Imenu yamagezi</string>
+    <string name="power_button_action_shutdown_confirm">Cisha, ngokuqinisekisa</string>
+    <string name="power_button_action_shutdown_no_confirm">Cisha, ngaphandle kokuqinisekisa</string>
 </resources>

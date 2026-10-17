@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Telefoonapps tonen op het startscherm van de tv</string>
     <string name="leanback_launcher_injection_summary">Toont apps die geen tv-startitem hebben in de appreg, met een banner die van hun pictogram is gemaakt. Gaat meteen in.</string>
     <string name="audio_device_input_level">Invoerniveau: %1$s</string>
+    <string name="power_button_press_short_title">Kort indrukken van de aan/uit-knop</string>
+    <string name="power_button_press_short_summary">Wat er gebeurt bij een korte druk op de aan/uit-knop</string>
+    <string name="power_button_press_long_title">Lang indrukken van de aan/uit-knop</string>
+    <string name="power_button_press_long_summary">Wat er gebeurt bij het ingedrukt houden van de aan/uit-knop</string>
+    <string name="power_button_action_default">Standaard</string>
+    <string name="power_button_action_sleep">Slaapstand</string>
+    <string name="power_button_action_sleep_no_doze">Slaapstand, volledig uitgeschakeld</string>
+    <string name="power_button_action_go_home">Ga naar het startscherm</string>
+    <string name="power_button_action_power_menu">Energiemenu</string>
+    <string name="power_button_action_shutdown_confirm">Afsluiten, met bevestiging</string>
+    <string name="power_button_action_shutdown_no_confirm">Afsluiten, zonder bevestiging</string>
 </resources>

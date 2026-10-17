@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Mostra le app del telefono nella schermata Home della TV</string>
     <string name="leanback_launcher_injection_summary">Elenca le app che non hanno una voce nel launcher della TV nella riga delle app, con un banner generato dalla loro icona. Viene applicato immediatamente.</string>
     <string name="audio_device_input_level">Livello di ingresso: %1$s</string>
+    <string name="power_button_press_short_title">Pressione breve del tasto di accensione</string>
+    <string name="power_button_press_short_summary">Cosa succede premendo briefly l\'accensione</string>
+    <string name="power_button_press_long_title">Pressione prolungata del tasto di accensione</string>
+    <string name="power_button_press_long_summary">Cosa succede tenendo premuto l\'accensione</string>
+    <string name="power_button_action_default">Predefinito</string>
+    <string name="power_button_action_sleep">Sospensione</string>
+    <string name="power_button_action_sleep_no_doze">Sospensione, spegnimento totale</string>
+    <string name="power_button_action_go_home">Vai alla schermata Home</string>
+    <string name="power_button_action_power_menu">Menu energia</string>
+    <string name="power_button_action_shutdown_confirm">Spegni, con conferma</string>
+    <string name="power_button_action_shutdown_no_confirm">Spegni, senza conferma</string>
 </resources>

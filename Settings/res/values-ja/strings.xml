@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">スマートフォンのアプリをテレビのホーム画面に表示</string>
     <string name="leanback_launcher_injection_summary">アプリの行にテレビランチャー項目がないアプリを、アイコンから生成したバナー付きで一覧表示します。すぐに反映されます。</string>
     <string name="audio_device_input_level">入力レベル: %1$s</string>
+    <string name="power_button_press_short_title">電源ボタンの短押し</string>
+    <string name="power_button_press_short_summary">電源を軽く押したときの動作</string>
+    <string name="power_button_press_long_title">電源ボタンの長押し</string>
+    <string name="power_button_press_long_summary">電源を長く押したときの動作</string>
+    <string name="power_button_action_default">デフォルト</string>
+    <string name="power_button_action_sleep">スリープ</string>
+    <string name="power_button_action_sleep_no_doze">スリープ（完全に電源オフ）</string>
+    <string name="power_button_action_go_home">ホーム画面へ</string>
+    <string name="power_button_action_power_menu">電源メニュー</string>
+    <string name="power_button_action_shutdown_confirm">電源をオフ（確認あり）</string>
+    <string name="power_button_action_shutdown_no_confirm">電源をオフ（確認なし）</string>
 </resources>

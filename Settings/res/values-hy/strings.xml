@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Տելեֆոնի հավելումները ցույց տալ հեռուստատեսի գլխավոր էկրանին</string>
     <string name="leanback_launcher_injection_summary">Ցույց է տալիս այն հավելումները, որոնք հավելումների տողում հեռուստատեսի գործարկիչի մուտք չունեն՝ իրենց պատկերիկայից պատկերված բաներով։ Ամբողջությամբ մեկնում է։</string>
     <string name="audio_device_input_level">Մուտքի մակարդակ: %1$s</string>
+    <string name="power_button_press_short_title">Սարդոն ակնելի սեղմելը</string>
+    <string name="power_button_press_short_summary">Ի՞նչ է կատարվում կարճ սեղմելիս</string>
+    <string name="power_button_press_long_title">Սարդոն ակնելի երկար սեղմելը</string>
+    <string name="power_button_press_long_summary">Ի՞նչ է կատարվում կոճակը պահելիս</string>
+    <string name="power_button_action_default">Լռելյայն</string>
+    <string name="power_button_action_sleep">Քուն</string>
+    <string name="power_button_action_sleep_no_doze">Քուն՝ լիոլի անջատում</string>
+    <string name="power_button_action_go_home">Անցնել հիմնական էկրան</string>
+    <string name="power_button_action_power_menu">Էներգիայի ցանկ</string>
+    <string name="power_button_action_shutdown_confirm">Հանջարկել՝ հաստատումով</string>
+    <string name="power_button_action_shutdown_no_confirm">Հանջարկել՝ առանց հաստատման</string>
 </resources>

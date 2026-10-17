@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Shfaq aplikacionet e telefonit në ekranin kryesor të TV-së</string>
     <string name="leanback_launcher_injection_summary">Liston aplikacionet që nuk kanë hyrje në nisësin e TV-së në rreshtin e aplikacioneve, me baner të vizatuar nga ikona e tyre. Zbatohet menjëherë.</string>
     <string name="audio_device_input_level">Niveli i hyrjes: %1$s</string>
+    <string name="power_button_press_short_title">Prekje e shkurtër e butonit të ndezjes</string>
+    <string name="power_button_press_short_summary">Çfarë ndodh kur ndezja shtypet shkurt</string>
+    <string name="power_button_press_long_title">Prekje e gjatë e butonit të ndezjes</string>
+    <string name="power_button_press_long_summary">Çfarë ndodh kur mbahet i shtypur ndezja</string>
+    <string name="power_button_action_default">Parashtroj</string>
+    <string name="power_button_action_sleep">Gjumi</string>
+    <string name="power_button_action_sleep_no_doze">Gjumë, plotësisht i fikur</string>
+    <string name="power_button_action_go_home">Shko te ekrani kryesor</string>
+    <string name="power_button_action_power_menu">Menyja e energjisë</string>
+    <string name="power_button_action_shutdown_confirm">Fike, me konfirmim</string>
+    <string name="power_button_action_shutdown_no_confirm">Fike, pa konfirmim</string>
 </resources>

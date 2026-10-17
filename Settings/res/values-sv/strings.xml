@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Visa telefonappar på TV:ns startskärm</string>
     <string name="leanback_launcher_injection_summary">Listar appar som inte har någon TV-startpost i appraden, med en banner som ritas från deras ikon. Börjar gälla direkt.</string>
     <string name="audio_device_input_level">Innlevels: %1$s</string>
+    <string name="power_button_press_short_title">Kort tryck på strömbrytaren</string>
+    <string name="power_button_press_short_summary">Vad som händer vid ett kort tryck</string>
+    <string name="power_button_press_long_title">Långt tryck på strömbrytaren</string>
+    <string name="power_button_press_long_summary">Vad som händer när strömbrytaren hålls ned</string>
+    <string name="power_button_action_default">Standard</string>
+    <string name="power_button_action_sleep">Vila</string>
+    <string name="power_button_action_sleep_no_doze">Vila, helt avstängd</string>
+    <string name="power_button_action_go_home">Gå till startskärmen</string>
+    <string name="power_button_action_power_menu">Strömmeny</string>
+    <string name="power_button_action_shutdown_confirm">Stäng av, med bekräftelse</string>
+    <string name="power_button_action_shutdown_no_confirm">Stäng av, utan bekräftelse</string>
 </resources>

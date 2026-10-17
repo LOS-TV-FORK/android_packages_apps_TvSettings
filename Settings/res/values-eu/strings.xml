@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Erakutsi telefonoaren aplikazioak TVaren hasierako pantailan</string>
     <string name="leanback_launcher_injection_summary">Aplikazioen errendan TVaren abiarazleentzako sarrerarik ez duten aplikazioak zerrenda ditu, haien ikonorengat hartutako banner batekin. Berehalta aplikatzen da.</string>
     <string name="audio_device_input_level">Sarrera maila: %1$s</string>
+    <string name="power_button_press_short_title">Sakurtuaduraz hutsunean</string>
+    <string name="power_button_press_short_summary">Zer gertatzen da energiaz hutsunean</string>
+    <string name="power_button_press_long_title">Sakurtuadura luzea</string>
+    <string name="power_button_press_long_summary">Zer gertatzen da energiaz luze helduta dagoenean</string>
+    <string name="power_button_action_default">Lehenetsia</string>
+    <string name="power_button_action_sleep">Loakumea</string>
+    <string name="power_button_action_sleep_no_doze">Loakumea, guzti ez da</string>
+    <string name="power_button_action_go_home">Joan hasierako pantailara</string>
+    <string name="power_button_action_power_menu">Energia menua</string>
+    <string name="power_button_action_shutdown_confirm">Itzali, berrespenarekin</string>
+    <string name="power_button_action_shutdown_no_confirm">Itzali, berrespenik gabe</string>
 </resources>

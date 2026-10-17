@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Zobraziť aplikácie telefónu na úvodnej obrazovke TV</string>
     <string name="leanback_launcher_injection_summary">Vypíše aplikácie, ktoré nemajú záznam v spúšťači TV v riadku aplikácií, s bannerym vytvoreným z ich ikony. Změna sa projaví okamžitě.</string>
     <string name="audio_device_input_level">Úroveň vstupu: %1$s</string>
+    <string name="power_button_press_short_title">Krátke stlačenie tlačidla napájania</string>
+    <string name="power_button_press_short_summary">Čo sa stane pri krátkom stlačení napájania</string>
+    <string name="power_button_press_long_title">Dlhé stlačenie tlačidla napájania</string>
+    <string name="power_button_press_long_summary">Čo sa stane pri pridržaní napájania</string>
+    <string name="power_button_action_default">Predvolené</string>
+    <string name="power_button_action_sleep">Spánok</string>
+    <string name="power_button_action_sleep_no_doze">Spánok s úplným vypnutím</string>
+    <string name="power_button_action_go_home">Prejsť na domovskú obrazovku</string>
+    <string name="power_button_action_power_menu">Ponuka napájania</string>
+    <string name="power_button_action_shutdown_confirm">Vypnúť s potvrdením</string>
+    <string name="power_button_action_shutdown_no_confirm">Vypnúť bez potvrdenia</string>
 </resources>

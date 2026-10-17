@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Telefon tətbiqlərini TV başlanğıc ekranında göstərin</string>
     <string name="leanback_launcher_injection_summary">Tətbiqlər sətrində TV başlatğıcı girişi olmayan tətbiqləri, ikonlarından hazırlanmış banner ilə göstərir. Dərhal tətbiq olunur.</string>
     <string name="audio_device_input_level">Giriş səviyyəsi: %1$s</string>
+    <string name="power_button_press_short_title">Güc düyməsinin qısa basılması</string>
+    <string name="power_button_press_short_summary">Güç qısa basıldıqda nə baş verir</string>
+    <string name="power_button_press_long_title">Güc düyməsinin uzun basılması</string>
+    <string name="power_button_press_long_summary">Güc düyməsi basılı saxlanıldıqda nə baş verir</string>
+    <string name="power_button_action_default">Standart</string>
+    <string name="power_button_action_sleep">Yuxu</string>
+    <string name="power_button_action_sleep_no_doze">Yuxu, tamamilə söndürülür</string>
+    <string name="power_button_action_go_home">Ana ekrana keç</string>
+    <string name="power_button_action_power_menu">Güc menyusu</string>
+    <string name="power_button_action_shutdown_confirm">Söndür, təsdiqlə</string>
+    <string name="power_button_action_shutdown_no_confirm">Söndür, təsdiqsiz</string>
 </resources>

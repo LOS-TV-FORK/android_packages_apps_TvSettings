@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Afișează aplicațiile pentru telefon pe ecranul de pornire al televizorului</string>
     <string name="leanback_launcher_injection_summary">Listează aplicațiile care nu au o intrare în lansatorul TV în rândul de aplicații, cu o banner desenat din pictograma lor. Se aplică imediat.</string>
     <string name="audio_device_input_level">Nivel de intrare: %1$s</string>
+    <string name="power_button_press_short_title">Apăsare scurtă pe butonul de alimentare</string>
+    <string name="power_button_press_short_summary">Ce se întâmplă la apăsarea scurtă a alimentării</string>
+    <string name="power_button_press_long_title">Apăsare lungă pe butonul de alimentare</string>
+    <string name="power_button_press_long_summary">Ce se întâmplă la menținerea apăsată a alimentării</string>
+    <string name="power_button_action_default">Implicit</string>
+    <string name="power_button_action_sleep">Repaus</string>
+    <string name="power_button_action_sleep_no_doze">Repaus cu oprire completă</string>
+    <string name="power_button_action_go_home">Mergi la ecranul principal</string>
+    <string name="power_button_action_power_menu">Meniu de alimentare</string>
+    <string name="power_button_action_shutdown_confirm">Oprește, cu confirmare</string>
+    <string name="power_button_action_shutdown_no_confirm">Oprește, fără confirmare</string>
 </resources>

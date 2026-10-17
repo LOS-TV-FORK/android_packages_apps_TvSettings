@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Prikaži aplikacije telefona na početnom zaslonu TV-a</string>
     <string name="leanback_launcher_injection_summary">Ispisuje aplikacije koje nemaju unos TV pokretanja u retku aplikacija, s natpisom nacrtanim iz njihove ikone. Primjenjuje se odmah.</string>
     <string name="audio_device_input_level">Razina ulaza: %1$s</string>
+    <string name="power_button_press_short_title">Kratki pritisak gumba za napajanje</string>
+    <string name="power_button_press_short_summary">Što se događa pri kratkom pritisku</string>
+    <string name="power_button_press_long_title">Dugi pritisak gumba za napajanje</string>
+    <string name="power_button_press_long_summary">Što se događa dok držite pritisnuto</string>
+    <string name="power_button_action_default">Zadano</string>
+    <string name="power_button_action_sleep">Mirovanje</string>
+    <string name="power_button_action_sleep_no_doze">Mirovanje, potpuno isključeno</string>
+    <string name="power_button_action_go_home">Idi na početni zaslon</string>
+    <string name="power_button_action_power_menu">Izbornik napajanja</string>
+    <string name="power_button_action_shutdown_confirm">Isključi, s potvrdom</string>
+    <string name="power_button_action_shutdown_no_confirm">Isključi, bez potvrde</string>
 </resources>

@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Telefonos alkalmazások megjelenítése a TV kezdőképernyőjén</string>
     <string name="leanback_launcher_injection_summary">Felsorolja azokat az alkalmazásokat, amelyeknek nincs TV-indítási bejegyzésük az alkalmazássorban, az ikonjukból rajzolt bannerrel. Azonnal életbe lép.</string>
     <string name="audio_device_input_level">Bemeneti szint: %1$s</string>
+    <string name="power_button_press_short_title">Tápés meg a be-/kikapcsoló gombra</string>
+    <string name="power_button_press_short_summary">Mi történik rövid tápáskor</string>
+    <string name="power_button_press_long_title">Hosszú nyomás a be-/kikapcsoló gombon</string>
+    <string name="power_button_press_long_summary">Mi történik, ha nyomva tartják</string>
+    <string name="power_button_action_default">Alapértelmezett</string>
+    <string name="power_button_action_sleep">Alvás</string>
+    <string name="power_button_action_sleep_no_doze">Alvás, teljes kikapcsolás</string>
+    <string name="power_button_action_go_home">Vissza a kezdőképernyőre</string>
+    <string name="power_button_action_power_menu">Energiamenu</string>
+    <string name="power_button_action_shutdown_confirm">Kikapcsolás megerősítéssel</string>
+    <string name="power_button_action_shutdown_no_confirm">Kikapcsolás megerősítés nélkül</string>
 </resources>

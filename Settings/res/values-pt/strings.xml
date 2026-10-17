@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Mostrar aplicativos de celular na tela inicial da TV</string>
     <string name="leanback_launcher_injection_summary">Lista os aplicativos que não têm entrada no inicializador da TV na linha de aplicativos, com um banner desenhado a partir do ícone. Entra em vigor imediatamente.</string>
     <string name="audio_device_input_level">Nível de entrada: %1$s</string>
+    <string name="power_button_press_short_title">Toque curto no botão de energia</string>
+    <string name="power_button_press_short_summary">O que acontece ao pressionar a energia brevemente</string>
+    <string name="power_button_press_long_title">Toque longo no botão de energia</string>
+    <string name="power_button_press_long_summary">O que acontece ao manter a energia pressionada</string>
+    <string name="power_button_action_default">Padrão</string>
+    <string name="power_button_action_sleep">Suspensão</string>
+    <string name="power_button_action_sleep_no_doze">Suspensão, desligamento total</string>
+    <string name="power_button_action_go_home">Ir para a tela inicial</string>
+    <string name="power_button_action_power_menu">Menu de energia</string>
+    <string name="power_button_action_shutdown_confirm">Desligar, com confirmação</string>
+    <string name="power_button_action_shutdown_no_confirm">Desligar, sem confirmação</string>
 </resources>

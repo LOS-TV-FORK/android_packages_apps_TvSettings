@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Afficher les applications du téléphone sur l\'écran d\'accueil de la TV</string>
     <string name="leanback_launcher_injection_summary">Réaffiche les applications qui n\'ont pas d\'entrée dans le lanceur TV dans la ligne d\'applications, avec une bannière dessinée à partir de leur icône. Prend effet immédiatement.</string>
     <string name="audio_device_input_level">Niveau d\'entrée : %1$s</string>
+    <string name="power_button_press_short_title">Appui court sur le bouton d\'alimentation</string>
+    <string name="power_button_press_short_summary">Ce qui se produit lors d\'un appui court</string>
+    <string name="power_button_press_long_title">Appui long sur le bouton d\'alimentation</string>
+    <string name="power_button_press_long_summary">Ce qui se produit lors d\'un appui long</string>
+    <string name="power_button_action_default">Par défaut</string>
+    <string name="power_button_action_sleep">Veille</string>
+    <string name="power_button_action_sleep_no_doze">Veille, arrêt complet</string>
+    <string name="power_button_action_go_home">Aller à l\'écran d\'accueil</string>
+    <string name="power_button_action_power_menu">Menu d\'alimentation</string>
+    <string name="power_button_action_shutdown_confirm">Arrêter, avec confirmation</string>
+    <string name="power_button_action_shutdown_no_confirm">Arrêter, sans confirmation</string>
 </resources>

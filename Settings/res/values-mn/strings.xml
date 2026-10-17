@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Утасны програмуудыг телевизорын нэгдүгээр дэлгэцэд харуулах</string>
     <string name="leanback_launcher_injection_summary">Программын мөрөнд телевизорын эхлүүлэгчийн бичлэггүй програмуудыг тэдгээрийн дүрсээс зурсан баннертайгаар жагсаана. Шууд хүчин төгөлдөр болно.</string>
     <string name="audio_device_input_level">Оролтын түвшин: %1$s</string>
+    <string name="power_button_press_short_title">Тогны товчыг богино дарьцах</string>
+    <string name="power_button_press_short_summary">Тогныг богино дарьсан юу болно</string>
+    <string name="power_button_press_long_title">Тогны товчыг удаан дарьцах</string>
+    <string name="power_button_press_long_summary">Товчийг дарж байхдаа юу болно</string>
+    <string name="power_button_action_default">Үндсэн</string>
+    <string name="power_button_action_sleep">Унтаж</string>
+    <string name="power_button_action_sleep_no_doze">Унтаж, бүрэн унтраах</string>
+    <string name="power_button_action_go_home">Үндсэн дэлгэц рүү очих</string>
+    <string name="power_button_action_power_menu">Тогны цэвэрлэг</string>
+    <string name="power_button_action_shutdown_confirm">Унтраах, баталгаажуулж</string>
+    <string name="power_button_action_shutdown_no_confirm">Унтраах, баталгаагүйгээр</string>
 </resources>

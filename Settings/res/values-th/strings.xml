@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">แสดงแอปจากโทรศัพท์บนหน้าจอโฮมของทีวี</string>
     <string name="leanback_launcher_injection_summary">แสดงรายการแอปที่ไม่มีรายการในตัวเรียกใช้ทีวีในแถวแอป พร้อมแบนเนอร์ที่วาดจากไอคอนของแอป ใช้งานทันที</string>
     <string name="audio_device_input_level">ระดับอินพุต: %1$s</string>
+    <string name="power_button_press_short_title">แตะปุ่มเพาเวอร์สั้น ๆ</string>
+    <string name="power_button_press_short_summary">เกิดอะไรขึ้นเมื่อแตะเพาเวอร์สั้น ๆ</string>
+    <string name="power_button_press_long_title">แตะปุ่มเพาเวอร์ค้าง</string>
+    <string name="power_button_press_long_summary">เกิดอะไรขึ้นเมื่อกดเพาเวอร์ค้างไว้</string>
+    <string name="power_button_action_default">ค่าเริ่มต้น</string>
+    <string name="power_button_action_sleep">เข้าโหมดพัก</string>
+    <string name="power_button_action_sleep_no_doze">เข้าโหมดพัก ปิดเครื่องทั้งหมด</string>
+    <string name="power_button_action_go_home">ไปที่หน้าจอหลัก</string>
+    <string name="power_button_action_power_menu">เมนูเพาเวอร์</string>
+    <string name="power_button_action_shutdown_confirm">ปิดเครื่อง พร้อมยืนยัน</string>
+    <string name="power_button_action_shutdown_no_confirm">ปิดเครื่อง โดยไม่ยืนยัน</string>
 </resources>

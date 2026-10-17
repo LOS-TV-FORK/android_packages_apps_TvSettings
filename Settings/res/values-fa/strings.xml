@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">نمایش برنامه‌های تلفن در صفحهٔ خانگی تلویزیون</string>
     <string name="leanback_launcher_injection_summary">برنامه‌هایی را که در ردیف برنامه‌ها ورودی برای راه‌انداز تلویزیون ندارند، همراه با بنری که از نمادشان ساخته شده فهرست می‌کند. بلافاصله اعمال می‌شود.</string>
     <string name="audio_device_input_level">سطح ورودی: %1$s</string>
+    <string name="power_button_press_short_title">فشارش کوتاه دکمهٔ روشن/خاموش</string>
+    <string name="power_button_press_short_summary">هنگام فشارش کوتاه چه اتفاقی می‌افتد</string>
+    <string name="power_button_press_long_title">فشارش طولانی دکمهٔ روشن/خاموش</string>
+    <string name="power_button_press_long_summary">هنگام نگه‌داشتن دکمه چه اتفاقی می‌افتد</string>
+    <string name="power_button_action_default">پیش‌فرض</string>
+    <string name="power_button_action_sleep">خواب</string>
+    <string name="power_button_action_sleep_no_doze">خواب، خاموشی کامل</string>
+    <string name="power_button_action_go_home">رفتن به صفحهٔ خانه</string>
+    <string name="power_button_action_power_menu">منوی روشن/خاموش</string>
+    <string name="power_button_action_shutdown_confirm">خاموش کردن، با تأیید</string>
+    <string name="power_button_action_shutdown_no_confirm">خاموش کردن، بدون تأیید</string>
 </resources>

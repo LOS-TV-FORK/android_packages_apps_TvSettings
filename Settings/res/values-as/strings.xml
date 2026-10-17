@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">ফোনৰ এপসমূহ টিভিৰ মূল স্ক্ৰীনত দেখুওৱা</string>
     <string name="leanback_launcher_injection_summary">এপছলিসমূহ তালিকা দিয়ে যেসমূহৰ এপছত টিভি লঞ্চাৰ এন্ট্ৰি নেই, আৰু সেইবোৰৰ আইকনৰ পৰা বানানো বেনাৰৰ সৈতে। তাৎক্ষণিকভাৱে কার্যকৰ হয়।</string>
     <string name="audio_device_input_level">ইনপুট স্তৰ: %1$s</string>
+    <string name="power_button_press_short_title">ভাৰ্টিকেল বৰ্টনৰ সংক্ষিপ্ত চাপ</string>
+    <string name="power_button_press_short_summary">ভাৰ্টিকেল সংক্ষিপ্তভাৱে চাপিলে কি হয়</string>
+    <string name="power_button_press_long_title">ভাৰ্টিকেল বৰ্টন দীৰ্ঘ চাপ</string>
+    <string name="power_button_press_long_summary">ভাৰ্টিকেল বৰ্টন ধৰি ৰাখিলে কি হয়</string>
+    <string name="power_button_action_default">ডিফল্ট</string>
+    <string name="power_button_action_sleep">ঘুম</string>
+    <string name="power_button_action_sleep_no_doze">ঘুম, সম্পূৰ্ণ বন্ধ</string>
+    <string name="power_button_action_go_home">হোম স্ক্ৰীনলৈ যাওক</string>
+    <string name="power_button_action_power_menu">ভাৰ্টিকেল মেনু</string>
+    <string name="power_button_action_shutdown_confirm">বন্ধ কৰক, নিশ্চিতকৰণৰ সৈতে</string>
+    <string name="power_button_action_shutdown_no_confirm">বন্ধ কৰক, নিশ্চিতকৰণৰ বিয়াই</string>
 </resources>

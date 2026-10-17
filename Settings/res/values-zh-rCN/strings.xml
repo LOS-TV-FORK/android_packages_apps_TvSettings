@@ -1220,4 +1220,15 @@
     <string name="leanback_launcher_injection_title">在电视主屏幕上显示手机应用</string>
     <string name="leanback_launcher_injection_summary">在应用行中列出没有电视启动器入口的应用，并使用从其图标生成的横幅。立即生效。</string>
     <string name="audio_device_input_level">输入电平：%1$s</string>
+    <string name="power_button_press_short_title">短按电源键</string>
+    <string name="power_button_press_short_summary">短按电源键时的操作</string>
+    <string name="power_button_press_long_title">长按电源键</string>
+    <string name="power_button_press_long_summary">长按电源键时的操作</string>
+    <string name="power_button_action_default">默认</string>
+    <string name="power_button_action_sleep">睡眠</string>
+    <string name="power_button_action_sleep_no_doze">睡眠（完全关机）</string>
+    <string name="power_button_action_go_home">返回主屏幕</string>
+    <string name="power_button_action_power_menu">电源菜单</string>
+    <string name="power_button_action_shutdown_confirm">关机，需要确认</string>
+    <string name="power_button_action_shutdown_no_confirm">关机，无需确认</string>
 </resources>

@@ -269,6 +269,17 @@ public abstract class TwoPanelSettingsFragment extends Fragment implements
         }
 
         if (mPostShowPreviewRunnable != null) {
+            // The tap decides which screen opens, but the pending preview belongs to whichever
+            // row was focused last. The two disagree whenever focus lands on a row without the
+            // panel following it, which is what coming back from the detail panel does: focus
+            // returns to the row just left, and the panel would then show that stale screen
+            // again instead of the tapped one. When they differ the tapped row wins.
+            if (!TextUtils.equals(mPostShowPreviewRunnable.getPref().getKey(), pref.getKey())) {
+                mPostShowPreviewRunnable.cancel();
+                mFocusedPreference = pref;
+                handleFragmentTransactionWhenFocused(pref, true, mPrefPanelIdx);
+                return true;
+            }
             mPostShowPreviewRunnable.showPreview();
         }
 
@@ -563,6 +574,11 @@ public abstract class TwoPanelSettingsFragment extends Fragment implements
         void cancel() {
             mHandler.removeCallbacks(this);
             mPostShowPreviewRunnable = null;
+        }
+
+        /** The row this pending preview belongs to, so a tap can tell whether it matches. */
+        Preference getPref() {
+            return mPref;
         }
 
         @Override

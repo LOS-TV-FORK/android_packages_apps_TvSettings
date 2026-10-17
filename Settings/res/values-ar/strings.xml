@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">إظهار تطبيقات الهاتف على الشاشة الرئيسية للتلفاز</string>
     <string name="leanback_launcher_injection_summary">يسرد التطبيقات التي لا تحتوي على إدخال مشغّل التلفاز في صف التطبيقات، مع لافتة مرسومة من أيقونتها. يسري فورًا.</string>
     <string name="audio_device_input_level">مستوى الإدخال: %1$s</string>
+    <string name="power_button_press_short_title">ضغطة قصيرة على زر الطاقة</string>
+    <string name="power_button_press_short_summary">ماذا يحدث عند الضغط على الطاقة بإيجاز</string>
+    <string name="power_button_press_long_title">ضغطة طويلة على زر الطاقة</string>
+    <string name="power_button_press_long_summary">ماذا يحدث عند الاستمرار بالضغط على الطاقة</string>
+    <string name="power_button_action_default">افتراضي</string>
+    <string name="power_button_action_sleep">سكون</string>
+    <string name="power_button_action_sleep_no_doze">سكون، إطفاء كامل</string>
+    <string name="power_button_action_go_home">الانتقال إلى الشاشة الرئيسية</string>
+    <string name="power_button_action_power_menu">قائمة الطاقة</string>
+    <string name="power_button_action_shutdown_confirm">إيقاف التشغيل، مع تأكيد</string>
+    <string name="power_button_action_shutdown_no_confirm">إيقاف التشغيل، بدون تأكيد</string>
 </resources>

@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">ဖုန်းအက်ပ်များကို တီဗီမူည်စာမျက်နှာပြင်တွင် ပြထားရန်</string>
     <string name="leanback_launcher_injection_summary">အက်ပ်များတန်းတွင် တီဗီအပြန်တင်မှု မရှိသော အက်ပ်များကို ၎င်းတိုင်းအတိုင်းဖြင့် ဆောင်းသွင်းထားသော ဘန်နာနှင့်အတူ စာရင်းစဉ်ပြုလုပ်ပါသည်။ ချက်ချင်းအသုံးပြုရမည်။</string>
     <string name="audio_device_input_level">သွင်းသည့်အဆင့်: %1$s</string>
+    <string name="power_button_press_short_title">ပါရိုက်တီးကိုတိုက်ခြင်း</string>
+    <string name="power_button_press_short_summary">ပါရိုက်တီးကိုတိုက်လိုက်တွင် မည်သူဖြစ်သနည်</string>
+    <string name="power_button_press_long_title">ပါရိုက်တီးကိုအကြာကျွန်းမိုက်ခြင်း</string>
+    <string name="power_button_press_long_summary">ခလုတ်ကိုဖိအမ်းထားချိန်တွင် မည်သူဖြစ်သနည်</string>
+    <string name="power_button_action_default">မူလအတိုင်း</string>
+    <string name="power_button_action_sleep">အိပ်ရေး</string>
+    <string name="power_button_action_sleep_no_doze">အိပ်ရေး၊ လုံးဝပိတ်</string>
+    <string name="power_button_action_go_home">ပင်မကနေရှင်းသွင်းသွားရန်</string>
+    <string name="power_button_action_power_menu">ပါရိုက်တီးမီနူး</string>
+    <string name="power_button_action_shutdown_confirm">ပိတ်ရန်၊ အတည်ပြုချက်ဖြင့်</string>
+    <string name="power_button_action_shutdown_no_confirm">ပိတ်ရန်၊ အတည်ပြုချက်မရှိဘဲ</string>
 </resources>

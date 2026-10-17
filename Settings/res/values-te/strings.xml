@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">TV హోమ్ స్క్రీన్‌పై ఫోన్ యాప్‌లను చూపించు</string>
     <string name="leanback_launcher_injection_summary">యాప్ వరుసలో TV లాంచర్ ఎంట్రీ లేని యాప్‌లను, వాటి ఐకన్ నుంచి తయారైన బానర్‌తో జాబితా చేస్తుంది. వెంటనే అమల్లోకి వస్తుంది.</string>
     <string name="audio_device_input_level">ఇన్‌పుట్ స్థాయి: %1$s</string>
+    <string name="power_button_press_short_title">పవర్ బటన్ చిన్న నొక్కు</string>
+    <string name="power_button_press_short_summary">పవర్ చిన్నగా నొక్కినప్పుడు ఏమి జరుగుతుంది</string>
+    <string name="power_button_press_long_title">పవర్ బటన్ పొడవైన నొక్కు</string>
+    <string name="power_button_press_long_summary">బటన్ నొక్కి పెట్టుకుంటే ఏమి జరుగుతుంది</string>
+    <string name="power_button_action_default">డిఫాల్ట్</string>
+    <string name="power_button_action_sleep">నిద్ర</string>
+    <string name="power_button_action_sleep_no_doze">నిద్ర, పూర్తిగా ఆఫ్</string>
+    <string name="power_button_action_go_home">హోమ్ స్క్రీన్‌కు వెళ్లండి</string>
+    <string name="power_button_action_power_menu">పవర్ మెనూ</string>
+    <string name="power_button_action_shutdown_confirm">ఆఫ్ చేయండి, నిర్ధారణతో</string>
+    <string name="power_button_action_shutdown_no_confirm">ఆఫ్ చేయండి, నిర్ధారణ లేకుండా</string>
 </resources>

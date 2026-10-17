@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Onyesha programu za simu kwenye skrini ya mwanzo ya TV</string>
     <string name="leanback_launcher_injection_summary">Inaorodha programu ambazo hazina ingizo la kizinduzi cha TV katika safu ya programu, pamoja na bango lililochorwa kutoka aikoni yake. Hutumika mara moja.</string>
     <string name="audio_device_input_level">Kiwango cha ingizo: %1$s</string>
+    <string name="power_button_press_short_title">Bofya ya nguvu, mzigo</string>
+    <string name="power_button_press_short_summary">Nini hutokea unapobofya nguvu kwa muda mfupi</string>
+    <string name="power_button_press_long_title">Bofya ya nguvu, muda mrefu</string>
+    <string name="power_button_press_long_summary">Nini hutokea unashikilia kitufe cha nguvu</string>
+    <string name="power_button_action_default">Chaguo-msingi</string>
+    <string name="power_button_action_sleep">Usingizi</string>
+    <string name="power_button_action_sleep_no_doze">Usingizi, kuzimwa kabisa</string>
+    <string name="power_button_action_go_home">Nenda kwenye skrini ya nyumbani</string>
+    <string name="power_button_action_power_menu">Menyu ya nguvu</string>
+    <string name="power_button_action_shutdown_confirm">Zima, kwa uthibitisho</string>
+    <string name="power_button_action_shutdown_no_confirm">Zima, bila uthibitisho</string>
 </resources>

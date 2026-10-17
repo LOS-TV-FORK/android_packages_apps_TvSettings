@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Εμφάνιση εφαρμογών τηλεφώνου στην αρχική οθόνη της τηλεόρασης</string>
     <string name="leanback_launcher_injection_summary">Εμφανίζει εφαρμογές που δεν έχουν καταχώριση στην εκκίνηση της τηλεόρασης στη σειρά εφαρμογών, με πανό που σχεδιάζεται από το εικονίδιό τους. Ισχύει αμέσως.</string>
     <string name="audio_device_input_level">Επίπεδο εισόδου: %1$s</string>
+    <string name="power_button_press_short_title">Σύντομο πάτημα του κουμπιού τροφοδοσίας</string>
+    <string name="power_button_press_short_summary">Τι συμβαίνει με σύντομο πάτημα</string>
+    <string name="power_button_press_long_title">Παρατεταμένο πάτημα του κουμπιού τροφοδοσίας</string>
+    <string name="power_button_press_long_summary">Τι συμβαίνει όταν κρατάτε πατημένο</string>
+    <string name="power_button_action_default">Προεπιλογή</string>
+    <string name="power_button_action_sleep">Αδρανοποίηση</string>
+    <string name="power_button_action_sleep_no_doze">Αδρανοποίηση με πλήρη διακοπή</string>
+    <string name="power_button_action_go_home">Μετάβαση στην αρχική οθόνη</string>
+    <string name="power_button_action_power_menu">Μενού τροφοδοσίας</string>
+    <string name="power_button_action_shutdown_confirm">Κλείσιμο, με επιβεβαίωση</string>
+    <string name="power_button_action_shutdown_no_confirm">Κλείσιμο, χωρίς επιβεβαίωση</string>
 </resources>

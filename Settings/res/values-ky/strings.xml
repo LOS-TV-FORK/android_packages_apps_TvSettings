@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Телефон колдонмолоруну телевизордун баш экранда көрсөтүү</string>
     <string name="leanback_launcher_injection_summary">Колдонмолор сабында телевизорду иштетүү жазуусу жок колдонмолорду, алардын белгисинен жасалган баннер менен тизмектейт. Дарып колданылат.</string>
     <string name="audio_device_input_level">Киришүү деңгээли: %1$s</string>
+    <string name="power_button_press_short_title">Кубаттук баскычын кыска басуу</string>
+    <string name="power_button_press_short_summary">Кубат кыска басылганда эмне болот</string>
+    <string name="power_button_press_long_title">Кубаттук баскычын узак басуу</string>
+    <string name="power_button_press_long_summary">Кубат баскычы кармалып турганда эмне болот</string>
+    <string name="power_button_action_default">Демейки</string>
+    <string name="power_button_action_sleep">Уктоо</string>
+    <string name="power_button_action_sleep_no_doze">Уктоо, толук өчүү</string>
+    <string name="power_button_action_go_home">Баш экранга өтүү</string>
+    <string name="power_button_action_power_menu">Кубат менюсу</string>
+    <string name="power_button_action_shutdown_confirm">Өчүрүү, ырастаган менен</string>
+    <string name="power_button_action_shutdown_no_confirm">Өчүрүү, ырастатуусуз</string>
 </resources>

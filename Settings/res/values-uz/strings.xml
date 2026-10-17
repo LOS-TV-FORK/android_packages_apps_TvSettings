@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Telefon ilovalarini TV bosh ekranida ko\'rsatish</string>
     <string name="leanback_launcher_injection_summary">Ilovalar qatorida TV ishga tushiruvchi yozuvi yo\'q ilovalarni, ularning belgisidan yasalgan banner bilan ro\'yxatlaydi. Darhol qo\'llaniladi.</string>
     <string name="audio_device_input_level">Kiritish darajasi: %1$s</string>
+    <string name="power_button_press_short_title">Energiya tugmasini qisqa bosish</string>
+    <string name="power_button_press_short_summary">Energiya qisqa bosilganda nima bo\'ladi</string>
+    <string name="power_button_press_long_title">Energiya tugmasini uzoq bosish</string>
+    <string name="power_button_press_long_summary">Tugma bosib turilganda nima bo\'ladi</string>
+    <string name="power_button_action_default">Standart</string>
+    <string name="power_button_action_sleep">Uyqu</string>
+    <string name="power_button_action_sleep_no_doze">Uyqu, to\'liq o\'chirish</string>
+    <string name="power_button_action_go_home">Asosiy ekranga o\'tish</string>
+    <string name="power_button_action_power_menu">Energiya menyusi</string>
+    <string name="power_button_action_shutdown_confirm">O\'chirish, tasdiq bilan</string>
+    <string name="power_button_action_shutdown_no_confirm">O\'chirish, tasdiqsiz</string>
 </resources>

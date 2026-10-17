@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">TV ହୋମ ସ୍କ୍ରିନରେ ଫୋନ ଆପ୍ ଦେଖାନ୍ତୁ</string>
     <string name="leanback_launcher_injection_summary">ଆପ୍ ସରିହାଡରେ TV ଲଞ୍ଚର ପଙ୍କି ନଥିବା ଆପ୍ଗୁଡ଼କୁ, ସେମାନଙ୍କ ଆଇକନରୁ ଆଁସି ବନାଯାଇଥିବା ବ୍ୟାନର୍ ସହିତ ତାଲିକା କରେ। ସିମେନ୍ଟରେ କାମ କରେ।</string>
     <string name="audio_device_input_level">ଇନପୁଟ ସ୍ତର: %1$s</string>
+    <string name="power_button_press_short_title">ପାୱର ବଟନର ସଂକ୍ଷିପ୍ତ ଚାପ</string>
+    <string name="power_button_press_short_summary">ପାୱର ସଂକ୍ଷିପ୍ତ ଚାପିଲେ କ\'ଣ ହୁଏ</string>
+    <string name="power_button_press_long_title">ପାୱର ବଟନର ଦୀର୍ଘ ଚାପ</string>
+    <string name="power_button_press_long_summary">ବଟନ ଚାପି ଧରିଥିବା ସମୟରେ କ\'ଣ ହୁଏ</string>
+    <string name="power_button_action_default">ଡିଫଲ୍ଟ</string>
+    <string name="power_button_action_sleep">ଘୋମ</string>
+    <string name="power_button_action_sleep_no_doze">ଘୋମ, ସମ୍ପୂର୍ଣ୍ଣ ବନ୍ଦ</string>
+    <string name="power_button_action_go_home">ମୁଖ୍ୟ ସ୍କ୍ରିନକୁ ଯାଆନ୍ତା</string>
+    <string name="power_button_action_power_menu">ପାୱର ମେନୁ</string>
+    <string name="power_button_action_shutdown_confirm">ବନ୍ଦ କରନ୍ତୁ, ନିଶ୍ଚିତତା ସହିତ</string>
+    <string name="power_button_action_shutdown_no_confirm">ବନ୍ଦ କରନ୍ତୁ, ନିଶ୍ଚିତତା ବିହୀନ</string>
 </resources>

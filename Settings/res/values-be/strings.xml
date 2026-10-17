@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Паказаць мабільныя праграмы на галоўным экране ТВ</string>
     <string name="leanback_launcher_injection_summary">Паказвае праграмы, у якіх няма запісу ТВ-праграмы ў радку праграм, з банерам, створаным з іх значкі. Прымяняецца адразу.</string>
     <string name="audio_device_input_level">Узровень уваходу: %1$s</string>
+    <string name="power_button_press_short_title">Кароткае націсканне кнопкі сілкання</string>
+    <string name="power_button_press_short_summary">Што адбываецца пры кароткім націсканні</string>
+    <string name="power_button_press_long_title">Доўгае націсканне кнопкі сілкання</string>
+    <string name="power_button_press_long_summary">Што адбываецца пры ўтрыманні</string>
+    <string name="power_button_action_default">Па змаўчанні</string>
+    <string name="power_button_action_sleep">Сон</string>
+    <string name="power_button_action_sleep_no_doze">Сон з поўным выключэннем</string>
+    <string name="power_button_action_go_home">Перайсці на галоўны экран</string>
+    <string name="power_button_action_power_menu">Меню сілкання</string>
+    <string name="power_button_action_shutdown_confirm">Выключэнне з пацвярджэннем</string>
+    <string name="power_button_action_shutdown_no_confirm">Выключэнне без пацвярджэння</string>
 </resources>

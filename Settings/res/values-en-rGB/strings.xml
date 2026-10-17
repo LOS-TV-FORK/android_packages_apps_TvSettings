@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Show phone apps on the TV home screen</string>
     <string name="leanback_launcher_injection_summary">Lists apps that have no TV launcher entry in the apps row, with a banner drawn from their icon. Takes effect right away.</string>
     <string name="audio_device_input_level">Input level: %1$s</string>
+    <string name="power_button_press_short_title">Short press of power button</string>
+    <string name="power_button_press_short_summary">What happens when power is pressed briefly</string>
+    <string name="power_button_press_long_title">Long press of power button</string>
+    <string name="power_button_press_long_summary">What happens when power is held down</string>
+    <string name="power_button_action_default">Default</string>
+    <string name="power_button_action_sleep">Sleep</string>
+    <string name="power_button_action_sleep_no_doze">Sleep, fully switched off</string>
+    <string name="power_button_action_go_home">Go to the home screen</string>
+    <string name="power_button_action_power_menu">Power menu</string>
+    <string name="power_button_action_shutdown_confirm">Shut down, with confirmation</string>
+    <string name="power_button_action_shutdown_no_confirm">Shut down, no confirmation</string>
 </resources>

@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Tampilkan aplikasi ponsel di layar beranda TV</string>
     <string name="leanback_launcher_injection_summary">Menampilkan aplikasi yang tidak memiliki entri peluncur TV di baris aplikasi, dengan banner yang digambar dari ikonnya. Berlaku seketika.</string>
     <string name="audio_device_input_level">Level input: %1$s</string>
+    <string name="power_button_press_short_title">Tekan singkat tombol daya</string>
+    <string name="power_button_press_short_summary">Apa yang terjadi saat daya ditekan sebentar</string>
+    <string name="power_button_press_long_title">Tekan lama tombol daya</string>
+    <string name="power_button_press_long_summary">Apa yang terjadi saat tombol daya ditahan</string>
+    <string name="power_button_action_default">Bawaan</string>
+    <string name="power_button_action_sleep">Tidur</string>
+    <string name="power_button_action_sleep_no_doze">Tidur, matikan sepenuhnya</string>
+    <string name="power_button_action_go_home">Ke layar beranda</string>
+    <string name="power_button_action_power_menu">Menu daya</string>
+    <string name="power_button_action_shutdown_confirm">Matikan, dengan konfirmasi</string>
+    <string name="power_button_action_shutdown_no_confirm">Matikan, tanpa konfirmasi</string>
 </resources>

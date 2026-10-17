@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Показване на телефонните приложения на началния екран на ТВ</string>
     <string name="leanback_launcher_injection_summary">Изброява приложенията, които нямат запис на ТВ стартера в реда с приложения, с банер, създаден от иконата им. Прилага се веднага.</string>
     <string name="audio_device_input_level">Ниво на входния сигнал: %1$s</string>
+    <string name="power_button_press_short_title">Кратко натискане на бутона за захранване</string>
+    <string name="power_button_press_short_summary">Какво се случва при кратко натискане</string>
+    <string name="power_button_press_long_title">Продължително натискане на бутона за захранване</string>
+    <string name="power_button_press_long_summary">Какво се случва, докато бутоните е задържан</string>
+    <string name="power_button_action_default">По подразбиране</string>
+    <string name="power_button_action_sleep">Сън</string>
+    <string name="power_button_action_sleep_no_doze">Сън с пълно изключване</string>
+    <string name="power_button_action_go_home">Към началния екран</string>
+    <string name="power_button_action_power_menu">Меню за захранване</string>
+    <string name="power_button_action_shutdown_confirm">Изключване с потвърждение</string>
+    <string name="power_button_action_shutdown_no_confirm">Изключване без потвърждение</string>
 </resources>

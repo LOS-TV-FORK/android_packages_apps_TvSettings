@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Rodyti telefono programmes TV pagrindiniame ekrane</string>
     <string name="leanback_launcher_injection_summary">Išvardina programas, kurios neturi TV paleidimo įrašo programų eilutėje, su skelbimu, sudarytu iš jų piktos. Taip pat taikoma nedelsiant.</string>
     <string name="audio_device_input_level">Įvesties lygis: %1$s</string>
+    <string name="power_button_press_short_title">Trumpas paspaudimas maitinimo mygtuku</string>
+    <string name="power_button_press_short_summary">Kas nutinka trumpai paspaudus</string>
+    <string name="power_button_press_long_title">Ilgas paspaudimas maitinimo mygtuku</string>
+    <string name="power_button_press_long_summary">Kas nutinka laikant mygtuką paspaudus</string>
+    <string name="power_button_action_default">Numatytoji</string>
+    <string name="power_button_action_sleep">Miegas</string>
+    <string name="power_button_action_sleep_no_doze">Miegas, visiškai išjungtas</string>
+    <string name="power_button_action_go_home">Eiti į pagrindinį ekraną</string>
+    <string name="power_button_action_power_menu">Maitinimo meniu</string>
+    <string name="power_button_action_shutdown_confirm">Išjungti, su patvirtinimu</string>
+    <string name="power_button_action_shutdown_no_confirm">Išjungti, be patvirtinimo</string>
 </resources>

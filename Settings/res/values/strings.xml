@@ -2991,5 +2991,17 @@
     <string name="audio_hdmi_enable_summary">Report an HDMI/DP device so it appears above and can be selected</string>
 
     <!-- Power button actions -->
+    <string name="power_button_press_short_title">Short press of power button</string>
+    <string name="power_button_press_short_summary">What happens when power is pressed briefly</string>
+    <string name="power_button_press_long_title">Long press of power button</string>
+    <string name="power_button_press_long_summary">What happens when power is held down</string>
+
+    <string name="power_button_action_default">Default</string>
+    <string name="power_button_action_sleep">Sleep</string>
+    <string name="power_button_action_sleep_no_doze">Sleep, fully switched off</string>
+    <string name="power_button_action_go_home">Go to the home screen</string>
+    <string name="power_button_action_power_menu">Power menu</string>
+    <string name="power_button_action_shutdown_confirm">Shut down, with confirmation</string>
+    <string name="power_button_action_shutdown_no_confirm">Shut down, no confirmation</string>
 
 </resources>

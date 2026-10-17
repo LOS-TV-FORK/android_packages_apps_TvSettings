@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Näytä puhelimen sovellukset television aloitusnäytöllä</string>
     <string name="leanback_launcher_injection_summary">Luettelee sovellukset, joilla ei ole television käynnistyksen merkintää sovellusrivissä, ja piirtää niiden kuvakkeesta bannerin. Tulee voimaan heti.</string>
     <string name="audio_device_input_level">Tason tulo: %1$s</string>
+    <string name="power_button_press_short_title">Virtapainikkeen lyhyt painallus</string>
+    <string name="power_button_press_short_summary">Mitä tapahtuu, kun painat virtapainiketta hetken</string>
+    <string name="power_button_press_long_title">Virtapainikkeen pitkä painallus</string>
+    <string name="power_button_press_long_summary">Mitä tapahtuu, kun virtapainiketta pidetään pohjassa</string>
+    <string name="power_button_action_default">Oletus</string>
+    <string name="power_button_action_sleep">Lepotila</string>
+    <string name="power_button_action_sleep_no_doze">Lepotila, täysi sammutus</string>
+    <string name="power_button_action_go_home">Siirry kot näytölle</string>
+    <string name="power_button_action_power_menu">Virtavalikko</string>
+    <string name="power_button_action_shutdown_confirm">Sammuta, vahvistuksella</string>
+    <string name="power_button_action_shutdown_no_confirm">Sammuta, ilman vahvistusta</string>
 </resources>

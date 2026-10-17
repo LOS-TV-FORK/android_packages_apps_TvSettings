@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">টিভি হোম স্ক্রিনে ফোনের অ্যাপ দেখান</string>
     <string name="leanback_launcher_injection_summary">অ্যাপের সারিতে টিভি লঞ্চার এন্ট্রি নেই এমন অ্যাপগুলো তালিকাভুক্ত করে, আইকন থেকে তৈরি ব্যানার সহ। সঙ্গে সঙ্গে কার্যকর হয়।</string>
     <string name="audio_device_input_level">ইনপুট স্তর: %1$s</string>
+    <string name="power_button_press_short_title">পাওয়ার বোতাম সংক্ষিপ্ত চাপ</string>
+    <string name="power_button_press_short_summary">পাওয়ার সংক্ষিপ্তভাবে চাপলে কী হয়</string>
+    <string name="power_button_press_long_title">পাওয়ার বোতাম দীর্ঘ চাপ</string>
+    <string name="power_button_press_long_summary">পাওয়ার বোতাম চেপে ধরলে কী হয়</string>
+    <string name="power_button_action_default">ডিফল্ট</string>
+    <string name="power_button_action_sleep">ঘুম</string>
+    <string name="power_button_action_sleep_no_doze">ঘুম, সম্পূর্ণ বন্ধ</string>
+    <string name="power_button_action_go_home">হোম স্ক্রিনে যান</string>
+    <string name="power_button_action_power_menu">পাওয়ার মেনু</string>
+    <string name="power_button_action_shutdown_confirm">বন্ধ করুন, নিশ্চিতকরণসহ</string>
+    <string name="power_button_action_shutdown_no_confirm">বন্ধ করুন, নিশ্চিতকরণ ছাড়া</string>
 </resources>

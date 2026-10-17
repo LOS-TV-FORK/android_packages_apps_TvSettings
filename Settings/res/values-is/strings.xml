@@ -1219,4 +1219,15 @@
     <string name="leanback_launcher_injection_title">Sýna fónforrits á sjálfs Oddskeiðinu</string>
     <string name="leanback_launcher_injection_summary">Sýnir forrit sem hafa ekki færðu í TV-rævisinu í forraðarinum, með borði sem teiknaður er úr tákninu þeirra. Tek gildi samstundis.</string>
     <string name="audio_device_input_level">Stig inntaks: %1$s</string>
+    <string name="power_button_press_short_title">Stutt press á roffatanum</string>
+    <string name="power_button_press_short_summary">Hvað gerist þegar ýtt er stutt á roftann</string>
+    <string name="power_button_press_long_title">Langt press á roffatanum</string>
+    <string name="power_button_press_long_summary">Hvað gerist þegar roftinn er haldinn niðri</string>
+    <string name="power_button_action_default">Sjálfgefið</string>
+    <string name="power_button_action_sleep">Hvíla</string>
+    <string name="power_button_action_sleep_no_doze">Hvíla, alveg kynnt</string>
+    <string name="power_button_action_go_home">Fara á upphafsskjá</string>
+    <string name="power_button_action_power_menu">Orkuvinnsluknun</string>
+    <string name="power_button_action_shutdown_confirm">Slökkva, með staðfestingu</string>
+    <string name="power_button_action_shutdown_no_confirm">Slökkva, án staðfestingar</string>
 </resources>
