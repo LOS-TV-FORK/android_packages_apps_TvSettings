@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Միացնել ANGLE-ը որպես կանխադրված OpenGL ES դրայվեր"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Փորձնական պարամետր, կպահանջվի վերաբեռնում։"</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Համակարգի OpenGL ES դրայվերը փոխելու համար պահանջվում է վերաբեռնում"</string>
+    <string name="leanback_launcher_injection_title">Տելեֆոնի հավելումները ցույց տալ հեռուստատեսի գլխավոր էկրանին</string>
+    <string name="leanback_launcher_injection_summary">Ցույց է տալիս այն հավելումները, որոնք հավելումների տողում հեռուստատեսի գործարկիչի մուտք չունեն՝ իրենց պատկերիկայից պատկերված բաներով։ Ամբողջությամբ մեկնում է։</string>
+    <string name="audio_device_input_level">Մուտքի մակարդակ: %1$s</string>
 </resources>

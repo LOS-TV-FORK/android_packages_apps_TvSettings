@@ -1226,4 +1226,7 @@
     <string name="audio_device_auto_input_summary">Системный выбор</string>
     <string name="audio_hdmi_enable_title">"Вывод звука по HDMI/DP"</string>
     <string name="audio_hdmi_enable_summary">"Показать устройство HDMI/DP в списке выше для выбора"</string>
+    <string name="leanback_launcher_injection_title">Показывать приложения телефона на главном экране ТВ</string>
+    <string name="leanback_launcher_injection_summary">Показывает приложения, у которых нет записи в ТВ-лаунчере в строке приложений, с баннером, созданным из их значка. Применяется сразу.</string>
+    <string name="audio_device_input_level">Уровень входа: %1$s</string>
 </resources>

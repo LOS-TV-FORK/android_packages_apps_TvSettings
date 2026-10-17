@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Gaitu ANGLE OpenGL ES-ren kontrolatzaile lehenetsi gisa"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Esperimentala; berrabiarazi egin behar da."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Berrabiarazi egin behar da OpenGL ES-ren kontrolatzailea (sistemarena) aldatzeko"</string>
+    <string name="leanback_launcher_injection_title">Erakutsi telefonoaren aplikazioak TVaren hasierako pantailan</string>
+    <string name="leanback_launcher_injection_summary">Aplikazioen errendan TVaren abiarazleentzako sarrerarik ez duten aplikazioak zerrenda ditu, haien ikonorengat hartutako banner batekin. Berehalta aplikatzen da.</string>
+    <string name="audio_device_input_level">Sarrera maila: %1$s</string>
 </resources>

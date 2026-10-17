@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"تفعيل ANGLE كبرنامج التشغيل التلقائي OpenGL ES"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"هذه الميزة تجريبية وتتطلب إعادة تشغيل الجهاز."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"يجب إعادة تشغيل الجهاز لتغيير برنامج التشغيل OpenGL ES الخاص بالنظام"</string>
+    <string name="leanback_launcher_injection_title">إظهار تطبيقات الهاتف على الشاشة الرئيسية للتلفاز</string>
+    <string name="leanback_launcher_injection_summary">يسرد التطبيقات التي لا تحتوي على إدخال مشغّل التلفاز في صف التطبيقات، مع لافتة مرسومة من أيقونتها. يسري فورًا.</string>
+    <string name="audio_device_input_level">مستوى الإدخال: %1$s</string>
 </resources>

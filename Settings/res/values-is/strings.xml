@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Virkja ANGLE sem sjálfgefinn OpenGL ES-rekil"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Á tilraunastigi, krefst endurræsingar."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Endurræsingar er krafist til að skipta um OpenGL ES-rekil kerfis"</string>
+    <string name="leanback_launcher_injection_title">Sýna fónforrits á sjálfs Oddskeiðinu</string>
+    <string name="leanback_launcher_injection_summary">Sýnir forrit sem hafa ekki færðu í TV-rævisinu í forraðarinum, með borði sem teiknaður er úr tákninu þeirra. Tek gildi samstundis.</string>
+    <string name="audio_device_input_level">Stig inntaks: %1$s</string>
 </resources>

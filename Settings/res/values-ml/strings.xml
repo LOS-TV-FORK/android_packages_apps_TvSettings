@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"ഡിഫോൾട്ട് OpenGL ES ഡ്രൈവറായി ആംഗിൾ സജീവമാക്കുക"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"പരീക്ഷണാത്മകം, റീബൂട്ട് ചെയ്യേണ്ടതുണ്ട്."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"സിസ്റ്റം OpenGL ES ഡ്രൈവർ മാറ്റാൻ റീബൂട്ട് ചെയ്യേണ്ടതുണ്ട്"</string>
+    <string name="leanback_launcher_injection_title">ടിവി ഹോം സ്ക്രീനിൽ ഫോൺ ആപ്പുകൾ കാണിക്കുക</string>
+    <string name="leanback_launcher_injection_summary">ആപ്പ് വരിവിൽ ടിവി ലോഞ്ചർ എൻട്രിയില്ലാത്ത ആപ്പുകൾ അവയുടെ ഐക്കൺ സ്വന്തം വരച്ചുപടിച്ച ബാനർ ഉപയോഗിച്ച് പട്ടികപ്പെടുത്തുന്നു. ഉടൻ പ്രാബ്യായമാകും.</string>
+    <string name="audio_device_input_level">ഇൻപുട്ട് ലെവൽ: %1$s</string>
 </resources>

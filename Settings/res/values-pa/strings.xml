@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"ANGLE ਨੂੰ OpenGL ES ਦੇ ਪੂਰਵ-ਨਿਰਧਾਰਿਤ ਡਰਾਈਵਰ ਵਜੋਂ ਚਾਲੂ ਕਰੋ"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"ਪ੍ਰਯੋਗਮਈ, ਰੀਬੂਟ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"ਸਿਸਟਮ ਦੇ OpenGL ES ਡਰਾਈਵਰ ਨੂੰ ਬਦਲਣ ਲਈ ਰੀਬੂਟ ਕਰਨ ਦੀ ਲੋੜ ਹੈ"</string>
+    <string name="leanback_launcher_injection_title">ਟੀਵੀ ਹੋਮ ਸਕ੍ਰੀਨ ਤੇ ਫ਼ੋਨ ਐਪਾਂ ਵੇਖਾਓ</string>
+    <string name="leanback_launcher_injection_summary">ਐਪ ਪੰਗਤੀ ਵਿੱਚ ਟੀਵੀ ਲਾਂਚਰ ਐਂਟਰੀ ਨਹੀਂ ਵਾਲੀਆਂ ਐਪਾਂ ਨੂੰ, ਉਹਨਾਂ ਦੇ ਆਈਕਾਨ ਤੋਂ ਬਣੀ ਬੈਨਰ ਨਾਲ ਸੂਚੀਬੱਧ ਕਰਦਾ ਹੈ। ਤੁਰੰਤ ਲਾਗੂ ਹੁੰਦਾ ਹੈ।</string>
+    <string name="audio_device_input_level">ਇਨਪੁਟ ਪੱਧਰ: %1$s</string>
 </resources>

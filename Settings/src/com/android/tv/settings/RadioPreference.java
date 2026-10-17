@@ -69,4 +69,15 @@ public class RadioPreference extends CheckBoxPreference {
             radioPreference.setChecked(false);
         }
     }
+
+    /**
+     * Redraws the row even when its checked state has not changed.
+     *
+     * <p>{@code setChecked()} only refreshes the view when the value really flips, so a recycled
+     * row can keep the tick of the entry it used to show. Lists that pick exactly one row and
+     * write the whole set at once need to say "redraw this" themselves.
+     */
+    public void forceRedraw() {
+        notifyChanged();
+    }
 }

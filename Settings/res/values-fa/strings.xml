@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"فعال کردن ANGLE به‌عنوان درایور پیش‌فرض OpenGL ES"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"آزمایشی؛ بازراه‌اندازی لازم است."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"برای تغییر درایور OpenGL ES در سیستم، بازراه‌اندازی لازم است"</string>
+    <string name="leanback_launcher_injection_title">نمایش برنامه‌های تلفن در صفحهٔ خانگی تلویزیون</string>
+    <string name="leanback_launcher_injection_summary">برنامه‌هایی را که در ردیف برنامه‌ها ورودی برای راه‌انداز تلویزیون ندارند، همراه با بنری که از نمادشان ساخته شده فهرست می‌کند. بلافاصله اعمال می‌شود.</string>
+    <string name="audio_device_input_level">سطح ورودی: %1$s</string>
 </resources>

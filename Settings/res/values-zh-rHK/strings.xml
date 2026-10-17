@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"啟用 ANGLE 為預設 OpenGL ES 驅動程式"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"實驗版，需要重新開機。"</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"你需要重新開機，才能變更系統的 OpenGL ES 驅動程式"</string>
+    <string name="leanback_launcher_injection_title">在電視主畫面上顯示手機應用程式</string>
+    <string name="leanback_launcher_injection_summary">在應用程式列中列出沒有電視啟動器項目的應用程式，並附上由其圖示繪製的橫幅。立即生效。</string>
+    <string name="audio_device_input_level">輸入位準：%1$s</string>
 </resources>

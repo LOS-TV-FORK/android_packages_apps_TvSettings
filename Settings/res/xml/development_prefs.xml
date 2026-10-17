@@ -43,6 +43,11 @@
         android:title="@string/keep_screen_on"
         android:summary="@string/keep_screen_on_summary"/>
 
+    <com.android.tv.settings.widget.SwitchWithSoundPreference
+        android:key="leanback_launcher_injection"
+        android:title="@string/leanback_launcher_injection_title"
+        android:summary="@string/leanback_launcher_injection_summary"/>
+
     <ListPreference
         android:key="hdcp_checking"
         android:title="@string/hdcp_checking_title"

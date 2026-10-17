@@ -2028,6 +2028,10 @@
     <string name="system_stay_awake">Stay awake</string>
     <!-- setting Checkbox summary whether to keep the screen on when plugged in  -->
     <string name="keep_screen_on_summary">Screen will never sleep</string>
+    <!-- Title for the TV launcher visibility switch in Developer options [CHAR LIMIT=60] -->
+    <string name="leanback_launcher_injection_title">Show phone apps on the TV home screen</string>
+    <!-- Summary for the TV launcher visibility switch in Developer options [CHAR LIMIT=250] -->
+    <string name="leanback_launcher_injection_summary">Lists apps that have no TV launcher entry in the apps row, with a banner drawn from their icon. Takes effect right away.</string>
     <!-- Title for Set HDCP checking in System Settings Developer options [CHAR LIMIT=50] -->
     <string name="system_hdcp_checking">HDCP checking</string>
     <!-- Title for HDMI optimization in System Settings Developer options [CHAR LIMIT=50] -->
@@ -2159,11 +2163,11 @@
     <!-- Title for OpenGL traces preference. [CHAR LIMIT=35] -->
     <string name="enable_opengl_traces_none">None</string>
     <!-- Title for OpenGL traces preference. Do not translate "Logcat" [CHAR LIMIT=35] -->
-    <string name="enable_opengl_traces_logcat">Logcat</string>
+    <string name="enable_opengl_traces_logcat" translatable="false">Logcat</string>
     <!-- Title for OpenGL traces preference. Do not translate "Systrace" [CHAR LIMIT=35] -->
-    <string name="enable_opengl_traces_systrace">Systrace (Graphics)</string>
+    <string name="enable_opengl_traces_systrace" translatable="false">Systrace (Graphics)</string>
     <!-- Title for OpenGL traces preference. "Call stack" is a developer term. Do not translate "glGetError" [CHAR LIMIT=35] -->
-    <string name="enable_opengl_traces_error">Call stack on glGetError</string>
+    <string name="enable_opengl_traces_error" translatable="false">Call stack on glGetError</string>
 
     <!-- Titles for window animation scale preference. [CHAR LIMIT=35] -->
     <string-array name="animation_scale_entries">
@@ -2192,7 +2196,7 @@
     <!-- Title for frame time tracking preference. [CHAR LIMIT=35] -->
     <string name="track_frame_time_bars">On screen as bars</string>
     <!-- Title for frame time tracking preference. Do not translate "adb shell dumpsys gfxinfo" [CHAR LIMIT=35] -->
-    <string name="track_frame_time_gfxinfo">In adb shell dumpsys gfxinfo</string>
+    <string name="track_frame_time_gfxinfo" translatable="false">In adb shell dumpsys gfxinfo</string>
 
     <!-- Title for app process limit preference. [CHAR LIMIT=35] -->
     <string name="app_process_limit_standard">Standard limit</string>
@@ -2981,7 +2985,11 @@
     <string name="audio_device_auto_title">Auto</string>
     <string name="audio_device_auto_output_summary">System choice</string>
     <string name="audio_device_auto_input_summary">System choice</string>
+    <!-- Level meter shown for the selected audio input [CHAR LIMIT=120] -->
+    <string name="audio_device_input_level">Input level: %1$s</string>
     <string name="audio_hdmi_enable_title">HDMI/DP audio output</string>
     <string name="audio_hdmi_enable_summary">Report an HDMI/DP device so it appears above and can be selected</string>
+
+    <!-- Power button actions -->
 
 </resources>

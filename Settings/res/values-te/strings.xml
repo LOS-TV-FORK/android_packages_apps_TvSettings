@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"డిఫాల్ట్ OpenGL ES డ్రైవర్‌గా ANGLEను ఎనేబుల్ చేయి"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"ప్రయోగాత్మక, రీబూట్ చేయడం అవసరం."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"సిస్టమ్ OpenGL ES డ్రైవర్‌ను మార్చడానికి రీబూట్ చేయడం అవసరం"</string>
+    <string name="leanback_launcher_injection_title">TV హోమ్ స్క్రీన్‌పై ఫోన్ యాప్‌లను చూపించు</string>
+    <string name="leanback_launcher_injection_summary">యాప్ వరుసలో TV లాంచర్ ఎంట్రీ లేని యాప్‌లను, వాటి ఐకన్ నుంచి తయారైన బానర్‌తో జాబితా చేస్తుంది. వెంటనే అమల్లోకి వస్తుంది.</string>
+    <string name="audio_device_input_level">ఇన్‌పుట్ స్థాయి: %1$s</string>
 </resources>

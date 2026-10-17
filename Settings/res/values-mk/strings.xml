@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Овозм. ANGLE како стандарден драјвер за OpenGL ES"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Експериментално, потребно е рестартирање."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Потребно е рестартирање за да се промени системскиот драјвер за OpenGL ES"</string>
+    <string name="leanback_launcher_injection_title">Прикажи ги апликациите од телефонот на почетниот екран на ТВ</string>
+    <string name="leanback_launcher_injection_summary">Ги прикажува апликациите што немаат запис во ТВ-претварачот во редот со апликации, со банер направен од нивната икона. Се применува веднаш.</string>
+    <string name="audio_device_input_level">Ниво на влез: %1$s</string>
 </resources>

@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"ANGLE ಅನ್ನು ಡೀಫಾಲ್ಟ್ OpenGL ES ಡ್ರೈವರ್ ಆಗಿ ಸಕ್ರಿಯಗೊಳಿಸಿ"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"ಪ್ರಾಯೋಗಿಕ, ರೀಬೂಟ್ ಮಾಡುವ ಅಗತ್ಯವಿದೆ."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"ಸಿಸ್ಟಂ OpenGL ES ಡ್ರೈವರ್ ಅನ್ನು ಬದಲಾಯಿಸಲು ರೀಬೂಟ್ ಮಾಡುವ ಅಗತ್ಯವಿದೆ"</string>
+    <string name="leanback_launcher_injection_title">TV ಮುಖಪುಟದಲ್ಲಿ ಫೋನ್ ಆ್ಯಪ್‌ಗಳನ್ನು ತೋರಿಸಿ</string>
+    <string name="leanback_launcher_injection_summary">ಆ್ಯಪ್ ಸರತಿಯಲ್ಲಿ TV ಲಾಂಚರ್ ನಮೂದಿ ಇಲ್ಲದ ಆ್ಯಪ್‌ಗಳನ್ನು, ಅವುಗಳ ಐಕಾನ್‌ನಿಂದ ರಚಿಸಿದ ಬ್ಯಾನರ್‌ನೊಂದಿಗೆ ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ. ತಕ್ಷಣ ಅಮಲಗೊಳ್ಳುತ್ತದೆ.</string>
+    <string name="audio_device_input_level">ಇನ್‌ಪುಟ್ ಮಟ್ಟ: %1$s</string>
 </resources>

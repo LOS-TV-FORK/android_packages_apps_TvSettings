@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"ANGLE-г өгөгдмөл OpenGL ES драйвераар идэвхжүүлэх"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Туршилтынх, дахин асаахыг шаарддаг."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Системийн OpenGL ES драйверыг өөрчлөхийн тулд дахин асаах шаардлагатай"</string>
+    <string name="leanback_launcher_injection_title">Утасны програмуудыг телевизорын нэгдүгээр дэлгэцэд харуулах</string>
+    <string name="leanback_launcher_injection_summary">Программын мөрөнд телевизорын эхлүүлэгчийн бичлэггүй програмуудыг тэдгээрийн дүрсээс зурсан баннертайгаар жагсаана. Шууд хүчин төгөлдөр болно.</string>
+    <string name="audio_device_input_level">Оролтын түвшин: %1$s</string>
 </resources>

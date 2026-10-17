@@ -129,6 +129,8 @@ public class DevelopmentFragment extends SettingsPreferenceFragment
     private static final String CLEAR_ADB_KEYS = "clear_adb_keys";
     private static final String ENABLE_TERMINAL = "enable_terminal";
     private static final String KEEP_SCREEN_ON = "keep_screen_on";
+    private static final String LEANBACK_LAUNCHER_INJECTION = "leanback_launcher_injection";
+    private static final String LEANBACK_INJECTION_PROPERTY = "persist.sys.los.leanback_inject";
     private static final String BT_HCI_SNOOP_LOG = "bt_hci_snoop_log";
     private static final String BTSNOOP_LOG_MODE_PROPERTY = "persist.bluetooth.btsnooplogmode";
     private static final String ENABLE_OEM_UNLOCK = "oem_unlock_enable";
@@ -235,6 +237,7 @@ public class DevelopmentFragment extends SettingsPreferenceFragment
     private TwoStatePreference mEnableTerminal;
     private Preference mBugreport;
     private TwoStatePreference mKeepScreenOn;
+    private TwoStatePreference mLeanbackLauncherInjection;
     private ListPreference mBtHciSnoopLog;
     private OemUnlockPreferenceController mEnableOemUnlock;
     private TwoStatePreference mDebugViewAttributes;
@@ -452,6 +455,7 @@ public class DevelopmentFragment extends SettingsPreferenceFragment
         mLogpersistController.displayPreference(preferenceScreen);
 
         mKeepScreenOn = findAndInitSwitchPref(KEEP_SCREEN_ON);
+        mLeanbackLauncherInjection = findAndInitSwitchPref(LEANBACK_LAUNCHER_INJECTION);
         mBtHciSnoopLog = addListPreference(BT_HCI_SNOOP_LOG);
         mEnableOemUnlock = new OemUnlockPreferenceController(
                 getActivity(), findAndInitSwitchPref(ENABLE_OEM_UNLOCK));
@@ -773,6 +777,8 @@ public class DevelopmentFragment extends SettingsPreferenceFragment
         }
         updateSwitchPreference(mKeepScreenOn, Settings.Global.getInt(cr,
                 Settings.Global.STAY_ON_WHILE_PLUGGED_IN, 0) != 0);
+        updateSwitchPreference(mLeanbackLauncherInjection,
+                !"0".equals(SystemProperties.get(LEANBACK_INJECTION_PROPERTY, "1")));
         mEnableOemUnlock.updateState();
         updateSwitchPreference(mDebugViewAttributes, Settings.Global.getInt(cr,
                 Settings.Global.DEBUG_VIEW_ATTRIBUTES, 0) != 0);
@@ -1845,6 +1851,11 @@ public class DevelopmentFragment extends SettingsPreferenceFragment
                     mKeepScreenOn.isChecked() ?
                             (BatteryManager.BATTERY_PLUGGED_AC | BatteryManager.BATTERY_PLUGGED_USB)
                             : 0);
+        } else if (preference == mLeanbackLauncherInjection) {
+            // PackageManager reads this on every resolve, so the apps row follows the switch
+            // without a reboot.
+            SystemProperties.set(LEANBACK_INJECTION_PROPERTY,
+                    mLeanbackLauncherInjection.isChecked() ? "1" : "0");
         } else if (preference == mEnableOemUnlock.getPreference()) {
             if (!mEnableOemUnlock.onPreferenceClick()) {
                 // Pass to super to launch the confirmation dialog.

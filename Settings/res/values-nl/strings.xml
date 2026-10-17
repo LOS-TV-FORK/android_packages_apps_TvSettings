@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Zet ANGLE aan als standaard OpenGL ES-stuurprogramma"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Experimenteel, vereist opnieuw opstarten."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Je moet opnieuw opstarten om het OpenGL ES-stuurprogramma van het systeem te wijzigen"</string>
+    <string name="leanback_launcher_injection_title">Telefoonapps tonen op het startscherm van de tv</string>
+    <string name="leanback_launcher_injection_summary">Toont apps die geen tv-startitem hebben in de appreg, met een banner die van hun pictogram is gemaakt. Gaat meteen in.</string>
+    <string name="audio_device_input_level">Invoerniveau: %1$s</string>
 </resources>

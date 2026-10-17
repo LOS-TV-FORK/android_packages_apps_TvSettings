@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"ANGLE を既定の OpenGL ES ドライバとして有効にする"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"試験運用版です。再起動が必要です。"</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"システムの OpenGL ES ドライバを変更するには再起動が必要です"</string>
+    <string name="leanback_launcher_injection_title">スマートフォンのアプリをテレビのホーム画面に表示</string>
+    <string name="leanback_launcher_injection_summary">アプリの行にテレビランチャー項目がないアプリを、アイコンから生成したバナー付きで一覧表示します。すぐに反映されます。</string>
+    <string name="audio_device_input_level">入力レベル: %1$s</string>
 </resources>

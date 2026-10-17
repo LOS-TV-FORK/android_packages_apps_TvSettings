@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Sebenzisa i-ANGLE njengesishayeli se-OpenGL ES"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Ukuhlola, kudinga ukuqaliswa kabusha."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Ukuqalisa kabusha kuyadingeka ukuze ushintshe umshayeli wesistimu we-OpenGL ES"</string>
+    <string name="leanback_launcher_injection_title">Bonisa izinhlelo zefoni ekusethweni lasekhaya se-TV</string>
+    <string name="leanback_launcher_injection_summary">Uluhlu izinhlelo ezinganayo kufakela esiqondiseni se-TV emigadeni yezinhlelo, ngokubannersi odwetshe ku-icon yazo. Iqala ngokushesha.</string>
+    <string name="audio_device_input_level">Izinga lokufaka: %1$s</string>
 </resources>

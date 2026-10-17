@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Aktifkan ANGLE sebagai driver OpenGL ES default"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Eksperimental, perlu mulai ulang."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Perlu memulai ulang untuk mengubah driver OpenGL ES sistem"</string>
+    <string name="leanback_launcher_injection_title">Tampilkan aplikasi ponsel di layar beranda TV</string>
+    <string name="leanback_launcher_injection_summary">Menampilkan aplikasi yang tidak memiliki entri peluncur TV di baris aplikasi, dengan banner yang digambar dari ikonnya. Berlaku seketika.</string>
+    <string name="audio_device_input_level">Level input: %1$s</string>
 </resources>

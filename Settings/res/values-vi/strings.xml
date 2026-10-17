@@ -1218,4 +1218,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Bật ANGLE làm trình điều khiển OpenGL ES mặc định"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Thử nghiệm, cần khởi động lại."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Cần phải khởi động lại để thay đổi trình điều khiển hệ thống OpenGL ES"</string>
+    <string name="leanback_launcher_injection_title">Hiển thị ứng dụng điện thoại trên màn hình chính của TV</string>
+    <string name="leanback_launcher_injection_summary">Liệt kê các ứng dụng không có mục trình khởi chạy TV trong hàng ứng dụng, kèm biểu ngữ được vẽ từ biểu tượng của chúng. Có hiệu lực ngay lập tức.</string>
+    <string name="audio_device_input_level">Mức đầu vào: %1$s</string>
 </resources>

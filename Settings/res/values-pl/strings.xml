@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Włącz ANGLE jako domyślny sterownik OpenGL ES"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Funkcja eksperymentalna. Wymaga ponownego uruchomienia."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Zmiana systemowego sterownika OpenGL ES wymaga ponownego uruchomienia"</string>
+    <string name="leanback_launcher_injection_title">Pokaż aplikacje telefonu na ekranie głównym telewizora</string>
+    <string name="leanback_launcher_injection_summary">Wypisuje aplikacje, które nie mają wpisu w programie uruchamiającym TV na liście aplikacji, z banerem narysowanym z ich ikony. Działa natychmiast.</string>
+    <string name="audio_device_input_level">Poziom wejścia: %1$s</string>
 </resources>

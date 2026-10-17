@@ -116,6 +116,9 @@ public final class AudioDeviceRouteHelper {
 
     /** Human-readable label: product name when present, type name otherwise. */
     public static String describe(AudioDeviceInfo info) {
+        if (info == null) {
+            return "";
+        }
         CharSequence name = info.getProductName();
         if (!TextUtils.isEmpty(name)) {
             return name.toString();
@@ -125,6 +128,9 @@ public final class AudioDeviceRouteHelper {
 
     /** Detail line: type + address (address disambiguates same-type devices). */
     public static String describeDetails(AudioDeviceInfo info) {
+        if (info == null) {
+            return "";
+        }
         String address = info.getAddress();
         if (TextUtils.isEmpty(address)) {
             return deviceTypeName(info.getType());

@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Povolit ANGLE jako výchozí ovladač OpenGL ES"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Experimentální, vyžaduje restart."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Změna systémového ovladače OpenGL ES vyžaduje restart"</string>
+    <string name="leanback_launcher_injection_title">Zobrazit aplikace telefonu na úvodní obrazovce TV</string>
+    <string name="leanback_launcher_injection_summary">Vypíše aplikace, které nemají záznam ve spouštěči TV v řadě aplikací, s bannerem vytvořeným z jejich ikony. Změna se projeví okamžitě.</string>
+    <string name="audio_device_input_level">Úroveň vstupu: %1$s</string>
 </resources>

@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Activează ANGLE ca driver OpenGL ES prestabilit"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Experimental, necesită repornire."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Este nevoie de o repornire pentru a schimba driverul de sistem OpenGL ES"</string>
+    <string name="leanback_launcher_injection_title">Afișează aplicațiile pentru telefon pe ecranul de pornire al televizorului</string>
+    <string name="leanback_launcher_injection_summary">Listează aplicațiile care nu au o intrare în lansatorul TV în rândul de aplicații, cu o banner desenat din pictograma lor. Se aplică imediat.</string>
+    <string name="audio_device_input_level">Nivel de intrare: %1$s</string>
 </resources>

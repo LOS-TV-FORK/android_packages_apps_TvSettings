@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Aktivizo ANGLE si drejtues të parazgjedhur OpenGL ES"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Eksperimentale, kërkohet rindezja."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Kërkohet rindezja për të ndryshuar drejtuesin e OpenGL ES për sistemin"</string>
+    <string name="leanback_launcher_injection_title">Shfaq aplikacionet e telefonit në ekranin kryesor të TV-së</string>
+    <string name="leanback_launcher_injection_summary">Liston aplikacionet që nuk kanë hyrje në nisësin e TV-së në rreshtin e aplikacioneve, me baner të vizatuar nga ikona e tyre. Zbatohet menjëherë.</string>
+    <string name="audio_device_input_level">Niveli i hyrjes: %1$s</string>
 </resources>

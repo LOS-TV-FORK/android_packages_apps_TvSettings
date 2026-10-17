@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"기본 OpenGL ES 드라이버로 ANGLE 사용 설정"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"실험적 기능이며 재부팅이 필요합니다."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"시스템 OpenGL ES 드라이버를 변경하려면 재부팅해야 합니다."</string>
+    <string name="leanback_launcher_injection_title">TV 홈 화면에 휴대폰 앱 표시</string>
+    <string name="leanback_launcher_injection_summary">앱 행에 TV 런처 항목이 없는 앱을 아이콘에서 만든 배너와 함께 표시합니다. 즉시 적용됩니다.</string>
+    <string name="audio_device_input_level">입력 레벨: %1$s</string>
 </resources>

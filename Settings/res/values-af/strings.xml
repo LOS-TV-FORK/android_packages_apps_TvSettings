@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Aktiveer ANGLE as verstek-OpenGL ES-drywer"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Eksperimenteel, ’n herselflaai word vereis."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"’n Herselflaai word vereis om die stelsel-OpenGL ES-drywer te verander"</string>
+    <string name="leanback_launcher_injection_title">Wys foon-apps op die TV-tuisskerm</string>
+    <string name="leanback_launcher_injection_summary">Lys apps wat geen TV-opstarter-inskryding in die programareë het nie, met \'n banier wat uit hul ikoon geteken is. Tree onmiddellik in.</string>
+    <string name="audio_device_input_level">Invoervlak: %1$s</string>
 </resources>

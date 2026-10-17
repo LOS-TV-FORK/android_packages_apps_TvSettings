@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Activar ANGLE como controlador OpenGL ES predet."</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Experimental, require que se reinicie o dispositivo."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Cómpre reiniciar o dispositivo para cambiar o controlador do OpenGL ES do sistema"</string>
+    <string name="leanback_launcher_injection_title">Mostrar as aplicacións do teléfono na pantalla de inicio da TV</string>
+    <string name="leanback_launcher_injection_summary">Lista as aplicacións que non teñen entrada no lanzador da TV na fila de aplicacións, cunha banner debuxada a partir da súa icona. Aplica de inmediato.</string>
+    <string name="audio_device_input_level">Nivel de entrada: %1$s</string>
 </resources>

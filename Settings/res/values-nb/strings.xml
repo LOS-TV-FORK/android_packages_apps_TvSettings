@@ -1216,4 +1216,7 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Aktiver ANGLE som standard OpenGL ES-driver"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"På forsøksstadiet, krever omstart."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"En omstart kreves for å endre OpenGL ES-driveren for systemet"</string>
+    <string name="leanback_launcher_injection_title">Vis telefonapper på TV-startskjermen</string>
+    <string name="leanback_launcher_injection_summary">Lister opp apper som ikke har noen TV-startoppføring i apperaden, med et banner tegnet fra ikonet deres. Trer i kraft umiddelbart.</string>
+    <string name="audio_device_input_level">Innspillsnivå: %1$s</string>
 </resources>
