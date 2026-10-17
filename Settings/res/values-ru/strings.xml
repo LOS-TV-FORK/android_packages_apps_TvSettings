@@ -202,6 +202,8 @@
     <string name="dynamic_range_selection_force_sdr_title" msgid="1063579223517652945">"Принудительно конвертировать в формат SDR"</string>
     <string name="dynamic_range_selection_force_sdr_summary" msgid="2874771365465898941">"Принудительная конвертация в SDR отключает все форматы HDR в расширенных настройках экрана"</string>
     <string name="match_content_frame_rate_title" msgid="153291168560947689">"Использовать частоту кадров контента"</string>
+    <string name="hw_video_decoding_title">"Аппаратное декодирование видео"</string>
+    <string name="hw_video_decoding_summary">"Декодировать видео на GPU. Отключите при зависаниях видео. Применяется к видео, открытым после переключения."</string>
     <string name="match_content_frame_rate_seamless" msgid="5577846750811067585">"Только с плавным переходом"</string>
     <string name="match_content_frame_rate_seamless_summary" msgid="2737466163964133210">"Устройство переключит формат вывода изображения в соответствии с исходной частотой кадров воспроизводимого видео, если поступит соответствующий запрос от приложения, но ТОЛЬКО при условии, что телевизор может осуществить плавный переход."</string>
     <string name="match_content_frame_rate_seamless_not_supported_summary" msgid="98559950465123792">"Подключенный экран не поддерживает плавные переходы частоты обновления. Чтобы этот параметр работал, замените экран на совместимый."</string>

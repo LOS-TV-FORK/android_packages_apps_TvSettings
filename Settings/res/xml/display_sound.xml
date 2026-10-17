@@ -45,6 +45,10 @@
         android:fragment="com.android.tv.settings.device.displaysound.MatchContentFrameRateFragment"
         android:key="match_content_frame_rate"
         android:title="@string/match_content_frame_rate_title"/>
+    <SwitchPreference
+        android:key="hw_video_decoding"
+        android:title="@string/hw_video_decoding_title"
+        android:summary="@string/hw_video_decoding_summary" />
     <Preference
         android:key="advanced_display_settings"
         android:title="@string/advanced_display_settings_title"

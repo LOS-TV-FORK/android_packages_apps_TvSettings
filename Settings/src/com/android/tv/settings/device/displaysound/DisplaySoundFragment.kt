@@ -23,6 +23,7 @@ import android.hardware.display.DisplayManager
 import android.hardware.hdmi.HdmiControlManager
 import android.media.AudioManager
 import android.os.Bundle
+import android.os.SystemProperties
 import android.provider.Settings
 import android.text.TextUtils
 import android.view.Display
@@ -158,6 +159,8 @@ class DisplaySoundFragment : SettingsPreferenceFragment(), DisplayManager.Displa
         updateCecPreference()
         findPreference<SwitchPreference>(KEY_DYNAMIC_RANGE)?.isChecked =
             DisplaySoundUtils.getMatchContentDynamicRangeStatus(mDisplayManager)
+        findPreference<SwitchPreference>(KEY_HW_VIDEO_DECODING)?.isChecked =
+            isHwVideoDecodingEnabled()
         findPreference<Preference>(KEY_AUDIO_OUTPUT)?.summary =
             AudioDeviceRouteHelper.getOutputSummary(requireContext())
         findPreference<Preference>(KEY_AUDIO_INPUT)?.summary =
@@ -175,6 +178,9 @@ class DisplaySoundFragment : SettingsPreferenceFragment(), DisplayManager.Displa
             val dynamicPref = preference as SwitchPreference
             DisplaySoundUtils
                 .setMatchContentDynamicRangeStatus(context, mDisplayManager, dynamicPref.isChecked)
+        } else if (TextUtils.equals(preference.key, KEY_HW_VIDEO_DECODING)) {
+            val hwPref = preference as SwitchPreference
+            setHwVideoDecodingEnabled(hwPref.isChecked)
         }
         return super.onPreferenceTreeClick(preference)
     }
@@ -256,6 +262,15 @@ class DisplaySoundFragment : SettingsPreferenceFragment(), DisplayManager.Displa
             MatchContentDynamicRangeInfoFragment::class.java.name
     }
 
+    private fun isHwVideoDecodingEnabled(): Boolean {
+        // Empty means untouched: init.sh defaults media.sf.hwaccel to 1.
+        return SystemProperties.get(PROP_HW_VIDEO_DECODING, "1") != "0"
+    }
+
+    private fun setHwVideoDecodingEnabled(enabled: Boolean) {
+        SystemProperties.set(PROP_HW_VIDEO_DECODING, if (enabled) "1" else "0")
+    }
+
     companion object {
         const val KEY_SOUND_EFFECTS = "sound_effects"
         private const val KEY_AUDIO_OUTPUT = "audio_output_selection"
@@ -265,6 +280,8 @@ class DisplaySoundFragment : SettingsPreferenceFragment(), DisplayManager.Displa
         private const val KEY_RESOLUTION_TITLE = "resolution_selection"
         private const val KEY_DYNAMIC_RANGE = "match_content_dynamic_range"
 	private const val KEY_FRAMERATE = "match_content_frame_rate"
+        private const val KEY_HW_VIDEO_DECODING = "hw_video_decoding"
+        private const val PROP_HW_VIDEO_DECODING = "persist.sys.los.media.sf.hwaccel"
 
         private const val VOLUME_CHANGE = "volume_change"
 

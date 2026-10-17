@@ -533,6 +533,11 @@
     <!-- Title for preference for forcing a display's frame
     rate to match the content's frame rate. [CHAR LIMIT=60] -->
     <string name="match_content_frame_rate_title">Match content frame rate</string>
+    <!-- Title for the hardware video decoding switch. [CHAR LIMIT=60] -->
+    <string name="hw_video_decoding_title">Hardware video decoding</string>
+    <!-- Summary for the hardware video decoding switch. [CHAR LIMIT=250] -->
+    <string name="hw_video_decoding_summary">Decode video on the GPU. Turn off if videos freeze
+        or hang. Applies to videos opened after switching.</string>
     <!-- Default preference for a display's frame rate to match the content's frame rate. [CHAR LIMIT=80] -->
     <string name="match_content_frame_rate_seamless">Seamless-only</string>
     <!-- Summary for default preference for a display's frame rate to match the content's frame rate. [CHAR LIMIT=250] -->
