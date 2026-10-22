@@ -164,12 +164,18 @@ public class MatchContentFrameRateFragment extends SettingsPreferenceFragment {
     }
 
     private int getCurrentSettingValue() {
-        int defaultSetting = isSeamlessSwitchingSupported()
-                ? MATCH_CONTENT_FRAMERATE_SEAMLESSS_ONLY
-                : MATCH_CONTENT_FRAMERATE_NEVER;
-        int setting = Settings.Secure.getInt(
-                getContext().getContentResolver(), MATCH_CONTENT_FRAME_RATE,
-                defaultSetting);
+        int setting;
+        try {
+            setting = Settings.Secure.getInt(
+                    getContext().getContentResolver(), MATCH_CONTENT_FRAME_RATE);
+        } catch (Settings.SettingNotFoundException e) {
+            // No persisted value yet: reflect the actual framework default so that
+            // the UI and DisplayModeDirector cannot disagree (b/310237068-style gap).
+            setting = getDisplayManager().getMatchContentFrameRateUserPreference();
+            if (setting == DisplayManager.MATCH_CONTENT_FRAMERATE_UNKNOWN) {
+                setting = MATCH_CONTENT_FRAMERATE_NEVER;
+            }
+        }
 
         // Older versions of Android default to SEAMLESS_ONLY, even if the
         // device doesn't support seamless switching. In such cases, the setting
