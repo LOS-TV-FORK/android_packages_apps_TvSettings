@@ -234,7 +234,7 @@ public class AboutFragment extends SettingsPreferenceFragment implements SliceSh
             } else {
                 vulkanPref.setSummary("Vulkan not supported");
             }
-        } catch (Exception | UnsatisfiedLinkError e) {
+        } catch (Exception | UnsatisfiedLinkError | NoClassDefFoundError e) {
             vulkanPref.setSummary("Vulkan info unavailable");
         }
 
