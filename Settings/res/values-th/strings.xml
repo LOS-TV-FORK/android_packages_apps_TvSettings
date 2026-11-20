@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"เปิดใช้ ANGLE เป็นไดรเวอร์ OpenGL ES เริ่มต้น"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"ทดลองใช้ ต้องรีบูต"</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"ต้องรีบูตเพื่อเปลี่ยนไดรเวอร์ OpenGL ES ของระบบ"</string>
-    <string name="leanback_launcher_injection_title">แสดงแอปจากโทรศัพท์บนหน้าจอโฮมของทีวี</string>
-    <string name="leanback_launcher_injection_summary">แสดงรายการแอปที่ไม่มีรายการในตัวเรียกใช้ทีวีในแถวแอป พร้อมแบนเนอร์ที่วาดจากไอคอนของแอป ใช้งานทันที</string>
+    <string name="leanback_launcher_injection_title">วาดแบนเนอร์ TV สำหรับแอปโทรศัพท์</string>
+    <string name="leanback_launcher_injection_summary">วาดแบนเนอร์จากไอคอนสำหรับแอปที่ไม่มีแบนเนอร์ TV ของตัวเอง แอปจะยังคงอยู่ในรายการทั้งสองกรณี เมื่อปิด ตัวเปิดใช้จะวาดเอง มีผลทันที</string>
     <string name="audio_device_input_level">ระดับอินพุต: %1$s</string>
     <string name="power_button_press_short_title">แตะปุ่มเพาเวอร์สั้น ๆ</string>
     <string name="power_button_press_short_summary">เกิดอะไรขึ้นเมื่อแตะเพาเวอร์สั้น ๆ</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">เมนูเพาเวอร์</string>
     <string name="power_button_action_shutdown_confirm">ปิดเครื่อง พร้อมยืนยัน</string>
     <string name="power_button_action_shutdown_no_confirm">ปิดเครื่อง โดยไม่ยืนยัน</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">คลิกขวาเป็นปุ่มย้อนกลับ</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">การคลิกขวาจะทำแบบเดียวกับปุ่มย้อนกลับ</string>
 </resources>

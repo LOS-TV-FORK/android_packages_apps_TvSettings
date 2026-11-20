@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Aktivera ANGLE som standarddrivrutin för OpenGL ES"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Experimentell, kräver omstart."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Du måste starta om enheten för att ändra systemets OpenGL ES-drivrutin"</string>
-    <string name="leanback_launcher_injection_title">Visa telefonappar på TV:ns startskärm</string>
-    <string name="leanback_launcher_injection_summary">Listar appar som inte har någon TV-startpost i appraden, med en banner som ritas från deras ikon. Börjar gälla direkt.</string>
+    <string name="leanback_launcher_injection_title">Rita TV-bannere för telefonappar</string>
+    <string name="leanback_launcher_injection_summary">Ritar ett banner utifrån ikonen för appar som inte har eget TV-banner. Appar finns kvar i listan båda gångerna; när av ritar launchern dem själv. Träder i kraft direkt.</string>
     <string name="audio_device_input_level">Innlevels: %1$s</string>
     <string name="power_button_press_short_title">Kort tryck på strömbrytaren</string>
     <string name="power_button_press_short_summary">Vad som händer vid ett kort tryck</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">Strömmeny</string>
     <string name="power_button_action_shutdown_confirm">Stäng av, med bekräftelse</string>
     <string name="power_button_action_shutdown_no_confirm">Stäng av, utan bekräftelse</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">Höger mustangent som Tillbaka</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">Att trycka med höger musknapp fungerar som att trycka Tillbaka</string>
 </resources>

@@ -384,6 +384,8 @@
     <string name="system_update_description" msgid="998883510488461766">"Будет установлена последняя версия программного обеспечения системы. Устройство перезапустится."</string>
     <string name="system_update_content_description" msgid="5702888187682876466">"Обновление системы, будет установлена последняя версия программного обеспечения системы. Устройство перезапустится."</string>
     <string name="about_preference" msgid="9112690446998150670">"Об устройстве"</string>
+    <string name="system_fwtool_title">"Управление прошивками Wi-Fi/BT"</string>
+    <string name="system_fwtool_summary">"Сканер устройств, каталог и подмена прошивок"</string>
     <string name="device_name" msgid="566626587332817733">"Название устройства"</string>
     <string name="restart_button_label" msgid="911750765086382990">"Перезагрузить"</string>
     <string name="about_legal_info" msgid="2148797328415559733">"Юридическая информация"</string>
@@ -1226,8 +1228,8 @@
     <string name="audio_device_auto_input_summary">Системный выбор</string>
     <string name="audio_hdmi_enable_title">"Вывод звука по HDMI/DP"</string>
     <string name="audio_hdmi_enable_summary">"Показать устройство HDMI/DP в списке выше для выбора"</string>
-    <string name="leanback_launcher_injection_title">Показывать приложения телефона на главном экране ТВ</string>
-    <string name="leanback_launcher_injection_summary">Показывает приложения, у которых нет записи в ТВ-лаунчере в строке приложений, с баннером, созданным из их значка. Применяется сразу.</string>
+    <string name="leanback_launcher_injection_title">Рисовать TV-баннеры для телефонных приложений</string>
+    <string name="leanback_launcher_injection_summary">Рисует баннер из значка для приложений, у которых нет собственного TV-баннера. Приложения остаются в списке в обоих случаях; при выключении лончер рисует их сам. Действует сразу.</string>
     <string name="audio_device_input_level">Уровень входа: %1$s</string>
     <string name="power_button_press_short_title">Короткое нажатие кнопки питания</string>
     <string name="power_button_press_short_summary">Что происходит при коротком нажатии питания</string>
@@ -1240,4 +1242,6 @@
     <string name="power_button_action_power_menu">Меню питания</string>
     <string name="power_button_action_shutdown_confirm">Выключение с подтверждением</string>
     <string name="power_button_action_shutdown_no_confirm">Выключение без подтверждения</string>
+    <string name="device_right_mouse_as_back">Правая кнопка мыши — Назад</string>
+    <string name="device_right_mouse_as_back_summary">По клику правой кнопкой мыши происходит нажатие кнопки Назад</string>
 </resources>

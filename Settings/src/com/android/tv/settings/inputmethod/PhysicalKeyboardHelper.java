@@ -22,8 +22,13 @@ import android.content.Context;
 import android.hardware.input.InputDeviceIdentifier;
 import android.hardware.input.InputManager;
 import android.hardware.input.KeyboardLayout;
+import android.hardware.input.KeyboardLayoutSelectionResult;
+import android.os.UserHandle;
 import android.text.TextUtils;
 import android.view.InputDevice;
+import android.view.inputmethod.InputMethodInfo;
+import android.view.inputmethod.InputMethodManager;
+import android.view.inputmethod.InputMethodSubtype;
 
 import com.android.settingslib.R;
 
@@ -48,13 +53,28 @@ public class PhysicalKeyboardHelper {
         if (im == null) {
             return new ArrayList<>();
         }
+        final InputMethodManager imm = context.getSystemService(InputMethodManager.class);
+        final int userId = UserHandle.myUserId();
+        final InputMethodInfo imeInfo = imm == null ? null
+                : imm.getCurrentInputMethodInfoAsUser(UserHandle.of(userId));
+        final InputMethodSubtype imeSubtype =
+                imm == null ? null : imm.getCurrentInputMethodSubtype();
         for (int deviceId : InputDevice.getDeviceIds()) {
             final InputDevice device = InputDevice.getDevice(deviceId);
             if (device == null || device.isVirtual() || !device.isFullKeyboard()) {
                 continue;
             }
-            final String currentLayoutDesc =
-                    im.getCurrentKeyboardLayoutForInputDevice(device.getIdentifier());
+            // In AOSP U+ the per-device layout selection and auto-matching is keyed on the
+            // active IME/subtype, so the legacy one-argument APIs (which are no-op stubs in
+            // Android 16) can not be used here.
+            final String currentLayoutDesc;
+            if (imeInfo != null) {
+                final KeyboardLayoutSelectionResult result = im.getKeyboardLayoutForInputDevice(
+                        device.getIdentifier(), userId, imeInfo, imeSubtype);
+                currentLayoutDesc = result == null ? null : result.getLayoutDescriptor();
+            } else {
+                currentLayoutDesc = null;
+            }
             keyboards.add(new DeviceInfo(device.getName(), device.getId(),
                     device.getIdentifier(), currentLayoutDesc,
                     getLayoutLabel(currentLayoutDesc, context, im)));

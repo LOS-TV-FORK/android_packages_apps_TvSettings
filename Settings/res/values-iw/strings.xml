@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"הפעלת ANGLE כדרייבר OpenGL ES שמוגדר כברירת המחדל"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"ניסיוני, נדרשת הפעלה מחדש."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"צריך להפעיל מחדש כדי לשנות את דרייבר OpenGL ES של המערכת."</string>
-    <string name="leanback_launcher_injection_title">הצגת אפליקציות הטלפון במסך הבית של הטלוויזיה</string>
-    <string name="leanback_launcher_injection_summary">מציג אפליקציות שאין להן רשומת מפעיל טלוויזיה בשורת האפליקציות, עם באנר שנוצר מהסמל שלהן. נכנס לתוקף מיד.</string>
+    <string name="leanback_launcher_injection_title">צייר באנרי TV לאפליקציות טלפון</string>
+    <string name="leanback_launcher_injection_summary">מצייר באנר מהסמל לאפליקציות שאין להן באנר TV משלהן. האפליקציות נשארות ברשימה בשני המצבים; כשהאפשרות כבויה המשק מצייר אותן בעצמו. נכנס לתוקף מיד.</string>
     <string name="audio_device_input_level">רמת קלט: %1$s</string>
     <string name="power_button_press_short_title">לחיצה קצרה על כפתור ההפעלה</string>
     <string name="power_button_press_short_summary">מה קורה בלחיצה קצרה על ההפעלה</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">תפריט ההפעלה</string>
     <string name="power_button_action_shutdown_confirm">כיבוי, עם אישור</string>
     <string name="power_button_action_shutdown_no_confirm">כיבוי, ללא אישור</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">כפתור ימין של העכבר כדלג אחורה</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">לחיצה עם כפתור ימין של העכבר פועלת כמו לחיצה על הדלג לאחור</string>
 </resources>

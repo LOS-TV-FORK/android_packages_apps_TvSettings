@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"ANGLE ကို မူရင်း OpenGL ES ဒရိုင်ဗာအဖြစ် ဖွင့်ရန်"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"စမ်းသပ်ဆဲ၊ ပြန်လည်စတင်ရန် လိုအပ်သည်။"</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"စနစ် OpenGL ES ဒရိုင်ဗာကို ပြောင်းရန်အတွက် ပြန်လည်စတင်ရန် လိုအပ်သည်"</string>
-    <string name="leanback_launcher_injection_title">ဖုန်းအက်ပ်များကို တီဗီမူည်စာမျက်နှာပြင်တွင် ပြထားရန်</string>
-    <string name="leanback_launcher_injection_summary">အက်ပ်များတန်းတွင် တီဗီအပြန်တင်မှု မရှိသော အက်ပ်များကို ၎င်းတိုင်းအတိုင်းဖြင့် ဆောင်းသွင်းထားသော ဘန်နာနှင့်အတူ စာရင်းစဉ်ပြုလုပ်ပါသည်။ ချက်ချင်းအသုံးပြုရမည်။</string>
+    <string name="leanback_launcher_injection_title">ဖုန်းအက်ပ်များအတွက် TV ဘန်နားဆွဲရန်</string>
+    <string name="leanback_launcher_injection_summary">ကိုယ်ပိုင် TV ဘန်နားမရှိသော အက်ပ်များအတွက် သင်္ကေတမှ ဘန်နားဆွဲပေးသည်။ နှစ်ခုလုံးတွင် အက်ပ်များ စာရင်း၌ ဆက်ရှိနေမည်။ ပိတ်ထားလျှင် Launcher က ၎င်းဘာသာ ဆွဲသည်။ ချက်ချင်း အသက်ဝင်သည်။</string>
     <string name="audio_device_input_level">သွင်းသည့်အဆင့်: %1$s</string>
     <string name="power_button_press_short_title">ပါရိုက်တီးကိုတိုက်ခြင်း</string>
     <string name="power_button_press_short_summary">ပါရိုက်တီးကိုတိုက်လိုက်တွင် မည်သူဖြစ်သနည်</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">ပါရိုက်တီးမီနူး</string>
     <string name="power_button_action_shutdown_confirm">ပိတ်ရန်၊ အတည်ပြုချက်ဖြင့်</string>
     <string name="power_button_action_shutdown_no_confirm">ပိတ်ရန်၊ အတည်ပြုချက်မရှိဘဲ</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">ညာဘက် မောက်စ် ခလုတ် — နောက်သို့</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">ညာဘက် မောက်စ် ခလုတ်ကို နှိပ်ခြင်းသည် နောက်သို့ ခလုတ်ကို နှိပ်ခြင်းကဲ့သို့ လုပ်ဆောင်သည်</string>
 </resources>

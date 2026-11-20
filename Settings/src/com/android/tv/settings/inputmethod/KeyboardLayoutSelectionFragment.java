@@ -21,8 +21,14 @@ import android.annotation.Nullable;
 import android.content.Context;
 import android.hardware.input.InputDeviceIdentifier;
 import android.hardware.input.InputManager;
+import android.hardware.input.InputManagerGlobal;
 import android.hardware.input.KeyboardLayout;
+import android.hardware.input.KeyboardLayoutSelectionResult;
 import android.os.Bundle;
+import android.os.UserHandle;
+import android.view.inputmethod.InputMethodInfo;
+import android.view.inputmethod.InputMethodManager;
+import android.view.inputmethod.InputMethodSubtype;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
@@ -33,6 +39,7 @@ import com.android.tv.twopanelsettings.TwoPanelSettingsFragment;
 import com.android.tv.twopanelsettings.slices.SliceShard;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -51,7 +58,10 @@ public class KeyboardLayoutSelectionFragment extends SettingsPreferenceFragment 
 
     private InputDeviceIdentifier mInputDeviceIdentifier;
     private int mDeviceId;
+    private int mUserId;
     private InputManager mIm;
+    private InputMethodInfo mImeInfo;
+    private InputMethodSubtype mImeSubtype;
     private final Map<String, KeyboardLayout> mKeyboardLayoutMap = new HashMap<>();
 
     /**
@@ -75,6 +85,13 @@ public class KeyboardLayoutSelectionFragment extends SettingsPreferenceFragment 
         String mDeviceName = getArguments().getString(ARG_DEVICE_NAME);
         mDeviceId = getArguments().getInt(ARG_DEVICE_ID);
         String currentLayoutIdentifier = getArguments().getString(ARG_LAYOUT_IDENTIFIER);
+        mUserId = UserHandle.myUserId();
+        // The per-device layout list / selection is IME- and subtype-aware in Android U+. The
+        // current IME may also have no subtypes at all (LeanKeyKeyboard), in which case the
+        // framework offers all installed generic layouts.
+        final InputMethodManager imm = themedContext.getSystemService(InputMethodManager.class);
+        mImeInfo = imm == null ? null : imm.getCurrentInputMethodInfoAsUser(UserHandle.of(mUserId));
+        mImeSubtype = imm == null ? null : imm.getCurrentInputMethodSubtype();
         final PreferenceScreen screen =
                 getPreferenceManager().createPreferenceScreen(themedContext);
         screen.setTitle(themedContext.getString(
@@ -83,9 +100,19 @@ public class KeyboardLayoutSelectionFragment extends SettingsPreferenceFragment 
         mIm = Objects.requireNonNull(themedContext.getSystemService(InputManager.class));
         mIm.registerInputDeviceListener(this, null);
 
-        KeyboardLayout[] keyboardLayouts = mIm.getKeyboardLayoutsForInputDevice(
-                mInputDeviceIdentifier);
-        Arrays.sort(keyboardLayouts);
+        KeyboardLayout[] keyboardLayouts = mImeInfo == null
+                ? new KeyboardLayout[0]
+                : mIm.getKeyboardLayoutListForInputDevice(mInputDeviceIdentifier, mUserId,
+                        mImeInfo, mImeSubtype);
+        Arrays.sort(keyboardLayouts, Comparator.comparing(KeyboardLayout::getLabel,
+                Comparator.nullsFirst(Comparator.naturalOrder())));
+        if (mImeInfo != null) {
+            final KeyboardLayoutSelectionResult current = mIm.getKeyboardLayoutForInputDevice(
+                    mInputDeviceIdentifier, mUserId, mImeInfo, mImeSubtype);
+            if (current != null && current.getLayoutDescriptor() != null) {
+                currentLayoutIdentifier = current.getLayoutDescriptor();
+            }
+        }
         RadioPreference activePreference = null;
         for (KeyboardLayout kl : keyboardLayouts) {
             final RadioPreference radioPreference = new RadioPreference(themedContext);
@@ -116,7 +143,11 @@ public class KeyboardLayoutSelectionFragment extends SettingsPreferenceFragment 
             final RadioPreference radioPreference = (RadioPreference) preference;
             radioPreference.clearOtherRadioPreferences(getPreferenceScreen());
             if (radioPreference.isChecked()) {
-                mIm.setCurrentKeyboardLayoutForInputDevice(mInputDeviceIdentifier,
+                // Write the layout as a device-wide override: unlike the per (device, IME,
+                // subtype) selection, it is applied for every IME including IMEs that declare
+                // no subtypes at all.
+                InputManagerGlobal.getInstance().setKeyboardLayoutOverrideForInputDevice(
+                        mInputDeviceIdentifier,
                         mKeyboardLayoutMap.get(radioPreference.getKey()).getDescriptor());
             } else {
                 radioPreference.setChecked(true);

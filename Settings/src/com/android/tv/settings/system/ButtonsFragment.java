@@ -19,10 +19,12 @@ package com.android.tv.settings.system;
 import android.app.tvsettings.TvSettingsEnums;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 
 import androidx.annotation.Keep;
 import androidx.preference.ListPreference;
+import androidx.preference.TwoStatePreference;
 
 import com.android.internal.app.AssistUtils;
 import com.android.tv.settings.R;
@@ -41,6 +43,9 @@ public class ButtonsFragment extends SettingsPreferenceFragment {
             "power_button_long_press_action";
     private static final String KEY_PRESS_VOLUME_UP_AND_DOWN_TO_MUTE =
             "press_volume_up_and_down_to_mute";
+    private static final String KEY_RIGHT_MOUSE_AS_BACK = "right_mouse_as_back";
+    private static final String PROP_RIGHT_MOUSE_AS_BACK =
+            "persist.sys.input.right_mouse_as_back";
 
 
     private static final int LONG_PRESS_POWER_BUTTON_FOR_ASSISTANT = 1;
@@ -49,6 +54,7 @@ public class ButtonsFragment extends SettingsPreferenceFragment {
     private AssistUtils mAssistUtils;
 
     private ListPreference mPowerButtonLongPressAction;
+    private TwoStatePreference mRightMouseAsBack;
 
     public static ButtonsFragment newInstance() {
         return new ButtonsFragment();
@@ -84,6 +90,15 @@ public class ButtonsFragment extends SettingsPreferenceFragment {
             (preference, newValue) -> {
                 LineageSettings.System.putInt(context.getContentResolver(),
                         LineageSettings.System.VOLUME_UP_AND_DOWN_MUTE, (Boolean) newValue ? 1 : 0);
+                return true;
+            });
+
+        mRightMouseAsBack = findPreference(KEY_RIGHT_MOUSE_AS_BACK);
+        mRightMouseAsBack.setChecked(
+                "true".equals(SystemProperties.get(PROP_RIGHT_MOUSE_AS_BACK, "false")));
+        mRightMouseAsBack.setOnPreferenceChangeListener(
+            (preference, newValue) -> {
+                SystemProperties.set(PROP_RIGHT_MOUSE_AS_BACK, (Boolean) newValue ? "true" : "false");
                 return true;
             });
     }

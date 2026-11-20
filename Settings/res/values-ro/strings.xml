@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Activează ANGLE ca driver OpenGL ES prestabilit"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Experimental, necesită repornire."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Este nevoie de o repornire pentru a schimba driverul de sistem OpenGL ES"</string>
-    <string name="leanback_launcher_injection_title">Afișează aplicațiile pentru telefon pe ecranul de pornire al televizorului</string>
-    <string name="leanback_launcher_injection_summary">Listează aplicațiile care nu au o intrare în lansatorul TV în rândul de aplicații, cu o banner desenat din pictograma lor. Se aplică imediat.</string>
+    <string name="leanback_launcher_injection_title">Desenează bannere TV pentru aplicațiile de telefon</string>
+    <string name="leanback_launcher_injection_summary">Desenează un banner din pictogramă pentru aplicațiile care nu au banner TV propriu. Aplicațiile rămân în listă în ambele cazuri; când este dezactivat, launcherul le desenează singur. Se aplică imediat.</string>
     <string name="audio_device_input_level">Nivel de intrare: %1$s</string>
     <string name="power_button_press_short_title">Apăsare scurtă pe butonul de alimentare</string>
     <string name="power_button_press_short_summary">Ce se întâmplă la apăsarea scurtă a alimentării</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">Meniu de alimentare</string>
     <string name="power_button_action_shutdown_confirm">Oprește, cu confirmare</string>
     <string name="power_button_action_shutdown_no_confirm">Oprește, fără confirmare</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">Butonul dreapta al mouse-ului ca Înapoi</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">Apăsarea butonului din dreapta mouse-ului acționează ca butonul Înapoi</string>
 </resources>

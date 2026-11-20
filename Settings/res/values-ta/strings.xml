@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"இயல்பு OpenGL ES இயக்கியாக ANGLEளை இயக்கவும்"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"பரிசோதனைக்குரியது, மறுதொடக்கம் தேவை."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"சிஸ்டத்தின் OpenGL ES இயக்கியை மாற்ற மறுதொடக்கம் தேவை"</string>
-    <string name="leanback_launcher_injection_title">TV முகப்பு திரையில் தொலைபேசி பயன்பாடுகளைக் காட்டு</string>
-    <string name="leanback_launcher_injection_summary">பயன்பாட்டு வரிசையில் TV தொடக்கப் பதிவு இல்லாத பயன்பாடுகளை, அவற்றின் சின்னத்திலிருந்து உருவாக்கப்பட்ட பேனருடன் பட்டியலிடுகிறது. உடனுக்குடன் பயன்படும்.</string>
+    <string name="leanback_launcher_injection_title">தொலைபேசி செயலிகளுக்கான TV பேனர்</string>
+    <string name="leanback_launcher_injection_summary">தன்னுடைய TV பேனர் இல்லாத செயலிகளுக்கு ஐகானிலிருந்து பேனர் வரைகிறது. இரு நிலைகளிலும் செயலிகள் பட்டியலில் இருக்கும்; அணைத்திருந்தால் லான்ச்சர் வரைகிறது. உடனே அமலாகும்.</string>
     <string name="audio_device_input_level">உள்ளீட்டு நிலை: %1$s</string>
     <string name="power_button_press_short_title">ஆற்றல் பொத்தானைக் குறுகிய அழுத்தம்</string>
     <string name="power_button_press_short_summary">ஆற்றலை குறுகிய அழுத்தினால் என்ன நடக்கும்</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">ஆற்றல் பட்டி</string>
     <string name="power_button_action_shutdown_confirm">நிறுத்து, உறுதிப்புடன்</string>
     <string name="power_button_action_shutdown_no_confirm">நிறுத்து, உறுதியின்றி</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">வலது ஒட்டி பொத்தான் — பின்செல்</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">வலது ஒட்டி பொத்தானை அமர்த்தினால், பின்செல் பொத்தான் போல</string>
 </resources>

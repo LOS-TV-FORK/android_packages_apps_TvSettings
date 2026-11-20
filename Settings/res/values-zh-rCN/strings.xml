@@ -1217,8 +1217,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"启用 ANGLE 作为默认 OpenGL ES 驱动程序"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"这是实验性功能，需要重启。"</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"必须重启才能更改系统 OpenGL ES 驱动程序"</string>
-    <string name="leanback_launcher_injection_title">在电视主屏幕上显示手机应用</string>
-    <string name="leanback_launcher_injection_summary">在应用行中列出没有电视启动器入口的应用，并使用从其图标生成的横幅。立即生效。</string>
+    <string name="leanback_launcher_injection_title">为手机应用绘制 TV 横幅</string>
+    <string name="leanback_launcher_injection_summary">为没有自带 TV 横幅的应用从图标生成横幅。无论开启与否，应用都会保留在列表中；关闭时由启动器自行绘制。立即生效。</string>
     <string name="audio_device_input_level">输入电平：%1$s</string>
     <string name="power_button_press_short_title">短按电源键</string>
     <string name="power_button_press_short_summary">短按电源键时的操作</string>
@@ -1231,4 +1231,8 @@
     <string name="power_button_action_power_menu">电源菜单</string>
     <string name="power_button_action_shutdown_confirm">关机，需要确认</string>
     <string name="power_button_action_shutdown_no_confirm">关机，无需确认</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">鼠标右键作为返回键</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">按下鼠标右键相当于按下返回键</string>
 </resources>

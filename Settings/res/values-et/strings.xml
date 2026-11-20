@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"ANGLE-i lubamine vaikimisi OpenGL ES-i draiverina"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Katseline, nõuab taaskäivitamist."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Süsteemi OpenGL ES-i draiveri muutmiseks on vajalik taaskäivitamine"</string>
-    <string name="leanback_launcher_injection_title">Näita telefoni rakendusi TV-i avakuval</string>
-    <string name="leanback_launcher_injection_summary">Loetleb rakendused, millel puudub TV-i käivitaja kirje rakenduste reas, ikoonist joonistatud banneriga. Rakendub kohe.</string>
+    <string name="leanback_launcher_injection_title">Joonista telefoniäppide TV-bännerid</string>
+    <string name="leanback_launcher_injection_summary">Joonista rakendustele, kellel endal TV-bännerit pole, ikoonilt bänneri. Rakendused püsivad mõlemal juhul nimekirjas; väljalülitamisel joonistab käivitaja need ise. Jõustub kohe.</string>
     <string name="audio_device_input_level">Sisenditase: %1$s</string>
     <string name="power_button_press_short_title">Toitenupule lühike vajutus</string>
     <string name="power_button_press_short_summary">Mis juhtub toitenupu lühikese vajutuse korral</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">Toitemenüü</string>
     <string name="power_button_action_shutdown_confirm">Lülita välja, kinnitusega</string>
     <string name="power_button_action_shutdown_no_confirm">Lülita välja, ilma kinnituseta</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">Hiire parem nupp kui Tagasi</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">Hiire parema nupule vajutamine toimib nagu Tagasi vajutamine</string>
 </resources>

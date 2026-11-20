@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Activa ANGLE com a controlador OpenGL ES predet."</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"És experimental i requereix reiniciar."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Cal reiniciar per canviar el controlador OpenGL ES del sistema"</string>
-    <string name="leanback_launcher_injection_title">Mostra les aplicacions del telèfon a la pantalla d\'inici de la TV</string>
-    <string name="leanback_launcher_injection_summary">Mostra les aplicacions que no tenen cap entrada al llançador de la TV a la fila d\'aplicacions, amb un rètol extret de la seva icona. S\'aplica immediatament.</string>
+    <string name="leanback_launcher_injection_title">Dibuixa banners de TV per a apps de telèfon</string>
+    <string name="leanback_launcher_injection_summary">Dibuixa un banner a partir de la icona per a les apps que no tenen banner propi. Les apps es mantenen a la llista en ambdós casos; si està desactivat, el llançador les dibuixa sol. S\'aplica de seguida.</string>
     <string name="audio_device_input_level">Nivell d\'entrada: %1$s</string>
     <string name="power_button_press_short_title">Pulsació curta del botó d\'alimentació</string>
     <string name="power_button_press_short_summary">Què passa quan s\'aposta breument l\'alimentació</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">Menú d\'energia</string>
     <string name="power_button_action_shutdown_confirm">Atura, amb confirmació</string>
     <string name="power_button_action_shutdown_no_confirm">Atura, sense confirmació</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">Botó dret del ratolí com a Enrere</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">Premeu el botó dret del ratolí per fer una acció de navigació Enrere</string>
 </resources>

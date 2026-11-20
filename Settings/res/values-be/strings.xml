@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Уключыць ANGLE як стандартны драйвер OpenGL ES"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Эксперыментальная функцыя, патрабуецца перазагрузка."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Каб змяніць сістэмны драйвер OpenGL ES, патрабуецца перазагрузка"</string>
-    <string name="leanback_launcher_injection_title">Паказаць мабільныя праграмы на галоўным экране ТВ</string>
-    <string name="leanback_launcher_injection_summary">Паказвае праграмы, у якіх няма запісу ТВ-праграмы ў радку праграм, з банерам, створаным з іх значкі. Прымяняецца адразу.</string>
+    <string name="leanback_launcher_injection_title">Маляваць TV-банеры для тэлефонавых праграм</string>
+    <string name="leanback_launcher_injection_summary">Малюе банер з значка для праграм, у якіх няма ўласнага TV-банера. Праграмы застаюцца ў спісе ў абодвух выпадках; пры выключэнні запускатель малюе іх сам. Дзейнічае адразу.</string>
     <string name="audio_device_input_level">Узровень уваходу: %1$s</string>
     <string name="power_button_press_short_title">Кароткае націсканне кнопкі сілкання</string>
     <string name="power_button_press_short_summary">Што адбываецца пры кароткім націсканні</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">Меню сілкання</string>
     <string name="power_button_action_shutdown_confirm">Выключэнне з пацвярджэннем</string>
     <string name="power_button_action_shutdown_no_confirm">Выключэнне без пацвярджэння</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">Правая кнопка мышкі — Назад</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">Націск правай кнопкі мышкі працуе як націск «Назад»</string>
 </resources>

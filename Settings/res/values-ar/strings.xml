@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"تفعيل ANGLE كبرنامج التشغيل التلقائي OpenGL ES"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"هذه الميزة تجريبية وتتطلب إعادة تشغيل الجهاز."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"يجب إعادة تشغيل الجهاز لتغيير برنامج التشغيل OpenGL ES الخاص بالنظام"</string>
-    <string name="leanback_launcher_injection_title">إظهار تطبيقات الهاتف على الشاشة الرئيسية للتلفاز</string>
-    <string name="leanback_launcher_injection_summary">يسرد التطبيقات التي لا تحتوي على إدخال مشغّل التلفاز في صف التطبيقات، مع لافتة مرسومة من أيقونتها. يسري فورًا.</string>
+    <string name="leanback_launcher_injection_title">ارسم لافتات تلفزيون لتطبيقات الهاتف</string>
+    <string name="leanback_launcher_injection_summary">يرسم لافتة من الأيقونة للتطبيقات التي ليس لها لافتة تلفزيون. تبقى التطبيقات مدرجة في الحالتين؛ وعند الإيقاف يرسمها المشغل بنفسه. تُطبَّق النتيجة فوراً.</string>
     <string name="audio_device_input_level">مستوى الإدخال: %1$s</string>
     <string name="power_button_press_short_title">ضغطة قصيرة على زر الطاقة</string>
     <string name="power_button_press_short_summary">ماذا يحدث عند الضغط على الطاقة بإيجاز</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">قائمة الطاقة</string>
     <string name="power_button_action_shutdown_confirm">إيقاف التشغيل، مع تأكيد</string>
     <string name="power_button_action_shutdown_no_confirm">إيقاف التشغيل، بدون تأكيد</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">الزر الأيمن للفأرة كـ«رجوع»</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">النقر بالزر الأيمن للفأرة يعمل مثل الضغط على زر «رجوع»</string>
 </resources>

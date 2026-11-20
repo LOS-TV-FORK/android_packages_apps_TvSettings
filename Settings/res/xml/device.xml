@@ -23,6 +23,16 @@
         android:icon="@drawable/ic_info_outline"
         android:key="about_device"
         android:title="@string/about_preference"/>
+    <!-- LOS TV: firmware store management (Wi-Fi/BT firmware swapping) -->
+    <Preference
+        android:icon="@drawable/ic_info_outline"
+        android:key="fw_tool_settings"
+        android:title="@string/system_fwtool_title"
+        android:summary="@string/system_fwtool_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="org.los.tv.fwtool"
+            android:targetClass="org.los.tv.fwtool.MainActivity" />
+    </Preference>
     <Preference
         android:fragment="com.android.tv.settings.device.eco.PowerAndEnergyFragment"
         android:icon="@drawable/ic_settings_power_and_energy"

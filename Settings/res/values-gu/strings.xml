@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"ANGLEને ડિફૉલ્ટ OpenGL ES ડ્રાઇવર તરીકે ચાલુ કરો"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"પ્રાયોગિક છે, રીબૂટ કરવું જરૂરી છે."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"સિસ્ટમ OpenGL ES ડ્રાઇવરને બદલવા માટે રીબૂટ કરવું જરૂરી છે"</string>
-    <string name="leanback_launcher_injection_title">TV હોમ સ્ક્રીન પર ફોનની એપ્સ બતાવો</string>
-    <string name="leanback_launcher_injection_summary">એપ પંક્તિમાં TV લાંચર એન્ટ્રી ન ધરાવતી એપ્સને, તેમના આઇકનથી બનાવેલા બેનર સાથે સૂચિ કરે છે. તરત જ અમલમાં આવે છે.</string>
+    <string name="leanback_launcher_injection_title">ફોન એપ માટે TV બેનર દોરો</string>
+    <string name="leanback_launcher_injection_summary">જે એપ પાસે પોતાનું TV બેનર નથી તે માટે ચિહ્નમાંથી બેનર દોરે છે. બંને રીતે એપ યાદીમાં રહે છે; બંને હોય તો લોન્ચર પોતે દોરે. તરત જ લાગુ પડે.</string>
     <string name="audio_device_input_level">ઇનપુટ સ્તર: %1$s</string>
     <string name="power_button_press_short_title">પાવર બટનને ટૂંકું દબાવવું</string>
     <string name="power_button_press_short_summary">પાવરને ટૂંકું દબાવતાં શું થાય છે</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">પાવર મેનુ</string>
     <string name="power_button_action_shutdown_confirm">બંધ કરો, પુષ્ટિ સાથે</string>
     <string name="power_button_action_shutdown_no_confirm">બંધ કરો, પુષ્ટિ વગર</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">જમણું માઉસ બટન — પાછળ</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">જમણા માઉસ બટનને દબાવવાથી બેક બટન જેવું ફરી ફરે છે</string>
 </resources>

@@ -1017,6 +1017,10 @@
     <string name="system_update_content_description">System update,
         This will update your system software to the most recent version.
         Your device will restart.</string>
+    <!-- Preference which shows the Wi-Fi/BT firmware management tool (LOS TV).
+        [CHAR LIMIT=50] -->
+    <string name="system_fwtool_title">Wi-Fi/BT firmware management</string>
+    <string name="system_fwtool_summary">Scan devices, browse and swap firmware</string>
     <!-- Preference which shows about screen with legal info, model, etc. [CHAR LIMIT=50] -->
     <string name="about_preference">About</string>
     <!-- Preference which shows name of device as it will appear when being accessed remotely [CHAR LIMIT=50] -->
@@ -2029,9 +2033,9 @@
     <!-- setting Checkbox summary whether to keep the screen on when plugged in  -->
     <string name="keep_screen_on_summary">Screen will never sleep</string>
     <!-- Title for the TV launcher visibility switch in Developer options [CHAR LIMIT=60] -->
-    <string name="leanback_launcher_injection_title">Show phone apps on the TV home screen</string>
+    <string name="leanback_launcher_injection_title">Draw TV banners for phone apps</string>
     <!-- Summary for the TV launcher visibility switch in Developer options [CHAR LIMIT=250] -->
-    <string name="leanback_launcher_injection_summary">Lists apps that have no TV launcher entry in the apps row, with a banner drawn from their icon. Takes effect right away.</string>
+    <string name="leanback_launcher_injection_summary">Draws a banner from the icon for apps that have no TV banner of their own. Apps stay listed either way; when off the launcher draws them itself. Takes effect right away.</string>
     <!-- Title for Set HDCP checking in System Settings Developer options [CHAR LIMIT=50] -->
     <string name="system_hdcp_checking">HDCP checking</string>
     <!-- Title for HDMI optimization in System Settings Developer options [CHAR LIMIT=50] -->
@@ -3003,5 +3007,10 @@
     <string name="power_button_action_power_menu">Power menu</string>
     <string name="power_button_action_shutdown_confirm">Shut down, with confirmation</string>
     <string name="power_button_action_shutdown_no_confirm">Shut down, no confirmation</string>
+
+    <!-- Preference which makes the right mouse button act as the Back button. [CHAR LIMIT=50] -->
+    <string name="device_right_mouse_as_back">Right mouse button as Back</string>
+    <!-- Description of the right mouse button as Back preference. [CHAR LIMIT=150] -->
+    <string name="device_right_mouse_as_back_summary">Pressing the right mouse button acts like the Back button</string>
 
 </resources>

@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Attiva ANGLE come driver OpenGL ES predefinito"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"In fase sperimentale, richiede il riavvio."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"È necessario riavviare per cambiare il driver OpenGL ES di sistema"</string>
-    <string name="leanback_launcher_injection_title">Mostra le app del telefono nella schermata Home della TV</string>
-    <string name="leanback_launcher_injection_summary">Elenca le app che non hanno una voce nel launcher della TV nella riga delle app, con un banner generato dalla loro icona. Viene applicato immediatamente.</string>
+    <string name="leanback_launcher_injection_title">Disegna banner TV per le app del telefono</string>
+    <string name="leanback_launcher_injection_summary">Disegna un banner dall icona per le app che non hanno un banner TV proprio. Le app restano elencate in entrambi i casi; se disattivato, il launcher le disegna da solo. Ha effetto immediato.</string>
     <string name="audio_device_input_level">Livello di ingresso: %1$s</string>
     <string name="power_button_press_short_title">Pressione breve del tasto di accensione</string>
     <string name="power_button_press_short_summary">Cosa succede premendo briefly l\'accensione</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">Menu energia</string>
     <string name="power_button_action_shutdown_confirm">Spegni, con conferma</string>
     <string name="power_button_action_shutdown_no_confirm">Spegni, senza conferma</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">Pulsante destro del mouse come Indietro</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">La pressione del pulsante destro del mouse funziona come premere Indietro</string>
 </resources>

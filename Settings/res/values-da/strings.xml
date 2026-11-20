@@ -1217,8 +1217,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Aktivér ANGLE som OpenGL ES-standarddriver"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Eksperimentel, kræver genstart."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Du skal genstarte for at ændre OpenGL ES-systemdriveren"</string>
-    <string name="leanback_launcher_injection_title">Vis telefonapps på TV\'ens startskærm</string>
-    <string name="leanback_launcher_injection_summary">Viser apps, der ikke har en TV-startpost på apprækken, med et banner, der er tegnet ud fra deres ikon. Træder i kraft med det samme.</string>
+    <string name="leanback_launcher_injection_title">Tegn TV-bannere for telefonapps</string>
+    <string name="leanback_launcher_injection_summary">Tegner et banner fra ikonet for apps, der ikke har eget TV-banner. Apps vises stadig i begge tilfælde; når fra, tegner launcheren dem selv. Tæder i kraft med det samme.</string>
     <string name="audio_device_input_level">Indgangsniveau: %1$s</string>
     <string name="power_button_press_short_title">Kort tryk på tænd/sluk-knappen</string>
     <string name="power_button_press_short_summary">Hvad der sker ved et kort tryk</string>
@@ -1231,4 +1231,8 @@
     <string name="power_button_action_power_menu">Strømmenu</string>
     <string name="power_button_action_shutdown_confirm">Luk, med bekræftelse</string>
     <string name="power_button_action_shutdown_no_confirm">Luk, uden bekræftelse</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">Højre musetast som Tilbage</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">Højreklik fungerer som at trykke på Tilbage</string>
 </resources>

@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"បើក ANGLE ជាដ្រាយវើ OpenGL ES លំនាំដើម"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"ពិសោធន៍ ត្រូវការចាប់ផ្ដើមឡើងវិញ។"</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"តម្រូវឱ្យ​ចាប់ផ្ដើមឡើងវិញ ដើម្បីប្ដូរ​ប្រព័ន្ធដ្រាយវើ OpenGL ES"</string>
-    <string name="leanback_launcher_injection_title">បង្ហាញកម្មវិធីទូរស័ព្ទនៅលើអេក្រង់ដើមទំព័រទីវេរី</string>
-    <string name="leanback_launcher_injection_summary">បង្ហាញកម្មវិធីដែលគ្មានធាតុក្នុងការដំណើតរបស់ទីវេរីនៅក្នុងជួរកម្មវិធី ដោយមានបានឺរដឺបើង់ដែលបានគូរពីរូបតំណាង់របស់វា។ មានឥទ្ធិភ្លាមៗ។</string>
+    <string name="leanback_launcher_injection_title">គូរបាន់ណែរ TV សម្រាប់កម្មវិធីទូរស័ព្ទ</string>
+    <string name="leanback_launcher_injection_summary">គូរបាន់ណែរពីរូបតំណាង សម្រាប់កម្មវិធីដែលគ្មានបាន់ណែរ TV ផ្ទាល់ខ្លួន។ កម្មវិធីនៅតែត្រូវបានបញ្ជីក្នុងរាល់ករណី។ នៅពេលបិទ កម្មវិធីបើកដំណើរការគូរវាដោយខ្លួនឯង។ មានប្រសិទ្ធភាពភ្លាម។</string>
     <string name="audio_device_input_level">កម្រិតបញ្ចូល: %1$s</string>
     <string name="power_button_press_short_title">ចុចថ្លើងុនចោលក្នុងថ្លើង</string>
     <string name="power_button_press_short_summary">អ្វីកើតបានពេលចុចថ្លើងុនចោល</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">ម៉ឺនុយថ្លើង</string>
     <string name="power_button_action_shutdown_confirm">បិទ ដោយបញ្ជាក់</string>
     <string name="power_button_action_shutdown_no_confirm">បិទ ដោយគ្មានបញ្ជាក់</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">ប៊ូតុងកណ្ដុរខាងស្ដាំជា ថយក្រោយ</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">ចុចកណ្ដុរខាងស្ដាំជាហេតុការណ៍ការចុច ថយក្រោយ</string>
 </resources>

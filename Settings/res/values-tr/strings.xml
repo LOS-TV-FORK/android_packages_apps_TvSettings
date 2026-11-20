@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"ANGLE\'ı, varsayılan OpenGL ES sürücüsü yap"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Deneyseldir, yeniden başlatma gerekir."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"Sistem OpenGL ES sürücüsünü değiştirmek için yeniden başlatma gerekir"</string>
-    <string name="leanback_launcher_injection_title">Telefon uygulamalarını TV ana ekranında göster</string>
-    <string name="leanback_launcher_injection_summary">Uygulama satırında TV başlatıcısı girişi olmayan uygulamaları, ikonlarından çizilen afişle listeler. Hemen etkinleşir.</string>
+    <string name="leanback_launcher_injection_title">Telefon uygulamaları için TV bannerı çiz</string>
+    <string name="leanback_launcher_injection_summary">Kendi TV bannerı olmayan uygulamalar için simgeden banner çizer. Uygulamalar her iki durumda da listelenmeye devam eder; kapalıyken başlatıcı kendisi çizer. Hemen geçerli olur.</string>
     <string name="audio_device_input_level">Giriş seviyesi: %1$s</string>
     <string name="power_button_press_short_title">Güç düğmesine kısa basma</string>
     <string name="power_button_press_short_summary">Güce kısa basıldığında ne olur</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">Güç menüsü</string>
     <string name="power_button_action_shutdown_confirm">Kapat, onaylayarak</string>
     <string name="power_button_action_shutdown_no_confirm">Kapat, onaysız</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">Farenin sağ tuşunu Geri olarak</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">Farenin sağ tuşuna basmak, Geri tuşuna basmak gibi çalışır</string>
 </resources>

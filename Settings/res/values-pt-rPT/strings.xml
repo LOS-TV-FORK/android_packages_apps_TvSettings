@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"Ative ANGLE como controlador predefinido OpenGL ES"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"Experimental, requer um reinício."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"É necessário reiniciar para alterar o controlador do OpenGL ES do sistema"</string>
-    <string name="leanback_launcher_injection_title">Mostrar aplicações de telemóvel no ecrã inicial da TV</string>
-    <string name="leanback_launcher_injection_summary">Lista as aplicações que não têm entrada no inicializador da TV na lista de aplicações, com um banner desenhado a partir do respetivo ícone. Entra em vigor imediatamente.</string>
+    <string name="leanback_launcher_injection_title">Desenhar banners de TV para apps do telemóvel</string>
+    <string name="leanback_launcher_injection_summary">Desenha um banner a partir do ícone para as apps que não têm banner de TV próprio. As apps continuam listadas de qualquer forma; quando desativado, o lançador desenha-as sozinho. Entra em vigor imediatamente.</string>
     <string name="audio_device_input_level">Nível de entrada: %1$s</string>
     <string name="power_button_press_short_title">Toque curto no botão de energia</string>
     <string name="power_button_press_short_summary">O que acontece ao pressionar a energia brevemente</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">Menu de energia</string>
     <string name="power_button_action_shutdown_confirm">Desligar, com confirmação</string>
     <string name="power_button_action_shutdown_no_confirm">Desligar, sem confirmação</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">Botão direito do rato como Voltar</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">Premir o botão direito do rato funciona como premir Voltar</string>
 </resources>

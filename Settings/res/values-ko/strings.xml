@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"기본 OpenGL ES 드라이버로 ANGLE 사용 설정"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"실험적 기능이며 재부팅이 필요합니다."</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"시스템 OpenGL ES 드라이버를 변경하려면 재부팅해야 합니다."</string>
-    <string name="leanback_launcher_injection_title">TV 홈 화면에 휴대폰 앱 표시</string>
-    <string name="leanback_launcher_injection_summary">앱 행에 TV 런처 항목이 없는 앱을 아이콘에서 만든 배너와 함께 표시합니다. 즉시 적용됩니다.</string>
+    <string name="leanback_launcher_injection_title">전화기 앱용 TV 배너 그리기</string>
+    <string name="leanback_launcher_injection_summary">고유 TV 배너가 없는 앱에 대해 아이콘에서 배너를 만듭니다. 두 설정 모두에서 앱이 목록에 남아 있습니다. 해제 시 런처가 자체적으로 그립니다. 즉시 적용됩니다.</string>
     <string name="audio_device_input_level">입력 레벨: %1$s</string>
     <string name="power_button_press_short_title">전원 버튼 짧게 누르기</string>
     <string name="power_button_press_short_summary">전원을 짧게 눌렀을 때의 동작</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">전원 메뉴</string>
     <string name="power_button_action_shutdown_confirm">종료(확인 필요)</string>
     <string name="power_button_action_shutdown_no_confirm">종료(확인 없이)</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">마우스 오른쪽 버튼을 뒤로 버튼으로</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">마우스 오른쪽 버튼을 누르면 뒤로 버튼을 누른 것처럼 작동합니다</string>
 </resources>

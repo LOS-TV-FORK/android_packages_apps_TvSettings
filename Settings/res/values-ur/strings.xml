@@ -1216,8 +1216,8 @@
     <string name="enable_angle_as_system_driver" msgid="2621814239122082069">"‫ANGLE کو بطور ڈیفالٹ OpenGL ES ڈرائیور فعال کریں"</string>
     <string name="enable_angle_as_system_driver_summary" msgid="6941274244229799261">"تجرباتی، ریبوٹ درکار ہے۔"</string>
     <string name="reboot_dialog_enable_angle_as_system_driver" msgid="5658387699421699408">"سسٹم OpenGL ES ڈرائیور تبدیل کرنے کے لیے ریبوٹ کی ضرورت ہے"</string>
-    <string name="leanback_launcher_injection_title">ٹی وی ہوم اسکرین پر فون ایپس دکھائیں</string>
-    <string name="leanback_launcher_injection_summary">ایپس کی قطار میں ٹی وی لانچر اندراج نہ رکھنے والی ایپس کو ان کے آئیکن سے بنایا گیا بینر کے ساتھ درج کرتا ہے۔ فوراً لاگو ہوتا ہے۔</string>
+    <string name="leanback_launcher_injection_title">فون ایپس کے لیے TV بینر بنائیں</string>
+    <string name="leanback_launcher_injection_summary">جن ایپس کا اپنا TV بینر نہیں، ان کے لیے آئیکن سے بینر بناتا ہے۔ دونوں صورتوں میں ایپس فہرست میں رہتی ہیں؛ بند ہونے پر لانچر خود بناتا ہے۔ فوراً مؤثر۔</string>
     <string name="audio_device_input_level">ان پٹ لیول: %1$s</string>
     <string name="power_button_press_short_title">پاور بٹن کی مختصر دباؤ</string>
     <string name="power_button_press_short_summary">پاور کو مختصر دبائیں تو کیا ہوتا ہے</string>
@@ -1230,4 +1230,8 @@
     <string name="power_button_action_power_menu">پاور مینو</string>
     <string name="power_button_action_shutdown_confirm">بند کریں، تصدیق کے ساتھ</string>
     <string name="power_button_action_shutdown_no_confirm">بند کریں، بغیر تصدیق</string>
+    <!-- Preference which makes the right mouse button act as the Back button. -->
+    <string name="device_right_mouse_as_back">دائیں ماؤس بٹن — پیچھے</string>
+    <!-- Description of the right mouse button as Back preference. -->
+    <string name="device_right_mouse_as_back_summary">دائیں ماؤس بٹن دبانا بیک بٹن دبانے جیسا کام کرتا ہے</string>
 </resources>

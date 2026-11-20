@@ -66,6 +66,9 @@ public abstract class PowerButtonActionFragment extends PreferenceControllerFrag
     /** The setting this screen edits. */
     protected abstract String getSettingKey();
 
+    /** Title of this screen; both subclasses share one layout, so it is set here per action. */
+    protected abstract int getTitleResId();
+
     /** Labels of the actions, in display order. */
     protected abstract int[] getActionLabels();
 
@@ -80,6 +83,7 @@ public abstract class PowerButtonActionFragment extends PreferenceControllerFrag
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.power_button_actions, null);
+        getPreferenceScreen().setTitle(getTitleResId());
         mCategory = findPreference(KEY_CATEGORY);
         refresh();
     }
@@ -162,6 +166,11 @@ public abstract class PowerButtonActionFragment extends PreferenceControllerFrag
         }
 
         @Override
+        protected int getTitleResId() {
+            return R.string.power_button_press_short_title;
+        }
+
+        @Override
         protected int[] getActionLabels() {
             return new int[] {
                 R.string.power_button_action_default,
@@ -193,6 +202,11 @@ public abstract class PowerButtonActionFragment extends PreferenceControllerFrag
         @Override
         protected String getSettingKey() {
             return Settings.Global.POWER_BUTTON_LONG_PRESS;
+        }
+
+        @Override
+        protected int getTitleResId() {
+            return R.string.power_button_press_long_title;
         }
 
         @Override
