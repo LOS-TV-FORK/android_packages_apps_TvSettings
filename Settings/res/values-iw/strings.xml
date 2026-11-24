@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">כפתור ימין של העכבר כדלג אחורה</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">לחיצה עם כפתור ימין של העכבר פועלת כמו לחיצה על הדלג לאחור</string>
-</resources>
+
+    <string name="default_apps_title">"אפליקציות ברירת מחדל"</string>
+    <string name="default_app_home">"אפליקציה לדף הבית"</string>
+    <string name="default_app_browser">"אפליקציית דפדפן"</string>
+    <string name="default_app_dialer">"אפליקציית הטלפון"</string>
+    <string name="default_app_sms">"‏אפליקציית SMS"</string>
+    <string name="default_app_none">"ללא"</string></resources>

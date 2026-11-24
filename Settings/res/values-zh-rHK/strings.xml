@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">滑鼠右鍵作為返回鍵</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">按下滑鼠右鍵相當於按下返回鍵</string>
-</resources>
+
+    <string name="default_apps_title">"預設應用程式"</string>
+    <string name="default_app_home">"主畫面應用程式"</string>
+    <string name="default_app_browser">"瀏覽器應用程式"</string>
+    <string name="default_app_dialer">"電話應用程式"</string>
+    <string name="default_app_sms">"短訊應用程式"</string>
+    <string name="default_app_none">"無"</string></resources>

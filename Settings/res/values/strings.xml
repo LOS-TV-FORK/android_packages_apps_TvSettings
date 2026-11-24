@@ -113,6 +113,18 @@
     <string name="sound_category_title">Sound</string>
     <!-- Title for main screen preference for applications [CHAR LIMIT=50] -->
     <string name="applications_category_title">Apps</string>
+    <!-- Title for the default apps screen [CHAR_LIMIT_50] -->
+    <string name="default_apps_title">Default apps</string>
+    <!-- Summary when no app is set as default [CHAR_LIMIT_50] -->
+    <string name="default_app_none">None</string>
+    <!-- Default app role: home/launcher [CHAR_LIMIT_50] -->
+    <string name="default_app_home">Home app</string>
+    <!-- Default app role: browser [CHAR_LIMIT_50] -->
+    <string name="default_app_browser">Browser app</string>
+    <!-- Default app role: dialer/phone [CHAR_LIMIT_50] -->
+    <string name="default_app_dialer">Phone app</string>
+    <!-- Default app role: sms [CHAR_LIMIT_50] -->
+    <string name="default_app_sms">SMS app</string>
     <!-- Title for main screen preference for device [CHAR_LIMIT_50] -->
     <string name="device_pref_category_title">Device Preferences</string>
     <!-- Title for main screen preference for accessibilty [CHAR_LIMIT_50] -->

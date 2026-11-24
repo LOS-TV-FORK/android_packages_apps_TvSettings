@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">Баруун хулганы товч — Буцах</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Баруун хулганы товчийг дарах нь Буцах товчийг дарахтай адилхан ажиллана</string>
-</resources>
+
+    <string name="default_apps_title">"Өгөгдмөл апп"</string>
+    <string name="default_app_home">"Үндсэн апп"</string>
+    <string name="default_app_browser">"Хөтөч апп"</string>
+    <string name="default_app_dialer">"Гар утасны апп"</string>
+    <string name="default_app_sms">"SMS апп"</string>
+    <string name="default_app_none">"Байхгүй"</string></resources>

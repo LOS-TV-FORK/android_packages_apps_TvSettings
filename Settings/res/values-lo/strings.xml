@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">ປຸ່ມເມົາສຂວາເປັນ ກັບຄືນ</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">ການປຸ່ມສຂວາເຮັດໄດ້ເປັນ ເປັນປຸ່ມກັບຄືນ</string>
-</resources>
+
+    <string name="default_apps_title">"ແອັບເລີ່ມຕົ້ນ"</string>
+    <string name="default_app_home">"ແອັບໜ້າຫຼັກ"</string>
+    <string name="default_app_browser">"ແອັບໂປຣແກຣມທ່ອງເວັບ"</string>
+    <string name="default_app_dialer">"ແອັບ​ໂທ​ລ​ະ​ສັບ"</string>
+    <string name="default_app_sms">"SMS"</string>
+    <string name="default_app_none">"ບໍ່ມີ"</string></resources>

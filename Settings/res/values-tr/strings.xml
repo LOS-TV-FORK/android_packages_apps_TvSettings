@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">Farenin sağ tuşunu Geri olarak</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Farenin sağ tuşuna basmak, Geri tuşuna basmak gibi çalışır</string>
-</resources>
+
+    <string name="default_apps_title">"Varsayılan uygulamalar"</string>
+    <string name="default_app_home">"Ana ekran uygulaması"</string>
+    <string name="default_app_browser">"Tarayıcı uygulaması"</string>
+    <string name="default_app_dialer">"Telefon uygulaması"</string>
+    <string name="default_app_sms">"SMS uygulaması"</string>
+    <string name="default_app_none">"Yok"</string></resources>

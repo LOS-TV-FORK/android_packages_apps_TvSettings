@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">Оң тышқан түймесі — Артқа</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Оң тышқан түймесін басу Артқа түймесін басқандай жұмыс істейді</string>
-</resources>
+
+    <string name="default_apps_title">"Әдепкі қолданбалар"</string>
+    <string name="default_app_home">"Негізгі экран қолданбасы"</string>
+    <string name="default_app_browser">"Браузер қолданбасы"</string>
+    <string name="default_app_dialer">"Қоңырау шалу қолданбасы"</string>
+    <string name="default_app_sms">"SMS қолданбасы"</string>
+    <string name="default_app_none">"Ешқандай"</string></resources>

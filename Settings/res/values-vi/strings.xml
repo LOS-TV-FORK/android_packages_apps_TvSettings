@@ -1236,4 +1236,10 @@
     <string name="device_right_mouse_as_back">Nút chuột phải làm chức năng Quay lại</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Nhấn nút chuột phải hoạt động như nút Quay lại</string>
-</resources>
+
+    <string name="default_apps_title">"Ứng dụng mặc định"</string>
+    <string name="default_app_home">"Ứng dụng trên màn hình chính"</string>
+    <string name="default_app_browser">"Ứng dụng trình duyệt"</string>
+    <string name="default_app_dialer">"Ứng dụng điện thoại"</string>
+    <string name="default_app_sms">"Ứng dụng SMS"</string>
+    <string name="default_app_none">"Không có"</string></resources>

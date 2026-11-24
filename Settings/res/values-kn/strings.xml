@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">ಬಲ ಮೌಸ್ ಬಟನ್ ಹಿಂದಕ್ಕೆ</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">ಬಲ ಮೌಸ್ ಬಟನ್ ಒತ್ತುವುದು ಹಿಂದಕ್ಕೆ ಬಟನ್ ಒತ್ತುವಂತೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ</string>
-</resources>
+
+    <string name="default_apps_title">"ಡೀಫಾಲ್ಟ್ ಆ್ಯಪ್‍ಗಳು"</string>
+    <string name="default_app_home">"ಮುಖಪುಟ ಆ್ಯಪ್"</string>
+    <string name="default_app_browser">"ಬ್ರೌಸರ್ ಆ್ಯಪ್‌"</string>
+    <string name="default_app_dialer">"ಫೋನ್ ಆ್ಯಪ್‌"</string>
+    <string name="default_app_sms">"SMS ಆ್ಯಪ್‌"</string>
+    <string name="default_app_none">"ಯಾವುದೂ ಅಲ್ಲ"</string></resources>

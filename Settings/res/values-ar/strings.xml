@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">الزر الأيمن للفأرة كـ«رجوع»</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">النقر بالزر الأيمن للفأرة يعمل مثل الضغط على زر «رجوع»</string>
-</resources>
+
+    <string name="default_apps_title">"التطبيقات التلقائية"</string>
+    <string name="default_app_home">"تطبيق الشاشة الرئيسية"</string>
+    <string name="default_app_browser">"تطبيق المتصفح"</string>
+    <string name="default_app_dialer">"تطبيق الهاتف"</string>
+    <string name="default_app_sms">"‏تطبيق SMS"</string>
+    <string name="default_app_none">"ما مِن تطبيقات"</string></resources>

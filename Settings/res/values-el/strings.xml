@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">Δεξί κουμπί ποντικιού ως Πίσω</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Το πάτημα του δεξιού κουμπιού του ποντικιού λειτουργεί όπως το πάτημα του Πίσω</string>
-</resources>
+
+    <string name="default_apps_title">"Προεπιλεγμένες εφ."</string>
+    <string name="default_app_home">"Εφαρμογή αρχικής οθόνης"</string>
+    <string name="default_app_browser">"Εφαρμογή προγρ.περιήγησης"</string>
+    <string name="default_app_dialer">"Εφαρμογή \"Τηλέφωνο\""</string>
+    <string name="default_app_sms">"Εφαρμογή SMS"</string>
+    <string name="default_app_none">"Καμία"</string></resources>

@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">ညာဘက် မောက်စ် ခလုတ် — နောက်သို့</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">ညာဘက် မောက်စ် ခလုတ်ကို နှိပ်ခြင်းသည် နောက်သို့ ခလုတ်ကို နှိပ်ခြင်းကဲ့သို့ လုပ်ဆောင်သည်</string>
-</resources>
+
+    <string name="default_apps_title">"မူရင်းအက်ပ်များ"</string>
+    <string name="default_app_home">"ပင်မစာမျက်နှာ အက်ပ်"</string>
+    <string name="default_app_browser">"ဘရောင်ဇာ အက်ပ်"</string>
+    <string name="default_app_dialer">"ဖုန်း အက်ပ်"</string>
+    <string name="default_app_sms">"SMS အက်ပ်"</string>
+    <string name="default_app_none">"မရှိ"</string></resources>

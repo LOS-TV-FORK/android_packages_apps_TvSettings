@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">Hiire parem nupp kui Tagasi</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Hiire parema nupule vajutamine toimib nagu Tagasi vajutamine</string>
-</resources>
+
+    <string name="default_apps_title">"Vaikerakendused"</string>
+    <string name="default_app_home">"Avakuva rakendus"</string>
+    <string name="default_app_browser">"Brauserirakendus"</string>
+    <string name="default_app_dialer">"Telefonirakendus"</string>
+    <string name="default_app_sms">"SMS-rakendus"</string>
+    <string name="default_app_none">"Pole"</string></resources>

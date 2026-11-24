@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">Clic droit comme Retour</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Un clic droit agit comme le bouton Retour</string>
-</resources>
+
+    <string name="default_apps_title">"Applis par défaut"</string>
+    <string name="default_app_home">"Application d\'accueil"</string>
+    <string name="default_app_browser">"Appli de navigateur"</string>
+    <string name="default_app_dialer">"Appli de téléphone"</string>
+    <string name="default_app_sms">"Appli de SMS"</string>
+    <string name="default_app_none">"Aucune"</string></resources>

@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">కుడి మౌస్ బటన్ — వెనుకకు</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">కుడి మౌస్ బటన్‌ను నొక్కడం వెనుకకు బటన్‌ను నొక్కడం లాగా పనిచేస్తుంది</string>
-</resources>
+
+    <string name="default_apps_title">"ఆటోమేటిక్ యాప్‌లు"</string>
+    <string name="default_app_home">"మొదటి స్క్రీన్ యాప్"</string>
+    <string name="default_app_browser">"బ్రౌజర్ యాప్"</string>
+    <string name="default_app_dialer">"ఫోన్ యాప్"</string>
+    <string name="default_app_sms">"SMS యాప్"</string>
+    <string name="default_app_none">"ఏదీ లేదు"</string></resources>

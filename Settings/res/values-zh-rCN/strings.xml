@@ -1235,4 +1235,10 @@
     <string name="device_right_mouse_as_back">鼠标右键作为返回键</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">按下鼠标右键相当于按下返回键</string>
-</resources>
+
+    <string name="default_apps_title">"默认应用"</string>
+    <string name="default_app_home">"主屏幕应用"</string>
+    <string name="default_app_browser">"浏览器应用"</string>
+    <string name="default_app_dialer">"电话应用"</string>
+    <string name="default_app_sms">"短信应用"</string>
+    <string name="default_app_none">"无"</string></resources>

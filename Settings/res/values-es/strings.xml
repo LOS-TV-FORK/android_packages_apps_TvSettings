@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">Botón derecho del ratón como Atrás</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Pulsar el botón derecho del ratón funciona como pulsar el botón de Atrás</string>
-</resources>
+
+    <string name="default_apps_title">"Aplicaciones predeterminadas"</string>
+    <string name="default_app_home">"Aplicación de página principal"</string>
+    <string name="default_app_browser">"Aplicación de navegador"</string>
+    <string name="default_app_dialer">"Aplicación Teléfono"</string>
+    <string name="default_app_sms">"Aplicación de SMS"</string>
+    <string name="default_app_none">"Ninguna"</string></resources>

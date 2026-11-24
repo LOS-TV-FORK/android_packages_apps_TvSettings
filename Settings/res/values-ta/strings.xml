@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">வலது ஒட்டி பொத்தான் — பின்செல்</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">வலது ஒட்டி பொத்தானை அமர்த்தினால், பின்செல் பொத்தான் போல</string>
-</resources>
+
+    <string name="default_apps_title">"இயல்புநிலை ஆப்ஸ்"</string>
+    <string name="default_app_home">"முகப்பு"</string>
+    <string name="default_app_browser">"பிரவுசர் ஆப்ஸ்"</string>
+    <string name="default_app_dialer">"ஃபோன்"</string>
+    <string name="default_app_sms">"SMS"</string>
+    <string name="default_app_none">"ஏதுமில்லை"</string></resources>

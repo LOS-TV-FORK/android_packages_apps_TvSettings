@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">Butang kanan tetikus sebagai Undur</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Butang kanan tetikus berfungsi seperti butang Undur</string>
-</resources>
+
+    <string name="default_apps_title">"Apl lalai"</string>
+    <string name="default_app_home">"Apl skrin utama"</string>
+    <string name="default_app_browser">"Apl penyemak imbas"</string>
+    <string name="default_app_dialer">"Apl telefon"</string>
+    <string name="default_app_sms">"Apl SMS"</string>
+    <string name="default_app_none">"Tiada"</string></resources>

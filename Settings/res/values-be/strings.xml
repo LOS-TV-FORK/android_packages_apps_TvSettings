@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">Правая кнопка мышкі — Назад</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Націск правай кнопкі мышкі працуе як націск «Назад»</string>
-</resources>
+
+    <string name="default_apps_title">"Стандартныя праграмы"</string>
+    <string name="default_app_home">"Галоўны экран"</string>
+    <string name="default_app_browser">"Браўзер"</string>
+    <string name="default_app_dialer">"Праграма для званкоў"</string>
+    <string name="default_app_sms">"Праграма для SMS"</string>
+    <string name="default_app_none">"Няма"</string></resources>

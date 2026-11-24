@@ -1230,4 +1230,10 @@
     <string name="power_button_action_power_menu">Power menu</string>
     <string name="power_button_action_shutdown_confirm">Shut down, with confirmation</string>
     <string name="power_button_action_shutdown_no_confirm">Shut down, no confirmation</string>
-</resources>
+
+    <string name="default_apps_title">"Default apps"</string>
+    <string name="default_app_home">"Home app"</string>
+    <string name="default_app_browser">"Browser app"</string>
+    <string name="default_app_dialer">"Phone app"</string>
+    <string name="default_app_sms">"SMS app"</string>
+    <string name="default_app_none">"None"</string></resources>

@@ -36,6 +36,14 @@
         <intent android:action="android.intent.action.MANAGE_UNUSED_APPS"/>
     </Preference>
 
+    <Preference
+        android:key="default_apps"
+        android:title="@string/default_apps_title">
+        <intent
+            android:targetPackage="com.android.tv.settings"
+            android:targetClass="com.android.tv.settings.applications.DefaultAppsActivity" />
+    </Preference>
+
     <PreferenceCategory
         android:key="permissions"
         android:title="@string/apps_permissions_category_title">

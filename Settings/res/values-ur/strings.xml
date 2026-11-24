@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">دائیں ماؤس بٹن — پیچھے</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">دائیں ماؤس بٹن دبانا بیک بٹن دبانے جیسا کام کرتا ہے</string>
-</resources>
+
+    <string name="default_apps_title">"ڈیفالٹ ایپس"</string>
+    <string name="default_app_home">"ہوم ایپ"</string>
+    <string name="default_app_browser">"براؤزر ایپ"</string>
+    <string name="default_app_dialer">"فون ایپ"</string>
+    <string name="default_app_sms">"‏SMS ایپ"</string>
+    <string name="default_app_none">"کوئی نہیں"</string></resources>

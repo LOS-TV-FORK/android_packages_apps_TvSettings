@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">Десен бутон на мишката — Назад</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Натискането на десния бутон на мишката действа като бутона Назад</string>
-</resources>
+
+    <string name="default_apps_title">"Приложения по подразбиране"</string>
+    <string name="default_app_home">"Приложение за начален екран"</string>
+    <string name="default_app_browser">"Браузър"</string>
+    <string name="default_app_dialer">"Приложение „Телефон“"</string>
+    <string name="default_app_sms">"Приложение за SMS"</string>
+    <string name="default_app_none">"Няма"</string></resources>

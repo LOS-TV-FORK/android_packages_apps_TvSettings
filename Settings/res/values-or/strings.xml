@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">ଡାହାଣ ମାଉସ ବଟନ୍ ପଛକୁ</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">ଡାହାଣ ମାଉସ ବଟନ୍ ଚାପିବା ପଛ ବଟନ୍ ପରି କାର୍ଯ୍ୟ କରେ</string>
-</resources>
+
+    <string name="default_apps_title">"ଡିଫଲ୍ଟ ଆପ୍‌"</string>
+    <string name="default_app_home">"ହୋମ ଆପ"</string>
+    <string name="default_app_browser">"ବ୍ରାଉଜର ଆପ"</string>
+    <string name="default_app_dialer">"ଫୋନ୍‌ ଆପ୍‌"</string>
+    <string name="default_app_sms">"SMS ଆପ"</string>
+    <string name="default_app_none">"କିଛି ନାହିଁ"</string></resources>

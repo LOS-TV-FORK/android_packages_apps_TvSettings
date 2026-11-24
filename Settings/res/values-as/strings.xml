@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">সোঁ মাউছৰ বটাম আগৰলৈ</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">সোঁ মাউছৰ বটাম আগৰলৈ নিচক দবাতো আগৰলৈ নিচক দবা হোৱা</string>
-</resources>
+
+    <string name="default_apps_title">"ডিফ\'ল্ট এপ্‌সমূহ"</string>
+    <string name="default_app_home">"Home এপ্"</string>
+    <string name="default_app_browser">"ব্ৰাউজাৰ এপ্"</string>
+    <string name="default_app_dialer">"ফ\'ন এপ্"</string>
+    <string name="default_app_sms">"এছএমএছ এপ্"</string>
+    <string name="default_app_none">"একো নাই"</string></resources>

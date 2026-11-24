@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">Höger mustangent som Tillbaka</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Att trycka med höger musknapp fungerar som att trycka Tillbaka</string>
-</resources>
+
+    <string name="default_apps_title">"Standardappar"</string>
+    <string name="default_app_home">"Startskärmsapp"</string>
+    <string name="default_app_browser">"Webbläsarapp"</string>
+    <string name="default_app_dialer">"Telefonapp"</string>
+    <string name="default_app_sms">"Sms-app"</string>
+    <string name="default_app_none">"Inga"</string></resources>

@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">Десни тастер миша као Назад</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Притискивање десног тастера миша делује као притисак Назад</string>
-</resources>
+
+    <string name="default_apps_title">"Подразумеване апликације"</string>
+    <string name="default_app_home">"Апликација за почетну страницу"</string>
+    <string name="default_app_browser">"Апликација прегледача"</string>
+    <string name="default_app_dialer">"Апликација Телефон"</string>
+    <string name="default_app_sms">"Апликација за SMS"</string>
+    <string name="default_app_none">"Ништа"</string></resources>

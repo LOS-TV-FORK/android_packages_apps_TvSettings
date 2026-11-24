@@ -1244,4 +1244,10 @@
     <string name="power_button_action_shutdown_no_confirm">Выключение без подтверждения</string>
     <string name="device_right_mouse_as_back">Правая кнопка мыши — Назад</string>
     <string name="device_right_mouse_as_back_summary">По клику правой кнопкой мыши происходит нажатие кнопки Назад</string>
-</resources>
+
+    <string name="default_apps_title">"Приложения по умолчанию"</string>
+    <string name="default_app_home">"Главное приложение"</string>
+    <string name="default_app_browser">"Браузер"</string>
+    <string name="default_app_dialer">"Приложение для звонков"</string>
+    <string name="default_app_sms">"Приложение для SMS"</string>
+    <string name="default_app_none">"Нет"</string></resources>

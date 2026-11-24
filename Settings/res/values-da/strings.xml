@@ -1235,4 +1235,10 @@
     <string name="device_right_mouse_as_back">Højre musetast som Tilbage</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Højreklik fungerer som at trykke på Tilbage</string>
-</resources>
+
+    <string name="default_apps_title">"Standardapps"</string>
+    <string name="default_app_home">"Startapp"</string>
+    <string name="default_app_browser">"Browserapp"</string>
+    <string name="default_app_dialer">"Opkaldsapp"</string>
+    <string name="default_app_sms">"Sms-app"</string>
+    <string name="default_app_none">"Ingen"</string></resources>

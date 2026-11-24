@@ -61,6 +61,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS"/>
+    <uses-permission android:name="android.permission.MANAGE_DEFAULT_APPLICATIONS"/>
     <uses-permission android:name="android.permission.SUGGEST_MANUAL_TIME_AND_ZONE"/>
     <uses-permission android:name="android.permission.SET_TIME"/>
     <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
@@ -1128,7 +1129,15 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data android:scheme="package"/>
             </intent-filter>
-            <intent-filter android:priority="1">
+        </activity>
+
+        <activity
+            android:name=".applications.DefaultAppsActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:exported="true"
+            android:label="@string/default_apps_title"
+            android:theme="@style/TvSettingsActivityTheme">
+            <intent-filter android:priority="3">
                 <action android:name="android.settings.MANAGE_DEFAULT_APPS_SETTINGS"/>
                 <action android:name="android.settings.HOME_SETTINGS"/>
                 <category android:name="android.intent.category.DEFAULT"/>

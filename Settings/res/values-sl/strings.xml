@@ -1234,4 +1234,10 @@
     <string name="device_right_mouse_as_back">Desna tipka miške kot Nazaj</string>
     <!-- Description of the right mouse button as Back preference. -->
     <string name="device_right_mouse_as_back_summary">Pritisak desne tipke miške deluje kot pritisak tipke Nazaj</string>
-</resources>
+
+    <string name="default_apps_title">"Privzete aplikacije"</string>
+    <string name="default_app_home">"Aplikacija na začetnem zaslonu"</string>
+    <string name="default_app_browser">"Brskalnik"</string>
+    <string name="default_app_dialer">"Aplikacija za telefon"</string>
+    <string name="default_app_sms">"Aplikacija za SMS-je"</string>
+    <string name="default_app_none">"Brez"</string></resources>
