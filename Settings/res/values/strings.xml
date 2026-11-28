@@ -550,6 +550,83 @@
     <!-- Summary for the hardware video decoding switch. [CHAR LIMIT=250] -->
     <string name="hw_video_decoding_summary">Decode video on the GPU. Turn off if videos freeze
         or hang. Applies to videos opened after switching.</string>
+    <!-- Title for the video decoding sub-screen. [CHAR LIMIT=40] -->
+    <string name="video_decoding_title">Video decoding</string>
+    <!-- Title for the global automatic video decoding switch. [CHAR LIMIT=40] -->
+    <string name="video_decoding_auto_title">Automatic mode</string>
+    <!-- Summary for the global automatic video decoding switch. [CHAR LIMIT=250] -->
+    <string name="video_decoding_auto_summary">Use hardware for each codec when it is supported,
+        software otherwise. Turn off to choose per codec.</string>
+    <!-- Title for the decoder diagnostics switch. [CHAR LIMIT=40] -->
+    <string name="video_decoding_diag_title">Diagnostics (logcat)</string>
+    <!-- Summary for the decoder diagnostics switch. [CHAR LIMIT=250] -->
+    <string name="video_decoding_diag_summary">Log which decoding path is chosen for each codec.</string>
+    <!-- Segment label for automatic decoding. [CHAR LIMIT=10] -->
+    <string name="video_decoding_seg_auto" translatable="false">AUTO</string>
+    <!-- Segment label for forced software decoding. [CHAR LIMIT=10] -->
+    <string name="video_decoding_seg_sw" translatable="false">SW</string>
+    <!-- Header for the video decoding troubleshooting options. [CHAR LIMIT=40] -->
+    <string name="video_decoding_troubleshooting_title">Troubleshooting</string>
+    <!-- Title for the decoder output pixel format selector. [CHAR LIMIT=40] -->
+    <string name="video_decoding_pixelformat_title">Pixel format</string>
+    <!-- Summary for the pixel format selector. [CHAR LIMIT=250] -->
+    <string name="video_decoding_pixelformat_summary">Change only if video is black or garbled
+        while using hardware decoding.</string>
+    <!-- Pixel format option: let the system choose. [CHAR LIMIT=30] -->
+    <string name="video_decoding_pixelformat_auto">Automatic</string>
+    <!-- Title for the zero-copy DRM prime switch. [CHAR LIMIT=40] -->
+    <string name="video_decoding_drm_title">Zero-copy (DRM prime)</string>
+    <!-- Summary for the zero-copy DRM prime switch. [CHAR LIMIT=250] -->
+    <string name="video_decoding_drm_summary">Experimental. Turn off if video is black or the
+        decoder crashes.</string>
+    <!-- Title for the fast decode switch. [CHAR LIMIT=40] -->
+    <string name="video_decoding_fast_title">Fast decode</string>
+    <!-- Summary for the fast decode switch. [CHAR LIMIT=250] -->
+    <string name="video_decoding_fast_summary">Trade a little quality for speed.</string>
+    <!-- Entries for the pixel format selector. -->
+    <string-array name="video_decoding_pixelformat_entries" translatable="false">
+        <item>@string/video_decoding_pixelformat_auto</item>
+        <item>RGBX_8888</item>
+        <item>RGB_565</item>
+        <item>YUV_420</item>
+    </string-array>
+    <!-- Values for the pixel format selector; empty means automatic. -->
+    <string-array name="video_decoding_pixelformat_values" translatable="false">
+        <item></item>
+        <item>RGBX_8888</item>
+        <item>RGB_565</item>
+        <item>YUV_420</item>
+    </string-array>
+    <!-- Shown on a codec row when it has not been played yet. [CHAR LIMIT=60] -->
+    <string name="video_decoding_last_none">Not played yet</string>
+    <!-- Shown on a codec row when the last playback used the software path. [CHAR LIMIT=60] -->
+    <string name="video_decoding_last_sw">Last: software</string>
+    <!-- Shown on a codec row when the last playback used hardware. %1$s is the backend name. [CHAR LIMIT=60] -->
+    <string name="video_decoding_last_hw">Last: hardware (%1$s)</string>
+    <!-- ffmpeg codec keys exposed by the video decoding screen; must match avcodec_get_name(). -->
+    <string-array name="video_decoding_codec_keys" translatable="false">
+        <item>h264</item>
+        <item>hevc</item>
+        <item>vp8</item>
+        <item>vp9</item>
+        <item>av1</item>
+        <item>mpeg2video</item>
+        <item>mpeg4</item>
+        <item>vc1</item>
+        <item>wmv3</item>
+    </string-array>
+    <!-- Display names for the codecs listed above. -->
+    <string-array name="video_decoding_codec_labels" translatable="false">
+        <item>H.264</item>
+        <item>HEVC</item>
+        <item>VP8</item>
+        <item>VP9</item>
+        <item>AV1</item>
+        <item>MPEG-2</item>
+        <item>MPEG-4</item>
+        <item>VC-1</item>
+        <item>WMV</item>
+    </string-array>
     <!-- Default preference for a display's frame rate to match the content's frame rate. [CHAR LIMIT=80] -->
     <string name="match_content_frame_rate_seamless">Seamless-only</string>
     <!-- Summary for default preference for a display's frame rate to match the content's frame rate. [CHAR LIMIT=250] -->
